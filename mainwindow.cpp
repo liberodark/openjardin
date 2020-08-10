@@ -332,7 +332,7 @@ void MainWindow::on_actionA_propos_de_triggered()
                        tr("Ce programme est utilisé pour gérer graphiquement les plantations d'un potager.\n"
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
-                          "Ce programme est compilé avec Qt 5.5.1 .\n"
+                          "Ce programme est compilé avec Qt 5.12.0 .\n"
                           "Openjardin version 1.07.007 license GNU GPL version 3.0"));
 }
 

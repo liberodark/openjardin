@@ -7864,13 +7864,12 @@ Confirmer la mise à jour en version 1.06 ?</source>
 Please confirm to update to version 1.06</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
         <source>Ce programme est utilisé pour gérer graphiquement les plantations d&apos;un potager.
 il utilise des fichier XML pour la configuration des plans
 et une base sqlite pour les données de culture
 Ce programme est compilé avec Qt 5.5.1 .
 Openjardin version 1.07.007 license GNU GPL version 3.0</source>
-        <translation>This program is used to manage graphically the plantations of a garden.
+        <translation type="vanished">This program is used to manage graphically the plantations of a garden.
 He uses file XML for the configuration of the maps
 And a database sqlite for the data of crops
 Version 2017.001 license LPG GNU version 3 {1.07.001 ?}</translation>
@@ -7878,6 +7877,18 @@ Version 2017.001 license LPG GNU version 3 {1.07.001 ?}</translation>
     <message>
         <source>Ce programme utilise la version 5.5.1 de Qt</source>
         <translation type="vanished">This program use the 5.5.1 versio of Qt</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="332"/>
+        <source>Ce programme est utilisé pour gérer graphiquement les plantations d&apos;un potager.
+il utilise des fichier XML pour la configuration des plans
+et une base sqlite pour les données de culture
+Ce programme est compilé avec Qt 5.12.0 .
+Openjardin version 1.07.007 license GNU GPL version 3.0</source>
+        <translation type="unfinished">This program is used to manage graphically the plantations of a garden.
+He uses file XML for the configuration of the maps
+And a database sqlite for the data of crops
+Version 2017.001 license LPG GNU version 3 {1.07.001 ?} {5.12.0 ?} {1.07.007 ?} {3.0?}</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>

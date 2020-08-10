@@ -3266,7 +3266,7 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
         <source>Ce programme est utilisé pour gérer graphiquement les plantations d&apos;un potager.
 il utilise des fichier XML pour la configuration des plans
 et une base sqlite pour les données de culture
-Ce programme est compilé avec Qt 5.5.1 .
+Ce programme est compilé avec Qt 5.12.0 .
 Openjardin version 1.07.007 license GNU GPL version 3.0</source>
         <translation type="unfinished"></translation>
     </message>
