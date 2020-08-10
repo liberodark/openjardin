@@ -15,7 +15,22 @@ dialog_Aide::dialog_Aide(QWidget *parent) :
     // translator
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
+    QSettings settings;
+    QFile        iniFile(settings.fileName());
+    if (iniFile.exists())
+    {
+        QSettings settings(iniFile.fileName(), QSettings::IniFormat);
+        settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "english")
+            {
+            // forcer la langue anglaise
+                 fichier = ":/translations/open-jardin_en.ts";
 
+             }
+
+
+     }
     translator.load(fichier);
     qApp->installTranslator(&translator);
 

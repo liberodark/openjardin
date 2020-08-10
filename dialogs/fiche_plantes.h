@@ -50,8 +50,6 @@ private slots:
 
     void on_tableWidget_culture_printemps_cellClicked(int row, int column);
 
-    void on_tableWidget_culture_ete_cellClicked(int row, int column);
-
     void on_tableWidget_culture_automne_cellClicked(int row, int column);
 
     void on_pushButton_Modifier_especes_clicked();

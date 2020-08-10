@@ -99,19 +99,6 @@
              <number>4</number>
             </property>
             <item>
-             <widget class="QLabel" name="label_32">
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Id</string>
-              </property>
-             </widget>
-            </item>
-            <item>
              <widget class="QLineEdit" name="lineEdit_Id_Item">
               <property name="minimumSize">
                <size>
@@ -124,6 +111,9 @@
                 <width>40</width>
                 <height>25</height>
                </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
               </property>
               <property name="readOnly">
                <bool>true</bool>
@@ -159,6 +149,9 @@
               </property>
               <property name="toolTip">
                <string>Désignation de la parcelle sélectionnée</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 217);</string>
               </property>
              </widget>
             </item>
@@ -715,7 +708,7 @@
                <x>0</x>
                <y>0</y>
                <width>500</width>
-               <height>40</height>
+               <height>41</height>
               </rect>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -1458,6 +1451,9 @@
                   <height>16777215</height>
                  </size>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 217);</string>
+                </property>
                 <property name="readOnly">
                  <bool>true</bool>
                 </property>
@@ -1538,6 +1534,9 @@
                   <height>16777215</height>
                  </size>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 217);</string>
+                </property>
                 <property name="readOnly">
                  <bool>true</bool>
                 </property>
@@ -1572,6 +1571,9 @@
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 217);</string>
+                    </property>
                     <property name="readOnly">
                      <bool>true</bool>
                     </property>
@@ -1604,6 +1606,9 @@
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 217);</string>
+                    </property>
                     <property name="readOnly">
                      <bool>true</bool>
                     </property>
@@ -1628,7 +1633,7 @@
               </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="">
+            <widget class="QWidget" name="layoutWidget">
              <property name="geometry">
               <rect>
                <x>0</x>
@@ -1659,7 +1664,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ff5500</string>
@@ -1696,7 +1701,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color  :#aaaa7f</string>
@@ -1733,7 +1738,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #aaffff</string>
@@ -1770,7 +1775,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ff557f</string>
@@ -1807,7 +1812,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ffaa7f</string>
@@ -1844,7 +1849,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #00ff00</string>
@@ -1881,7 +1886,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ffff7f</string>
@@ -1918,7 +1923,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #aaaaff</string>
@@ -1955,7 +1960,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ff00ff</string>
@@ -1992,7 +1997,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #55ff7f</string>
@@ -2029,7 +2034,7 @@
                  </font>
                 </property>
                 <property name="autoFillBackground">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">background-color : #ded8d7</string>
@@ -2374,7 +2379,7 @@
                <x>10</x>
                <y>0</y>
                <width>208</width>
-               <height>27</height>
+               <height>28</height>
               </rect>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -3098,7 +3103,7 @@
      <x>0</x>
      <y>0</y>
      <width>1114</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
@@ -3140,6 +3145,7 @@
     <addaction name="actionAide"/>
     <addaction name="actionAide_PDF"/>
     <addaction name="action_Licenses"/>
+    <addaction name="actionA_propos_de_Qt"/>
    </widget>
    <widget class="QMenu" name="menuConfiguration">
     <property name="title">
@@ -3147,6 +3153,8 @@
     </property>
     <addaction name="actionFiches_plantes"/>
     <addaction name="actionConfiguration"/>
+    <addaction name="actionLangue_Anglais"/>
+    <addaction name="actionTraduire_en_francais"/>
    </widget>
    <widget class="QMenu" name="menuGantt">
     <property name="title">
@@ -3628,6 +3636,21 @@
   <action name="actionAfficherPlanning">
    <property name="text">
     <string>AfficherPlanning</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Qt">
+   <property name="text">
+    <string>A propos de Qt</string>
+   </property>
+  </action>
+  <action name="actionLangue_Anglais">
+   <property name="text">
+    <string>Translate in english</string>
+   </property>
+  </action>
+  <action name="actionTraduire_en_francais">
+   <property name="text">
+    <string>Traduire en francais</string>
    </property>
   </action>
  </widget>

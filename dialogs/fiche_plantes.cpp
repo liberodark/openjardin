@@ -21,7 +21,19 @@ Fiche_plantes::Fiche_plantes(const int&IdPlante, QWidget *parent) :
     // translator
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
-
+    QSettings settings;
+    QFile        iniFile(settings.fileName());
+    if (iniFile.exists())
+    {
+        QSettings settings(iniFile.fileName(), QSettings::IniFormat);
+        settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "english")
+            {
+            // forcer la langue anglaise
+                 fichier = ":/translations/open-jardin_en.ts";
+            }
+     }
     translator.load(fichier);
     qApp->installTranslator(&translator);
 
@@ -59,16 +71,16 @@ void Fiche_plantes::init_base()
     model1->setQuery(
         "SELECT id, designation, famille, positif, negatif, commentaires, compost, rotation_ans,rotation_familles FROM especes ORDER BY designation ASC");
     model1->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
-    model1->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
-    model1->setHeaderData(3, Qt::Vertical, QObject::tr("famille"));
+    model1->setHeaderData(0, Qt::Vertical, QObject::tr("designation"));
+    model1->setHeaderData(1, Qt::Vertical, QObject::tr("famille"));
     ui->tableView_especes->setModel(model1);
     ui->tableView_especes->setColumnWidth(0, 30);
-    ui->tableView_especes->setColumnWidth(1, 200);
+    ui->tableView_especes->setColumnWidth(1, 350);
     for (int i = 2; i < 9; i++)
     {
         ui->tableView_especes->setColumnHidden(i, true);
     }
-
+    ui->tableView_especes->setColumnHidden(0, true);
     //FAMILLES
     QSqlQueryModel *model2 = new QSqlQueryModel;
     model2->setQuery("SELECT id, designation,couleur FROM FAMILLES ORDER BY designation ASC");
@@ -77,23 +89,32 @@ void Fiche_plantes::init_base()
     model2->setHeaderData(2, Qt::Vertical, QObject::tr("couleur"));
     ui->tableView_familles->setModel(model2);
     ui->tableView_familles->setColumnWidth(0, 30);
-    ui->tableView_familles->setColumnWidth(1, 200);
+    ui->tableView_familles->setColumnWidth(1, 300);
     ui->tableView_familles->setColumnWidth(2, 50);
+    for (int i = 2; i < 9; i++)
+        {
+            ui->tableView_familles->setColumnHidden(i, true);
+        }
+        ui->tableView_familles->setColumnHidden(0, true);
     //PLANTES
     QSqlQueryModel *model3 = new QSqlQueryModel;
     model3->setQuery(
-        "SELECT id, designation,type_lune,nom_latin,espece,commentaires,semis_printemps,semis_ete,semis_automne FROM plantes ORDER BY designation ASC");
+         "SELECT id, designation,type_lune,nom_latin,espece,commentaires,semis_printemps,semis_ete,semis_automne FROM plantes ORDER BY designation ASC");
     model3->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     model3->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     model3->setHeaderData(1, Qt::Vertical, QObject::tr("espece"));
     model3->setHeaderData(1, Qt::Vertical, QObject::tr("commentaires"));
+
     ui->tableView_plantes->setModel(model3);
     ui->tableView_plantes->setColumnWidth(0, 30);
-    ui->tableView_plantes->setColumnWidth(1, 200);
+    ui->tableView_plantes->setColumnWidth(1, 300);
+   //masquer certaines colonnes
     for (int i = 2; i < 9; i++)
     {
         ui->tableView_plantes->setColumnHidden(i, true);
     }
+    ui->tableView_plantes->setColumnHidden(0, true);
+
     //remplissage combobox familles
     QSqlQueryModel *modelF = new QSqlQueryModel;
     modelF->setQuery("SELECT designation FROM familles ORDER BY designation ASC ");
@@ -114,14 +135,7 @@ void Fiche_plantes::init_base()
             ui->tableWidget_culture_printemps->item(x, y)->setBackgroundColor(Qt::white);
         }
     }
-    for (int x = 0; x < ui->tableWidget_culture_ete->rowCount(); x++)
-    {
-        for (int y = 0; y < ui->tableWidget_culture_ete->columnCount(); y++)
-        {
-            ui->tableWidget_culture_ete->setItem(x, y, new QTableWidgetItem);
-            ui->tableWidget_culture_ete->item(x, y)->setBackgroundColor(Qt::white);
-        }
-    }
+
     for (int x = 0; x < ui->tableWidget_culture_automne->rowCount(); x++)
     {
         for (int y = 0; y < ui->tableWidget_culture_automne->columnCount(); y++)
@@ -458,34 +472,6 @@ void Fiche_plantes::on_tableWidget_culture_printemps_cellClicked(int row, int co
     test_tables_semis();
 }
 
-void Fiche_plantes::on_tableWidget_culture_ete_cellClicked(int row, int column)
-{
-    QColor case_color = ui->tableWidget_culture_ete->item(row, column)->backgroundColor();
-
-    if (row == 0)
-    {
-        if (case_color == Qt::green)
-        {
-            ui->tableWidget_culture_ete->item(row, column)->setBackgroundColor(Qt::white);
-        }
-        else
-        {
-            ui->tableWidget_culture_ete->item(row, column)->setBackgroundColor(Qt::green);
-        }
-    }
-    else
-    {
-        if (case_color == Qt::gray)
-        {
-            ui->tableWidget_culture_ete->item(row, column)->setBackgroundColor(Qt::white);
-        }
-        else
-        {
-            ui->tableWidget_culture_ete->item(row, column)->setBackgroundColor(Qt::gray);
-        }
-    }
-    test_tables_semis();
-}
 
 void Fiche_plantes::on_tableWidget_culture_automne_cellClicked(int row, int column)
 {
@@ -547,32 +533,6 @@ void Fiche_plantes::test_tables_semis()
 
 
 
-    QString ete_semis   = "";
-    QString ete_recolte = "";
-    for (int y = 0; y < ui->tableWidget_culture_ete->columnCount(); y++)
-    {
-        if (ui->tableWidget_culture_ete->item(0, y)->backgroundColor() == Qt::green)
-        {
-            ete_semis = ete_semis + "1";
-        }
-        else
-        {
-            ete_semis = ete_semis + "0";
-        }
-    }
-
-    for (int y = 0; y < ui->tableWidget_culture_ete->columnCount(); y++)
-    {
-        if (ui->tableWidget_culture_ete->item(1, y)->backgroundColor() == Qt::gray)
-        {
-            ete_semis = ete_semis + "1";
-        }
-        else
-        {
-            ete_semis = ete_semis + "0";
-        }
-    }
-
 
 
     QString automne_semis   = "";
@@ -602,7 +562,6 @@ void Fiche_plantes::test_tables_semis()
     }
 
     m_printemps = printemps_semis;
-    m_ete       = ete_semis;
     m_automne   = automne_semis;
 }
 
@@ -636,34 +595,6 @@ void Fiche_plantes::mise_a_jour_tables_semis(const QString&printemps, const QStr
         }
     }
 
-    //table été
-    pos = 0;
-
-    for (int y = 0; y < ui->tableWidget_culture_ete->columnCount(); y++)
-    {
-        if (ete.mid(y, 1) == "0")
-        {
-            ui->tableWidget_culture_ete->item(0, y)->setBackgroundColor(Qt::white);
-        }
-        else
-        {
-            ui->tableWidget_culture_ete->item(0, y)->setBackgroundColor(Qt::green);
-        }
-        pos = y;
-    }
-
-
-    for (int z = 0; z < ui->tableWidget_culture_ete->columnCount(); z++)
-    {
-        if (ete.mid(pos + z + 1, 1) == "0")
-        {
-            ui->tableWidget_culture_ete->item(1, z)->setBackgroundColor(Qt::white);
-        }
-        else
-        {
-            ui->tableWidget_culture_ete->item(1, z)->setBackgroundColor(Qt::gray);
-        }
-    }
 
     //table automne
     pos = 0;

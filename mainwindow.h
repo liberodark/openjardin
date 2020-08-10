@@ -120,7 +120,7 @@ public:
     void resize_planning(int nb_parcelles);
     void zoomGraphicsView(int ratio);
     void testVersion();
-    void mise_a_jour_DB();
+    void mise_a_jour_DB(QString sqlfileName );
     void backup_base();
     void mise_a_jour_Titre();
     void tester_table_parcelles();
@@ -272,6 +272,12 @@ private slots:
     void on_toolButton_DeleteObjet_triggered(QAction *arg1);
 
     void on_pushButton_clicked();
+
+    void on_actionA_propos_de_Qt_triggered();
+
+    void on_actionLangue_Anglais_triggered();
+
+    void on_actionTraduire_en_francais_triggered();
 
 protected:
     QPoint mousePressPt;

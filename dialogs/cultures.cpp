@@ -55,7 +55,21 @@ Cultures::Cultures(const int&IdItem, const int&IdCulture, QWidget *parent) :
     // translator
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
+    QSettings settings;
+    QFile        iniFile(settings.fileName());
+    if (iniFile.exists())
+    {
+        QSettings settings(iniFile.fileName(), QSettings::IniFormat);
+        settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "english")
+            {
+            // forcer la langue anglaise
+                 fichier = ":/translations/open-jardin_en.ts";
 
+             }
+
+    }
     translator.load(fichier);
     qApp->installTranslator(&translator);
 
@@ -64,7 +78,7 @@ Cultures::Cultures(const int&IdItem, const int&IdCulture, QWidget *parent) :
     setIdCulture(IdCulture);
     ui->lineEditIdParcelle->setText(QString::number(m_idItem));
     ui->lineEdit_id_cultures->setText(QString::number(m_idCulture));
-
+    ui->lineEdit_id_tache->hide();
     // mise à la date du jour du dateEdit de la fiche
     QDate dateDuJour;
     dateDuJour = dateDuJour.currentDate();
@@ -94,36 +108,64 @@ void Cultures::init_models(int idculture)
     {
         QSqlQueryModel *model = new QSqlQueryModel;
         model->setQuery("SELECT id, designation, parcelle, date_semis, type_plante , commentaires , etat,duree,date_recolte FROM cultures WHERE parcelle=" + QString::number(
-                            m_idItem));
+                            m_idItem) + " ORDER BY id DESC");
         model->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
         model->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
         model->setHeaderData(3, Qt::Vertical, QObject::tr("parcelle"));
         ui->tableViewCultures->setModel(model);
-
+        ui->tableViewCultures->setColumnWidth(1, 200);
+        ui->tableViewCultures->setColumnWidth(5, 400);
+        for (int i = 2; i < 9; i++)
+        {
+            ui->tableViewCultures->setColumnHidden(i, true);
+        }
+        ui->tableViewCultures->setColumnHidden(0, true);
+        ui->tableViewCultures->setColumnHidden(3, false);
+        ui->tableViewCultures->setColumnHidden(5, false);
         QSqlQueryModel *modelObs = new QSqlQueryModel;
         modelObs->setQuery("SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + QString::number(
-                               idculture));
-        modelObs->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
+                               idculture) + " ORDER BY id DESC");
         modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
         modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
         ui->tableView_taches->setModel(modelObs);
+        ui->tableView_taches->setColumnWidth(1, 200);
+        ui->tableView_taches->setColumnWidth(4, 400);
+        ui->tableView_taches->setColumnHidden(0, true);
+        ui->tableView_taches->setColumnHidden(3, true);
+        ui->tableView_taches->setColumnHidden(5, true);
     }
     else
     {
         QSqlQueryModel *model = new QSqlQueryModel;
         model->setQuery("SELECT id, designation, parcelle, date_semis, type_plante , commentaires , etat,duree,date_recolte FROM cultures WHERE id =" + QString::number(
-                            idculture));
+                            idculture) + " ORDER BY id DESC");
         model->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
         model->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
         model->setHeaderData(3, Qt::Vertical, QObject::tr("parcelle"));
         ui->tableViewCultures->setModel(model);
+        ui->tableViewCultures->setColumnWidth(1, 200);
+        ui->tableViewCultures->setColumnWidth(5, 400);
+        for (int i = 2; i < 9; i++)
+        {
+            ui->tableViewCultures->setColumnHidden(i, true);
+        }
+        ui->tableViewCultures->setColumnHidden(0, true);
+        ui->tableViewCultures->setColumnHidden(3, false);
+        ui->tableViewCultures->setColumnHidden(5, false);
+
         QSqlQueryModel *modelObs = new QSqlQueryModel;
         modelObs->setQuery("SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + QString::number(
-                               idculture));
+                               idculture) + " ORDER BY id DESC");
         modelObs->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
         modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
         modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
         ui->tableView_taches->setModel(modelObs);
+        ui->tableView_taches->setColumnWidth(1, 200);
+        ui->tableView_taches->setColumnWidth(4, 400);
+        ui->tableView_taches->setColumnHidden(0, true);
+        ui->tableView_taches->setColumnHidden(3, true);
+        ui->tableView_taches->setColumnHidden(5, true);
+
         int     row   = 0;
         QString strId = ui->tableViewCultures->model()->data(ui->tableViewCultures->model()->index(row, 0)).toString();
         QString str   = ui->tableViewCultures->model()->data(ui->tableViewCultures->model()->index(row, 1)).toString();
@@ -207,11 +249,20 @@ void Cultures::on_pushButton_validerData_clicked()
     }
     QSqlQueryModel *model = new QSqlQueryModel;
     model->setQuery("SELECT id, designation, parcelle, date_semis, type_plante , commentaires,etat,duree,date_recolte FROM cultures WHERE parcelle=" + QString::number(
-                        m_idItem));
+                        m_idItem) + " ORDER BY id DESC");
     model->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     model->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     model->setHeaderData(3, Qt::Vertical, QObject::tr("parcelle"));
     ui->tableViewCultures->setModel(model);
+    ui->tableViewCultures->setColumnWidth(1, 200);
+    ui->tableViewCultures->setColumnWidth(5, 400);
+    for (int i = 2; i < 9; i++)
+    {
+        ui->tableViewCultures->setColumnHidden(i, true);
+    }
+    ui->tableViewCultures->setColumnHidden(0, true);
+    ui->tableViewCultures->setColumnHidden(3, false);
+    ui->tableViewCultures->setColumnHidden(5, false);
 }
 
 void Cultures::on_tableViewCultures_clicked(const QModelIndex&index)
@@ -398,11 +449,20 @@ void Cultures::on_pushButton_modifier_clicked()
 
     QSqlQueryModel *model = new QSqlQueryModel;
     model->setQuery("SELECT id, designation, parcelle, date_semis, type_plante , commentaires,etat,duree,date_recolte FROM cultures WHERE parcelle=" + QString::number(
-                        m_idItem));
+                        m_idItem) + " ORDER BY id DESC");
     model->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     model->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     model->setHeaderData(3, Qt::Vertical, QObject::tr("parcelle"));
     ui->tableViewCultures->setModel(model);
+    ui->tableViewCultures->setColumnWidth(1, 200);
+    ui->tableViewCultures->setColumnWidth(5, 400);
+    for (int i = 2; i < 9; i++)
+    {
+        ui->tableViewCultures->setColumnHidden(i, true);
+    }
+    ui->tableViewCultures->setColumnHidden(0, true);
+    ui->tableViewCultures->setColumnHidden(3, false);
+    ui->tableViewCultures->setColumnHidden(5, false);
 }
 
 /*************** base de données des taches et observations*************************/
@@ -448,11 +508,18 @@ void Cultures::on_pushButton_modifier_tache_clicked()
         qDebug() << "enregistrement terminé";
     }
     QSqlQueryModel *modelObs = new QSqlQueryModel;
-    modelObs->setQuery("SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5);
+    modelObs->setQuery(
+        "SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5 +
+        " ORDER BY id DESC");
     modelObs->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
     ui->tableView_taches->setModel(modelObs);
+    ui->tableView_taches->setColumnWidth(1, 200);
+    ui->tableView_taches->setColumnWidth(4, 400);
+    ui->tableView_taches->setColumnHidden(0, true);
+    ui->tableView_taches->setColumnHidden(3, true);
+    ui->tableView_taches->setColumnHidden(5, true);
 }
 
 void Cultures::on_pushButton_creer_tache_clicked()
@@ -496,11 +563,18 @@ void Cultures::on_pushButton_creer_tache_clicked()
         qDebug() << "enregistrement terminé";
     }
     QSqlQueryModel *modelObs = new QSqlQueryModel;
-    modelObs->setQuery("SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5);
+    modelObs->setQuery(
+        "SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5 +
+        " ORDER BY id DESC");
     modelObs->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
     ui->tableView_taches->setModel(modelObs);
+    ui->tableView_taches->setColumnWidth(1, 200);
+    ui->tableView_taches->setColumnWidth(4, 400);
+    ui->tableView_taches->setColumnHidden(0, true);
+    ui->tableView_taches->setColumnHidden(3, true);
+    ui->tableView_taches->setColumnHidden(5, true);
 }
 
 void Cultures::on_tableView_taches_clicked(const QModelIndex&index)
@@ -516,6 +590,7 @@ void Cultures::on_tableView_taches_clicked(const QModelIndex&index)
     ui->lineEdit_designation_tache->setText(str);
     ui->plainTextEdit_observations_taches->document()->setPlainText(str3);
     QDate date = QDate::fromString(str1, "yyyy.MM.dd");
+    ui->dateEdit_tache->show();
     ui->dateEdit_tache->setDate(date);
 
     //calage combo_type_tache sur valeur id
@@ -542,6 +617,18 @@ void Cultures::on_lineEdit_id_cultures_textChanged(const QString&arg1)
     modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
     ui->tableView_taches->setModel(modelObs);
+    ui->tableView_taches->setColumnWidth(1, 200);
+    ui->tableView_taches->setColumnWidth(4, 400);
+    ui->tableView_taches->setColumnHidden(0, true);
+    ui->tableView_taches->setColumnHidden(3, true);
+    ui->tableView_taches->setColumnHidden(5, true);
+
+    //effacer les zones texte des tâches
+    ui->lineEdit_designation_tache->setText("");
+    ui->plainTextEdit_observations_taches->document()->setPlainText("");
+    ui->lineEdit_id_tache->setText("");
+    ui->dateEdit_tache->hide();
+
 }
 
 /*******************************IMPRESSION FICHE***********************/
@@ -704,11 +791,20 @@ void Cultures::on_pushButton_supprimer_culture_clicked()
         }
         QSqlQueryModel *model = new QSqlQueryModel;
         model->setQuery("SELECT id, designation, parcelle, date_semis, type_plante , commentaires,etat,duree,date_recolte FROM cultures WHERE parcelle=" + QString::number(
-                            m_idItem));
+                            m_idItem) + " ORDER BY id DESC");
         model->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
         model->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
         model->setHeaderData(3, Qt::Vertical, QObject::tr("parcelle"));
         ui->tableViewCultures->setModel(model);
+        ui->tableViewCultures->setColumnWidth(1, 200);
+        ui->tableViewCultures->setColumnWidth(5, 400);
+        for (int i = 2; i < 9; i++)
+        {
+            ui->tableViewCultures->setColumnHidden(i, true);
+        }
+        ui->tableViewCultures->setColumnHidden(0, true);
+        ui->tableViewCultures->setColumnHidden(3, false);
+        ui->tableViewCultures->setColumnHidden(5, false);
     }
 
     case QMessageBox::Cancel:
@@ -740,11 +836,18 @@ void Cultures::on_pushButton_supprimer_tache_clicked()
     }
 
     QSqlQueryModel *modelObs = new QSqlQueryModel;
-    modelObs->setQuery("SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5);
+    modelObs->setQuery(
+        "SELECT id, designation, date,type , commentaires,id_culture FROM observations where id_culture= " + str5 +
+        " ORDER BY id DESC");
     modelObs->setHeaderData(0, Qt::Vertical, QObject::tr("id"));
     modelObs->setHeaderData(1, Qt::Vertical, QObject::tr("designation"));
     modelObs->setHeaderData(3, Qt::Vertical, QObject::tr("date"));
     ui->tableView_taches->setModel(modelObs);
+    ui->tableView_taches->setColumnWidth(1, 200);
+    ui->tableView_taches->setColumnWidth(4, 400);
+    ui->tableView_taches->setColumnHidden(0, true);
+    ui->tableView_taches->setColumnHidden(3, true);
+    ui->tableView_taches->setColumnHidden(5, true);
 }
 
 void Cultures::on_lineEdit_duree_textChanged(const QString&arg1)

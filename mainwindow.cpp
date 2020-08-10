@@ -104,7 +104,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QCoreApplication::setOrganizationDomain("openjardin.eu");
     QCoreApplication::setApplicationName("openjardin");
     QSettings settings;
-    //connexion à la base de données
+    //base de données
     QString fileName     = QDir::homePath() + "/openjardin/jardin.sqli"; //emplacement de la base de données utilisée
     QString fileName_usr = "/usr/share/openjardin/jardin.sqli";          //emplacement base de données copiées à l'installation
 
@@ -128,7 +128,7 @@ MainWindow::MainWindow(QWidget *parent) :
         //copie des fichiers dans le repertoire personnel
         QFile::copy(fileName_usr, fileName);
         QFile::copy("/usr/share/openjardin/jardin.xml", path + "/jardin.xml");
-        QFile::copy("/usr/share/openjardin/message.png", path + "/message.png");
+        QFile::copy(":/images/message.png", path + "/message.png");
         QFile::copy("/usr/share/openjardin/jardin_type.png", path + "/jardin_type.png");
         QFile::copy("/usr/share/openjardin/notice_openJardin.pdf", path + "/notice_openJardin.pdf");
         QFile::copy("/usr/share/openjardin/jardinDemo.xml", path + "/jardinDemo.xml");
@@ -253,7 +253,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     /**********************fond d'écran standard**************************************/
-    QString     fileName2 = QDir::homePath() + "/openjardin/message.png";
+    QString     fileName2 = QDir::homePath() + ":/images/message.png";
     QPixmap     pim(fileName2);
     background *pixmap = new background();
     pixmap->setPixmap(pim);
@@ -304,8 +304,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // cacher les outils de dessin car affichage uniquement en mode dessin
     ui->frame_ToolsCreate->hide();
+    // cacher les champs id
+    ui->lineEdit_Id_Item->hide();
+    ui->lineEdit_id_culture->hide();
+
 
     m_ZoomRatio = 1; //variable du facteur de zoom (actual size =1 )
+
 
 
     loadIniSettings();
@@ -327,13 +332,45 @@ void MainWindow::on_actionA_propos_de_triggered()
                        tr("Ce programme est utilisé pour gérer graphiquement les plantations d'un potager.\n"
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
-                          "version 1.07.001 license GNU GPL version 3"));
+                          "Ce programme est compilé avec Qt 5.5.1 .\n"
+                          "Openjardin version 1.07.007 license GNU GPL version 3.0"));
+}
+
+void MainWindow::on_actionA_propos_de_Qt_triggered()
+{
+    //QMessageBox::aboutQt(this,tr(QT_VERSION_STR));
+    QMessageBox::aboutQt(this, tr("Ce programme utilise la version 5.12.2 de Qt"));
 }
 
 void MainWindow::on_actionQuitter_triggered()
 {   //quitter l'application
     close();
 }
+
+void MainWindow::on_actionLangue_Anglais_triggered()
+{
+    // forcer la langue anglaise
+    QTranslator translator;
+    QString     fichier = ":/translations/open-jardin_en.ts";
+    translator.load(fichier);
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
+    QSettings       settings;
+    settings.setValue("langue", "english"); // enregistre dans fichier .conf
+}
+
+void MainWindow::on_actionTraduire_en_francais_triggered()
+{
+    // forcer la langue anglaise
+    QTranslator translator;
+    QString     fichier = ":/translations/open-jardin_fr.ts";
+    translator.load(fichier);
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
+    QSettings       settings;
+    settings.setValue("langue", "francais"); // enregistre dans fichier .conf
+}
+
 
 /*************************************************************************/
 void MainWindow::resizeEvent(QResizeEvent *event)
@@ -343,6 +380,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
     ui->graphicsView_planning->setMinimumWidth(WidthMainWindow - 328);
     ui->graphicsView_rotation->setMinimumWidth(WidthMainWindow - 328);
 }
+
+/*****************************************************************/
 
 void MainWindow::on_actionNouveau_projet_triggered()
 {   // création d'un nouveau projet
@@ -383,14 +422,22 @@ void MainWindow::loadIniSettings()
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
         settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "english")
+        {
+            on_actionLangue_Anglais_triggered();
+
+        }
         QString fileName = settings.value("lastfile").toString();
         ouvrir_FichierXML(fileName);
     }
     else
     {
         QString fileNameXML = QDir::homePath() + "/openjardin/jardin.xml";
+        setFileNameXML(fileNameXML);
         ouvrir_FichierXML(fileNameXML);
         QString fileName = QDir::homePath() + "/openjardin/jardin.sqli";
+        setfileNameSQL(fileName);
         createConnection(fileName);
     }
 }
@@ -403,6 +450,7 @@ void MainWindow::createConnection(QString fileName)
     {
         fileName = QDir::homePath() + "/openjardin/jardin.sqli";
     }
+
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
     db.setHostName("localhost");
     db.setUserName("root");
@@ -438,6 +486,23 @@ void MainWindow::mise_a_jour_Titre()
 
 void MainWindow::testVersion()
 {
+    QSqlQuery query1;
+    QString   strQuery1 = "SELECT name FROM sqlite_master WHERE name='especes'";
+
+    query1.exec(strQuery1);
+
+    if (query1.first())
+    {
+        QString resultat = query1.value(0).toString();
+        qDebug() << "le fichier jardin.sqli existe";
+    }
+    else
+    {
+        mise_a_jour_DB(":/sql/restore.sql");
+        qDebug() << "le fichier jardin.sqli a été créé ";
+        setFileNameXML(QDir::homePath() + "/openjardin/jardin.xml");
+    }
+
     QSqlQuery query;
     QString   strQuery = "SELECT name FROM sqlite_master WHERE name='tasks'";
 
@@ -453,7 +518,7 @@ void MainWindow::testVersion()
         qDebug() << "ancienne version";
         int ret = QMessageBox::warning(this, tr("OPENJARDIN - Mise à jour de la base de données"),
                                        tr("La base de données doit être mise à jour.\n"
-                                          "Confirmer la mise à jour en version 1.06 ?"),
+                                          "Confirmer la mise à jour en version 1.07 ?"),
                                        QMessageBox::Ok | QMessageBox::Cancel,
                                        QMessageBox::Cancel);
 
@@ -463,7 +528,7 @@ void MainWindow::testVersion()
         {
             // backup du fichier de la base de données
             backup_base();
-            mise_a_jour_DB();
+            mise_a_jour_DB(":/sql/planner.sql");
             break;
         }
 
@@ -492,7 +557,7 @@ void MainWindow::backup_base()
     QFile::copy(fileName, baseName);
 }
 
-void MainWindow::mise_a_jour_DB()
+void MainWindow::mise_a_jour_DB(QString sqlfileName)
 {   // Mise à jour d'une ancienne base de données vers la version 1.06
     QString      fileName(getfileNameSQL());
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
@@ -511,7 +576,7 @@ void MainWindow::mise_a_jour_DB()
     }
 
     QString queryStr;
-    QFile   file(":/sql/planner.sql");
+    QFile   file(sqlfileName);
     if (!file.open(QFile::ReadOnly | QFile::Text))
     {
         QMessageBox msgBox;
@@ -601,9 +666,6 @@ void MainWindow::mise_a_jour_DB()
                 drap_erreur = 1;
                 qDebug() << "erreur mise à jour :" << query.lastError().text() << "  " <<
                     query.lastError().databaseText() << query.lastQuery();
-            }
-            else
-            {
             }
         }
     }
@@ -942,10 +1004,10 @@ void MainWindow::tester_table_parcelles()
     if (query.first())
     {
         QString resultat = query.value(0).toString();
-        qDebug() << " nombre de parcelles " << resultat;
+        // qDebug() << " nombre de parcelles " << resultat;
         if (resultat.toInt() == 0)
         {
-            qDebug() << "remplir table 947";
+            //Debug() << "remplir table 947";
             remplir_table_parcelles();
         }
     }
@@ -1042,7 +1104,6 @@ void MainWindow::on_actionSauver_triggered()
     base.appendChild(fichier_base);
     //background
     QDomElement fond = document.createElement("fond");
-
     fond.setAttribute("chemin", getFileNameBackGround());
     fond.setAttribute("Type", "7");
     fond.setAttribute("PositionX", "0");
@@ -2386,6 +2447,7 @@ int MainWindow::get_MaxId()
     int Max = 0;
 
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->type() == 65536)   // MyItem
@@ -2623,6 +2685,7 @@ void MainWindow::on_actionSupprimer_triggered()
 void MainWindow::on_actionDeselectionner_tout_triggered()
 {   //deselectionne tous les objets
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -2675,6 +2738,7 @@ void MainWindow::on_actionBringToFront_triggered()
 void MainWindow::on_actionCacher_le_fond_triggered()
 {
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->type() == 7) //IMAGES
@@ -2691,6 +2755,7 @@ void MainWindow::on_actionCacher_le_fond_triggered()
 void MainWindow::on_actionAfficher_le_fond_triggered()
 {
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->type() == 7) //IMAGES
@@ -2819,6 +2884,7 @@ void MainWindow::on_actionUtilisation_triggered()
 void MainWindow::Item_clicked()
 {   //si l'item est sélectionné (selection changed)
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -2914,6 +2980,7 @@ void MainWindow::ItemPlanning_clicked()
     int     dateDepart;
     QString strDateAn = ui->comboBox_AnneeEnCours->currentText() + ".01.01";
     QDate   dateAn    = QDate::fromString(strDateAn, "yyyy.MM.dd");
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -2956,6 +3023,7 @@ void MainWindow::on_lineEdit_Nom_item_textChanged(const QString&arg1)
 void MainWindow::on_pushButton_Enregistrer_modif_item_clicked()
 {
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -3267,6 +3335,7 @@ QPolygon MainWindow::convertStrToPoly(const QString MyString)
 void MainWindow::ShowContextMenu(const QPoint& pos) // this is a slot
 {
     QList <Sommet *> sommets;
+
     foreach(QGraphicsItem * item, scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
@@ -3305,6 +3374,7 @@ void MainWindow::ajouterSommet()
     //ajout sommet
     QList <Sommet *> sommets;
     qreal            position = 0;
+
     foreach(QGraphicsItem * item, scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
@@ -3332,6 +3402,7 @@ void MainWindow::ajouterSommet()
 void MainWindow::supprimerSommet()
 {
     QList <Sommet *> sommets;
+
     foreach(QGraphicsItem * item, scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
@@ -3356,6 +3427,7 @@ void MainWindow::validerPolygone()
     int      drap1    = 0;
     int      initValX = 0;
     int      initValY = 0;
+
     for (int i = itemList.size() - 1; i >= 0; i--)
     {
         QPointF location = itemList[i]->pos();
@@ -3442,6 +3514,7 @@ void MainWindow::validerPolyline()
     int      drap1    = 0;
     int      initValX = 0;
     int      initValY = 0;
+
     for (int i = itemList.size() - 1; i >= 0; i--)
     {
         QPointF location = itemList[i]->pos();
@@ -3701,6 +3774,7 @@ void MainWindow::on_toolButton_newPolygon_toggled(bool checked)
 void MainWindow::on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString&arg1)
 {
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -3732,6 +3806,7 @@ void MainWindow::on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString
 void MainWindow::on_comboBox_typeLigne_P_currentIndexChanged(int index)
 {
     QList <QGraphicsItem *> itemList = scene->items();
+
     for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->isSelected())
@@ -4020,3 +4095,6 @@ void MainWindow::on_pushButton_clicked()
 
     Fiche->show();
 }
+
+
+
