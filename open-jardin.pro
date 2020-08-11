@@ -124,5 +124,4 @@ RESOURCES += \
 
 TRANSLATIONS = translations/open-jardin_fr.ts \
                translations/open-jardin_en.ts \
-               translations/open-jardin_es.ts \
                translations/open-jardin_it.ts

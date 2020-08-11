@@ -30,108 +30,108 @@
     <message>
         <location filename="../dialogs/configuration.ui" line="51"/>
         <source>Nom du fichier de configuration actif (.XML)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome del file di configurazione attivo (.XML)</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="58"/>
         <source>Nom du fichier de la base de données  active(.SQLI)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome del file del database attivo(.SQLI)</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="65"/>
         <source>Modifié uniquement en changeant de base de donnée active</source>
-        <translation type="unfinished"></translation>
+        <translation>Modificato solo cambiando database attivo</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="68"/>
         <source>jardin.sqli</source>
-        <translation type="unfinished"></translation>
+        <translation>jardin.sqli</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="94"/>
         <source>Paramétrage des types d&apos;observations</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazione dei tipi di osservazioni</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="117"/>
         <source>Bases de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Database</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="164"/>
         <source>Liste des types d&apos;observations</source>
-        <translation type="unfinished"></translation>
+        <translation>Elenco dei tipi di osservazioni</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="214"/>
         <location filename="../dialogs/configuration.ui" line="546"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="224"/>
         <location filename="../dialogs/configuration.ui" line="556"/>
         <source>Enregistrement N°</source>
-        <translation type="unfinished"></translation>
+        <translation>Registrazione N°</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="264"/>
         <location filename="../dialogs/configuration.ui" line="596"/>
         <source>Enregistrer modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare modifiche</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="283"/>
         <location filename="../dialogs/configuration.ui" line="615"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="302"/>
         <location filename="../dialogs/configuration.ui" line="634"/>
         <source>Fiche vierge</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda vuota</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="321"/>
         <location filename="../dialogs/configuration.ui" line="653"/>
         <source>Enregistrer nouvelle fiche</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva nuova scheda</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="346"/>
         <source>NOMS DES FICHIERS EN COURS</source>
-        <translation type="unfinished"></translation>
+        <translation>NOMI DEI FILE IN CORSO</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="367"/>
         <source>Choisir la base de données active</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il database attivo</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="374"/>
         <source>Mise à jour de la base de données vers v 1.07</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiornamento del database a v 1.07</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="381"/>
         <source>Créer une nouvelle base de données pré-remplie</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una nuova banca dati pre-compilata</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="388"/>
         <source>Créer une base de données et importer les données</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare un database e importare i dati</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="398"/>
         <source>Exporter la base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Esporta la banca dati</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="409"/>
         <source>Messages :</source>
-        <translation type="unfinished"></translation>
+        <translation>Messagi :</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="433"/>
@@ -153,78 +153,95 @@ Vous pouvez soit créer :
 
 Export de la base de donnée active:
 La base de données est sauvegardée sous un nouveau nom dans un fichier texte de requête sql de type .sql. ce fichier peut être importé en tant que nouvele base de données.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il file XML contiene i dati di configurazione del piano del terreno con gli appezzamenti, i materiali e le piantagioni.
+Il file del database (.sqli) collegato al file di configurazione contiene:
+- le schede colture (associate alle parcelle),
+- le schede piante
+- le schede contanti
+- le schede delle famiglie di piante,
+
+Selezionare la banca dati attiva:
+È possibile scegliere il database . sqli che sarà attivo e salvare il nome del database nel file di configurazione . xml salvando il file di configurazione . xml
+
+Creazione di una nuova banca dati:
+Puoi creare o:
+- una banca dati con solo le tabelle senza dati,
+- una base di dati con le tabelle specie - famiglie - macchie preriempite,
+- una nuova base importando un file di testo di tipo di backup . sql che include tabelle e dati.
+
+Esportazione del database attivo:
+Il database è salvato con un nuovo nome in un file di testo di query sql di tipo .sql. questo file può essere importato come nuovo database.</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="470"/>
         <source>Aide </source>
-        <translation type="unfinished"></translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="489"/>
         <source>Fermer </source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudere</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.ui" line="679"/>
         <source>Paramétrage des unités</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazione delle unità</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="116"/>
         <source>Ouverture d&apos;une base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Apertura di una banca dati</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="118"/>
         <source>SQLI files (*.sqli *.db);; All files (*.*) </source>
-        <translation type="unfinished"></translation>
+        <translation>SQLI files (*.sqli *.db);; All files (*.*) </translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="165"/>
         <source>Sauvegarde du tableau des objets</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva la tabella degli oggetti</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="167"/>
         <source>XML Files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML Files (*.xml)</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="194"/>
         <source>Créer une nouvelle base de données préremplie</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una nuova banca dati pre-compilata</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="196"/>
         <location filename="../dialogs/configuration.cpp" line="340"/>
         <source>SQLI Files (*.sqli *.db)</source>
-        <translation type="unfinished"></translation>
+        <translation>SQLI files (*.sqli *.db);; All files (*.*) </translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="338"/>
         <source>Nom de la nouvelle base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome della nuova banca dati</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="374"/>
         <source>Choisir le fichier .sql à importer dans la base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona il file . sql da importare nel database</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="376"/>
         <source>fichier SQL (*.sql)</source>
-        <translation type="unfinished"></translation>
+        <translation>file SQL (*.sql)</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="485"/>
         <source>Création d&apos;un export de la base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>Creazione di un export della banca dati</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="487"/>
         <source>Fichier SQL (*.sql)</source>
-        <translation type="unfinished"></translation>
+        <translation>file SQL (*.sql)</translation>
     </message>
 </context>
 <context>
@@ -232,184 +249,184 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
     <message>
         <location filename="../dialogs/cultures.ui" line="26"/>
         <source>FICHE CULTURE</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHEDA COLTURA</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="50"/>
         <source>FICHE CULTURE DE LA PARCELLE</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHEDA COLTURA DELLA PARCELLA</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="60"/>
         <location filename="../dialogs/cultures.ui" line="182"/>
         <location filename="../dialogs/cultures.ui" line="204"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="119"/>
         <source>Type lune : </source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo luna : </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="129"/>
         <source>Date de fin de culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Data di fine coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="136"/>
         <source>Culture N°</source>
-        <translation type="unfinished"></translation>
+        <translation>Coltura N°</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="162"/>
         <location filename="../dialogs/cultures.ui" line="548"/>
         <location filename="../dialogs/cultures.ui" line="764"/>
         <source>yyyy-MM-dd</source>
-        <translation type="unfinished"></translation>
+        <translation>yyyy-MM-dd</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="179"/>
         <source>Visualiser la fiche de la variété</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizzare la scheda della varietà</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="201"/>
         <source>Ajouter une nouvelle variété</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungere una nuova varietà</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="244"/>
         <source>Imprimer la fiche</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa la scheda</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="276"/>
         <location filename="../dialogs/cultures.ui" line="832"/>
         <source>Enregistrer modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare modifiche</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="283"/>
         <location filename="../dialogs/cultures.ui" line="839"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="290"/>
         <source>Nouvelle fiche vierge</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuova scheda vuota</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="309"/>
         <source>Créer nouvelle culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare nuova cultura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="331"/>
         <source>45</source>
-        <translation type="unfinished"></translation>
+        <translation>45</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="358"/>
         <source>Date de mise en culture </source>
-        <translation type="unfinished"></translation>
+        <translation>Data di messa in coltura </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="413"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="420"/>
         <location filename="../dialogs/cultures.ui" line="774"/>
         <source>Designation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="449"/>
         <source>Durée prévisionelle (en jours)</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata prevista (in giorni)</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="456"/>
         <source>Espèce :</source>
-        <translation type="unfinished"></translation>
+        <translation>Specie :</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="469"/>
         <source>Parcelle N°</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella N°</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="476"/>
         <source>Famille :</source>
-        <translation type="unfinished"></translation>
+        <translation>Famiglia :</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="487"/>
         <source>Parcelle en simple culture </source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella a semplice coltivazione </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="492"/>
         <source>Parcelle en double culture (ligne haute)</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella in doppia coltura (linea alta)</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="497"/>
         <source>Parcelle en double culture (ligne basse)</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella a doppia coltura (linea bassa)</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="502"/>
         <source>Parcelle en attente</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella in attesa</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="522"/>
         <source>Variété  : </source>
-        <translation type="unfinished"></translation>
+        <translation>Varietà : </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="558"/>
         <source>Intégrer cette culture dans Gantt</source>
-        <translation type="unfinished"></translation>
+        <translation>Integrare questa coltura in Gantt</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="585"/>
         <source>Liste des cultures  réalisées sur cette parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Elenco delle colture su tale parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="663"/>
         <source>Observations concernant cette culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Osservazioni relative a tale coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="695"/>
         <source>Observations</source>
-        <translation type="unfinished"></translation>
+        <translation>Osservazioni</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="722"/>
         <source>Date : </source>
-        <translation type="unfinished"></translation>
+        <translation>Data : </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="735"/>
         <source>Type d&apos;observation. : </source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di osservazione : </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="858"/>
         <source>Créer nouvelle observation</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea nuova osservazione</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="887"/>
         <source>Liste des observations  concernant  cette culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Elenco delle osservazioni relative a tale coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="226"/>
@@ -425,7 +442,7 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <location filename="../dialogs/cultures.cpp" line="995"/>
         <location filename="../dialogs/cultures.cpp" line="1031"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="227"/>
@@ -441,46 +458,47 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <location filename="../dialogs/cultures.cpp" line="996"/>
         <location filename="../dialogs/cultures.cpp" line="1032"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="768"/>
         <source>Suppression d&apos;une culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione di una coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="769"/>
         <source>Cette culture peut être supprimer.
 Confirmer la suppression de la culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa cultura può essere soppressa.
+Conferma della soppressione della coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="935"/>
         <location filename="../dialogs/cultures.cpp" line="1011"/>
         <source>Erreur </source>
-        <translation type="unfinished"></translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="936"/>
         <source>Veuillez sélectionner une culture svp</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego una coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="1000"/>
         <location filename="../dialogs/cultures.cpp" line="1036"/>
         <source>Enregistrement de la phase culture </source>
-        <translation type="unfinished"></translation>
+        <translation>Registrazione della fase coltura </translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="1001"/>
         <location filename="../dialogs/cultures.cpp" line="1037"/>
         <source>La phase de culture a été crée avec succès !</source>
-        <translation type="unfinished"></translation>
+        <translation>La fase di coltura è stata generata con successo !</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="1012"/>
         <source>Cette phase de culture est existante !</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa fase di coltura è esistente !</translation>
     </message>
 </context>
 <context>
@@ -518,32 +536,32 @@ Confirmer la suppression de la culture</source>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.ui" line="14"/>
         <source>Ajout d&apos;un moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiunta di un mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.ui" line="26"/>
         <source>Moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.ui" line="46"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.ui" line="72"/>
         <source>Nouveau moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.cpp" line="116"/>
         <source>Pas de moyen sélectionné</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun mezzo selezionato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_moyen.cpp" line="117"/>
         <source>Veuillez choisir un moyen avant de l&apos;éditer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego un mezzo prima della pubblicazione prego!</translation>
     </message>
 </context>
 <context>
@@ -551,12 +569,12 @@ Confirmer la suppression de la culture</source>
     <message>
         <location filename="../dialogs/dialog_ajout_ressource.ui" line="14"/>
         <source>Ajout d&apos;une ressource</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiunta di una risorsa</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ajout_ressource.ui" line="51"/>
         <source>Ressource :</source>
-        <translation type="unfinished"></translation>
+        <translation>Risorsa :</translation>
     </message>
 </context>
 <context>
@@ -564,102 +582,102 @@ Confirmer la suppression de la culture</source>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="14"/>
         <source>Fiche coordonnées</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda delle coordinate</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="59"/>
         <source>COORDONNEES</source>
-        <translation type="unfinished"></translation>
+        <translation>Coordinate</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="76"/>
         <source>Code postal</source>
-        <translation type="unfinished"></translation>
+        <translation>Codice postal</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="83"/>
         <source>Nom</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="99"/>
         <source>Fax</source>
-        <translation type="unfinished"></translation>
+        <translation>Fax</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="106"/>
         <source>Email</source>
-        <translation type="unfinished"></translation>
+        <translation>Email</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="116"/>
         <source>Ville</source>
-        <translation type="unfinished"></translation>
+        <translation>Città</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="123"/>
         <source>Portable</source>
-        <translation type="unfinished"></translation>
+        <translation>Cellulare</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="130"/>
         <source>Prénom</source>
-        <translation type="unfinished"></translation>
+        <translation>Cognome</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="137"/>
         <source>Pays</source>
-        <translation type="unfinished"></translation>
+        <translation>Paese</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="144"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="157"/>
         <source>Téléphone fixe</source>
-        <translation type="unfinished"></translation>
+        <translation>Telefono fisso</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="170"/>
         <source>Adresse</source>
-        <translation type="unfinished"></translation>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="189"/>
         <source>Société</source>
-        <translation type="unfinished"></translation>
+        <translation>Società</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="213"/>
         <source>Nouvelle coordonnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuova coordinata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="224"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="235"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.ui" line="246"/>
         <source>Annuler</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancellare</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.cpp" line="92"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_coordonnees.cpp" line="93"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
 </context>
 <context>
@@ -667,106 +685,107 @@ Confirmer la suppression de la culture</source>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="14"/>
         <source>Edition des moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Edizione dei mezzi</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="48"/>
         <location filename="../dialogs/dialog_moyens.ui" line="172"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="114"/>
         <source>MOYENS</source>
-        <translation type="unfinished"></translation>
+        <translation>MEZZI</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="124"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="143"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="150"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="157"/>
         <source>Type de moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="218"/>
         <source>Coordonnées</source>
-        <translation type="unfinished"></translation>
+        <translation>Coordinate</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="230"/>
         <source>Unité :</source>
-        <translation type="unfinished"></translation>
+        <translation>Unità :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="255"/>
         <source>Coût unitaire</source>
-        <translation type="unfinished"></translation>
+        <translation>Costo unitario</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="279"/>
         <source>Nouveau moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="290"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="301"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.ui" line="312"/>
         <source>Annuler</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancellare</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="116"/>
         <source>Suppression</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="117"/>
         <source>Cette fiche peut être supprimer.
 Confirmer la suppression de la fiche?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa scheda può essere cancellata.
+Confermare la cancellazione della scheda?</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="154"/>
         <source>Pas de moyen sélectionné</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun mezzo selezionato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="155"/>
         <source>Veuillez choisir un moyen avant de le supprimer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego un mezzo pprima di eliminarlo !</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="188"/>
         <location filename="../dialogs/dialog_moyens.cpp" line="211"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_moyens.cpp" line="189"/>
         <location filename="../dialogs/dialog_moyens.cpp" line="212"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
 </context>
 <context>
@@ -774,124 +793,124 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="14"/>
         <source>Edition des ressources</source>
-        <translation type="unfinished"></translation>
+        <translation>Edizione dei risorse</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="59"/>
         <source>RESSOURCES</source>
-        <translation type="unfinished"></translation>
+        <translation>Risorse :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="81"/>
         <source>Editer un moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Edizione di un mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="116"/>
         <source>Coût</source>
-        <translation type="unfinished"></translation>
+        <translation>Costo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="134"/>
         <source>Prévu :</source>
-        <translation type="unfinished"></translation>
+        <translation>Previsto :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="144"/>
         <source>Réalisé :</source>
-        <translation type="unfinished"></translation>
+        <translation>Realizzato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="154"/>
         <source>Unité :</source>
-        <translation type="unfinished"></translation>
+        <translation>Unità :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="171"/>
         <source>Valider la quantité du moyen sélectionné</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalida la quantità del mezzo selezionato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="174"/>
         <location filename="../dialogs/dialog_ressources.ui" line="215"/>
         <location filename="../dialogs/dialog_ressources.ui" line="235"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="193"/>
         <source>Quantité</source>
-        <translation type="unfinished"></translation>
+        <translation>Quantità</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="203"/>
         <source>Moyens alloués</source>
-        <translation type="unfinished"></translation>
+        <translation>Messi assegnate</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="212"/>
         <source>Ajouter un moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiuntare un mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="232"/>
         <source>Supprimer un moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi un mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="264"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="273"/>
         <source>Prévu</source>
-        <translation type="unfinished"></translation>
+        <translation>Previsto :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="280"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="287"/>
         <source>Total actualisé</source>
-        <translation type="unfinished"></translation>
+        <translation>Totale attualizzato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="302"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="309"/>
         <source>Tâche utilisatrice</source>
-        <translation type="unfinished"></translation>
+        <translation>Attività di utilizzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="350"/>
         <source>Fiche vierge</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda vuota</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="357"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="368"/>
         <source>Ajouter la ressource créée à la tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi risorsa creata all&apos;attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="371"/>
         <source>Valider et Ajouter à la tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalida e Aggiungi all&apos;attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.ui" line="382"/>
         <source>Fermer</source>
-        <translation type="unfinished">Chiudere</translation>
+        <translation>Chiudere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="211"/>
@@ -899,66 +918,67 @@ Confirmer la suppression de la fiche?</source>
         <location filename="../dialogs/dialog_ressources.cpp" line="316"/>
         <location filename="../dialogs/dialog_ressources.cpp" line="530"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="212"/>
         <location filename="../dialogs/dialog_ressources.cpp" line="294"/>
         <location filename="../dialogs/dialog_ressources.cpp" line="317"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="219"/>
         <source>Ressource déja attribuée</source>
-        <translation type="unfinished"></translation>
+        <translation>Risorsa già assegnata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="220"/>
         <source>Modification de la ressource prise en compte</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica della risorsa presa in considerazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="439"/>
         <location filename="../dialogs/dialog_ressources.cpp" line="460"/>
         <source>Pas de moyen sélectionné</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun mezzo selezionato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="440"/>
         <source>Veuillez choisir un moyen avant de le supprimer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego un mezzo pprima di eliminarlo !</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="461"/>
         <source>Veuillez choisir un moyen avant de l&apos;éditer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego un mezzo prima della pubblicazione prego!</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="531"/>
         <source>Veuillez choisir un moyen avant de valider svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Scelga prego un modo prima di convalidare !</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="569"/>
         <source>Suppression</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="570"/>
         <source>Cette fiche peut être supprimer.
 Confirmer la suppression de la fiche?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa scheda può essere cancellata.
+Confermare la cancellazione della scheda?</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="607"/>
         <source>Pas de ressource sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun risorsa selezionata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_ressources.cpp" line="608"/>
         <source>Veuillez choisir une ressource avant de le supprimer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego una risorsa prima di eliminarlo !</translation>
     </message>
 </context>
 <context>
@@ -966,220 +986,221 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="14"/>
         <source>Edition des tâches du processus de culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica delle attività del processo di coltivazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="33"/>
         <source>Contrainte de date</source>
-        <translation type="unfinished"></translation>
+        <translation>Vincolo di data</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="42"/>
         <source>Date fin tache precedente</source>
-        <translation type="unfinished"></translation>
+        <translation>Data fine attività precedente</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="76"/>
         <source>Phase à laquelle cette tâche est appartient, ce qui permet de déterminer les dates de début et de fin de la phase.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fase a cui appartiene questa attività, che permette di determinare le date di inizio e di fine della fase.</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="83"/>
         <source>Tâche précédente</source>
-        <translation type="unfinished"></translation>
+        <translation>Attività precedente</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="90"/>
         <source>Date départ</source>
-        <translation type="unfinished"></translation>
+        <translation>Data d&apos;inizio</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="97"/>
         <source>Avancement</source>
-        <translation type="unfinished"></translation>
+        <translation>Progresso</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="104"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="111"/>
         <source>Type de tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="124"/>
         <source>Gestion des coûts</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestione dei costi</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="161"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="201"/>
         <source>durée (jours)</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata in giorni</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="242"/>
         <source>Parcelle n° </source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella N°</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="312"/>
         <source>Date fin</source>
-        <translation type="unfinished"></translation>
+        <translation>Data di fine</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="384"/>
         <source>Ressources allouées</source>
-        <translation type="unfinished"></translation>
+        <translation>Risorsa assegnata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="413"/>
         <source>Liée à la culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Legata alla coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="428"/>
         <source>Cocher la case pour indiquer que cette tâche est à la racine du projet</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona la casella per indicare che questa attività è alla radice del progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="431"/>
         <source>Racine du projet</source>
-        <translation type="unfinished"></translation>
+        <translation>Radice del progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="468"/>
         <source>Cocher si c&apos;est une phase du projet</source>
-        <translation type="unfinished"></translation>
+        <translation>Contrassegnare se si tratta di una fase del progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="471"/>
         <source>Phase</source>
-        <translation type="unfinished"></translation>
+        <translation>Fase</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="484"/>
         <source>Type N°  :</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo N° : </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="500"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="516"/>
         <source>Editer le type de tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica il tipo dell&apos;attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="537"/>
         <source> Coût Prévu</source>
-        <translation type="unfinished"></translation>
+        <translation>Costo previsto</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="550"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="557"/>
         <source>€   Coût total actualisé</source>
-        <translation type="unfinished"></translation>
+        <translation>Costo totale attualizzato</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="574"/>
         <source>€ </source>
-        <translation type="unfinished"></translation>
+        <translation>€ </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="596"/>
         <source>Appartient à la phase :</source>
-        <translation type="unfinished"></translation>
+        <translation>Appartient à la phase :</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="653"/>
         <source>PHASES DE CULTURE</source>
-        <translation type="unfinished"></translation>
+        <translation>FASI DI COLTIVAZIONE</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="679"/>
         <source>TACHES </source>
-        <translation type="unfinished"></translation>
+        <translation>ATTIVITA</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="712"/>
         <source>Nouvelle tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuova attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="723"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="734"/>
         <source>Cloturer</source>
-        <translation type="unfinished"></translation>
+        <translation>chiudere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="741"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.ui" line="752"/>
         <source>Fermer</source>
-        <translation type="unfinished">Chiudere</translation>
+        <translation>Chiudere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="560"/>
         <source>Suppression</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="561"/>
         <source>Cette fiche peut être supprimer.
 Confirmer la suppression de la fiche?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa scheda può essere cancellata.
+Confermare la cancellazione della scheda?</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="599"/>
         <source>Pas de tâche sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun attività selezionata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="600"/>
         <source>Veuillez choisir une tâche avant de le supprimer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego una attività prima di eliminarlo !</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="681"/>
         <location filename="../dialogs/dialog_taches.cpp" line="706"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="682"/>
         <location filename="../dialogs/dialog_taches.cpp" line="707"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="822"/>
         <source>Pas de ressource sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun risorsa selezionata</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_taches.cpp" line="823"/>
         <source>Veuillez choisir une ressource avant de l&apos;éditer svp !</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego una risorsa prima della pubblicazione !</translation>
     </message>
 </context>
 <context>
@@ -1187,54 +1208,54 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="14"/>
         <source>Edition des types de moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Edizione dei tipi di mezzi</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="59"/>
         <source>TYPES DE MOYENS</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="79"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="89"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="113"/>
         <source>Nouveau type de moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo tipo di mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="124"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="135"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.ui" line="146"/>
         <source>Annuler</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancellare</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.cpp" line="101"/>
         <location filename="../dialogs/dialog_type_de_moyen.cpp" line="122"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_moyen.cpp" line="102"/>
         <location filename="../dialogs/dialog_type_de_moyen.cpp" line="123"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
 </context>
 <context>
@@ -1242,119 +1263,119 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="14"/>
         <source>Fiche des types de tâches</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda dei tipi di attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="59"/>
         <source>TYPE DE TACHE</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="73"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="83"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="94"/>
         <source>Rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Rettangolo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="99"/>
         <source>Rectangle bords arrondis</source>
-        <translation type="unfinished"></translation>
+        <translation>Rettangolo bordi arrotondati</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="104"/>
         <source>Ellipse</source>
-        <translation type="unfinished"></translation>
+        <translation>Ellisse</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="109"/>
         <source>Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Immagine</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="114"/>
         <source>Triangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Triangolo</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="119"/>
         <source>Ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Linea</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="124"/>
         <source>Ligne Avancement</source>
-        <translation type="unfinished"></translation>
+        <translation>Linea progresso</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="129"/>
         <source>Losange</source>
-        <translation type="unfinished"></translation>
+        <translation>Losanga</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="180"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="187"/>
         <source>Choisir la couleur de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore della parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="190"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="235"/>
         <source>Nouveau type de tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo tipo di attività</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="246"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="257"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.ui" line="268"/>
         <source>Annuler</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancellare</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="77"/>
         <source>Information </source>
-        <translation type="unfinished"></translation>
+        <translation>Informazione </translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="78"/>
         <source>La fiche PHASES ne peut être modifiée !</source>
-        <translation type="unfinished"></translation>
+        <translation>La scheda FASI non può essere modificata!</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="99"/>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="122"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="100"/>
         <location filename="../dialogs/dialog_type_de_tache.cpp" line="123"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
 </context>
 <context>
@@ -1362,465 +1383,465 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="26"/>
         <source>Paramétrage des plantes , espèces et familles</source>
-        <translation type="unfinished"></translation>
+        <translation>Configurazione delle piante, specie e famiglie</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="61"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;PARAMETRAGE DES PLANTES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;CONFIGURAZIONE DELLE PIANTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="74"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2178"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="97"/>
         <source>Variétés</source>
-        <translation type="unfinished"></translation>
+        <translation>Varietà : </translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="125"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;FICHE DES VARIETES DE PLANTES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;SCHEDA DELLE VARIETÀ DI PIANTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="192"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1865"/>
         <source>FAVORABLE</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoravole</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="197"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1870"/>
         <source>A EVITER</source>
-        <translation type="unfinished"></translation>
+        <translation>EVITARE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="202"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1875"/>
         <source>APIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>APIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="219"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1892"/>
         <source>ASTERACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ASTERECEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="236"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1909"/>
         <source>BRASSICACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>BRASSICACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="253"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1926"/>
         <source>CHENOPODACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CHENOPODIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="270"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1943"/>
         <source>CUCURBITACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CUCURBITACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="287"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1960"/>
         <source>FABACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>FABACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="304"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1977"/>
         <source>ALLIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALLIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="321"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1994"/>
         <source>POACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>POACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="338"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2011"/>
         <source>SOLANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>SOLANACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="355"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2028"/>
         <source>VALERIANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>VALERIANACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="372"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2045"/>
         <source>AUTRES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALTRI</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="430"/>
         <source>Nom scientifique</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome scientifico</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="478"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1613"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2145"/>
         <source>Enregistrement N°</source>
-        <translation type="unfinished"></translation>
+        <translation>Registrazione N°</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="549"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Associations &lt;span style=&quot; color:#0055ff;&quot;&gt;positives&lt;/span&gt; / &lt;span style=&quot; color:#ff0000;&quot;&gt;négatives&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Combinazioni &lt;span style=&quot; color:#0055ff;&quot;&gt;positive&lt;/span&gt; / &lt;span style=&quot; color:#ff0000;&quot;&gt;da evitare&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="582"/>
         <source>Feuilles</source>
-        <translation type="unfinished"></translation>
+        <translation>Foglie</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="587"/>
         <source>Fleurs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fiori</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="592"/>
         <source>Racines</source>
-        <translation type="unfinished"></translation>
+        <translation>Radice</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="597"/>
         <source>Fruits-graines</source>
-        <translation type="unfinished"></translation>
+        <translation>Frutti - semi</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="636"/>
         <source>Positif</source>
-        <translation type="unfinished"></translation>
+        <translation>Positivo</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="662"/>
         <source>Négatif</source>
-        <translation type="unfinished"></translation>
+        <translation>Da evitare</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="718"/>
         <source>Espèce</source>
-        <translation type="unfinished"></translation>
+        <translation>Specie :</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="728"/>
         <source>Type de plante</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di pianta</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="750"/>
         <source>Désignation variété</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione varietà</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="766"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1470"/>
         <source>Famille</source>
-        <translation type="unfinished"></translation>
+        <translation>Famiglia</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="788"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1620"/>
         <source>Commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="826"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;(Rotation - Aspects &lt;/span&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;favorables&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; ou &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;défavorables&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; de la famille de la culture précédente)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;(Rotazione - Aspetti &lt;/span&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;favorevole&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; o &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;da evitare&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; della famiglia della cultura precedente)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="870"/>
         <source>Périodes de semis et de récoltes</source>
-        <translation type="unfinished"></translation>
+        <translation>Periodi di semina e di raccolta</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="913"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1107"/>
         <source>semis</source>
-        <translation type="unfinished"></translation>
+        <translation>Semina</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="918"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1112"/>
         <source>récolte</source>
-        <translation type="unfinished"></translation>
+        <translation>Raccolto</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="923"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1117"/>
         <source>janvier</source>
-        <translation type="unfinished"></translation>
+        <translation>gennaio</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="933"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1127"/>
         <source>février</source>
-        <translation type="unfinished"></translation>
+        <translation>febbraio</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="943"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1137"/>
         <source>mars</source>
-        <translation type="unfinished"></translation>
+        <translation>Marzo</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="953"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1147"/>
         <source>avril</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprile</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="963"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1157"/>
         <source>mai</source>
-        <translation type="unfinished"></translation>
+        <translation>Maggio</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="973"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1167"/>
         <source>juin</source>
-        <translation type="unfinished"></translation>
+        <translation>giugno</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="983"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1177"/>
         <source>juillet</source>
-        <translation type="unfinished"></translation>
+        <translation>Luglio</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="993"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1187"/>
         <source>aout</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1003"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1197"/>
         <source>septembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Settembre</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1013"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1207"/>
         <source>octobre</source>
-        <translation type="unfinished"></translation>
+        <translation>Ottobre</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1023"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1217"/>
         <source>novembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Novembre</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1033"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1227"/>
         <source>décembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Dicembre</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1061"/>
         <source>AUTOMNE</source>
-        <translation type="unfinished"></translation>
+        <translation>AUTUNNO</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1255"/>
         <source>PRINTEMPS</source>
-        <translation type="unfinished"></translation>
+        <translation>PRIMAVERA</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1314"/>
         <source>Enregister les modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare modifiche</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1333"/>
         <location filename="../dialogs/fiche_plantes.ui" line="1736"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2103"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1352"/>
         <source>Fiche vierge</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda vuota</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1365"/>
         <source>Enregistrer une nouvelle variété</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva nuova varietà</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1382"/>
         <source>Fermer et Valider le choix</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudere e Convalidare scelta</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1391"/>
         <source>Espèces</source>
-        <translation type="unfinished"></translation>
+        <translation>Specie :</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1410"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;FICHE DES ESPECES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;SCHEDA DELLE SPECIE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1433"/>
         <source>Liste des espèces</source>
-        <translation type="unfinished"></translation>
+        <translation>Elenco delle specie</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1463"/>
         <source>Apports en fumure/compost nécessaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Apporti di fertilizzanti</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1484"/>
         <source>FACTEURS DE ROTATION</source>
-        <translation type="unfinished"></translation>
+        <translation>FATTORI DI ROTAZIONE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1517"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Associations négatives&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Associazioni da evitare&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1556"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2159"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1596"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00aaff;&quot;&gt;Associations positives&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#00aaff;&quot;&gt;Associazioni positive&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1627"/>
         <source>Nb d&apos;années avant retour sur la parcelle : </source>
-        <translation type="unfinished"></translation>
+        <translation>Numero di anni prima del ritorno sulla parcella :</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1635"/>
         <source>Peu d&apos;importance</source>
-        <translation type="unfinished"></translation>
+        <translation>Poca importanza</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1640"/>
         <source>1 an</source>
-        <translation type="unfinished"></translation>
+        <translation>1 anno</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1645"/>
         <source>2 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>2 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1650"/>
         <source>3 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>3 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1655"/>
         <source>4 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>4 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1660"/>
         <source>5 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>5 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1665"/>
         <source>6 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>6 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1670"/>
         <source>7 ans</source>
-        <translation type="unfinished"></translation>
+        <translation>7 anni</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1679"/>
         <source>Aucun</source>
-        <translation type="unfinished"></translation>
+        <translation>Alcun</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1684"/>
         <source>Faibles</source>
-        <translation type="unfinished"></translation>
+        <translation>Basso</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1689"/>
         <source>Moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Medi</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1694"/>
         <source>Importants</source>
-        <translation type="unfinished"></translation>
+        <translation>importanti</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1723"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2096"/>
         <source>Enregister modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare modifiche</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1749"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2110"/>
         <source>Nouveau</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1762"/>
         <location filename="../dialogs/fiche_plantes.ui" line="2117"/>
         <source>Enregistrer nouvelle fiche</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva nuova scheda</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1790"/>
         <source>ROTATION DES CULTURES</source>
-        <translation type="unfinished"></translation>
+        <translation>ROTAZIONE DELLE COLTURE</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="1819"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;(Aspects &lt;/span&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;favorables&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; ou &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;défavorables&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; de la famille de la culture précédente)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;(Aspetti &lt;/span&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;favorevole&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; o &lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;da evitare&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; della famiglia della cultura precedente)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="2079"/>
         <source>Familles</source>
-        <translation type="unfinished"></translation>
+        <translation>Famiglie</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="2168"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="2175"/>
         <source>Choisir la couleur de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore della parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.ui" line="2260"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;FICHE DES FAMILLES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;SCHEDA DELLE FAMIGLIE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -1828,12 +1849,12 @@ Confirmer la suppression de la fiche?</source>
     <message>
         <location filename="../dialogs/licenses.ui" line="14"/>
         <source>LICENCES</source>
-        <translation type="unfinished"></translation>
+        <translation>LICENZE</translation>
     </message>
     <message>
         <location filename="../dialogs/licenses.ui" line="29"/>
         <source>GNU GENERAL PUBLIC LICENSE</source>
-        <translation type="unfinished"></translation>
+        <translation>GNU GENERAL PUBLIC LICENSE</translation>
     </message>
     <message>
         <location filename="../dialogs/licenses.ui" line="53"/>
@@ -1970,12 +1991,144 @@ If the disclaimer of warranty and limitation of liability provided above cannot 
 END OF TERMS AND CONDITIONS
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+Copyright © 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+Preamble
+The GNU General Public License is a free, copyleft license for software and other kinds of works.
+The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
+When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.
+To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.
+For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.
+Developers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.
+For the developers&apos; and authors&apos; protection, the GPL clearly explains that there is no warranty for this free software. For both users&apos; and authors&apos; sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.
+Some devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users&apos; freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.
+Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.
+The precise terms and conditions for copying, distribution and modification follow.
+TERMS AND CONDITIONS
+
+0. Definitions.
+“This License” refers to version 3 of the GNU General Public License.
+“Copyright” also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
+“The Program” refers to any copyrightable work licensed under this License. Each licensee is addressed as “you”. “Licensees” and “recipients” may be individuals or organizations.
+To “modify” a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a “modified version” of the earlier work or a work “based on” the earlier work.
+A “covered work” means either the unmodified Program or a work based on the Program.
+To “propagate” a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
+To “convey” a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.
+An interactive user interface displays “Appropriate Legal Notices” to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.
+
+1. Source Code.
+The “source code” for a work means the preferred form of the work for making modifications to it. “Object code” means any non-source form of a work.
+A “Standard Interface” means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.
+The “System Libraries” of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A “Major Component”, in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.
+The “Corresponding Source” for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work&apos;s System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.
+The Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.
+The Corresponding Source for a work in source code form is that same work.
+
+2. Basic Permissions.
+All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
+You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
+
+3. Protecting Users&apos; Legal Rights From Anti-Circumvention Law.
+No covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.
+When you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work&apos;s users, your or third parties&apos; legal rights to forbid circumvention of technological measures.
+
+4. Conveying Verbatim Copies.
+You may convey verbatim copies of the Program&apos;s source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
+You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
+
+5. Conveying Modified Source Versions.
+You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:
+•	a) The work must carry prominent notices stating that you modified it, and giving a relevant date.
+•	b) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to “keep intact all notices”.
+•	c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
+•	d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.
+A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an “aggregate” if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation&apos;s users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
+
+6. Conveying Non-Source Forms.
+You may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:
+•	a) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.
+•	b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.
+•	c) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.
+•	d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.
+•	e) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.
+A separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.
+A “User Product” is either (1) a “consumer product”, which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, “normally used” refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.
+“Installation Information” for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.
+If you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).
+The requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.
+Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
+
+7. Additional Terms.
+“Additional permissions” are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.
+When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.
+Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:
+•	a) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or
+•	b) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or
+•	c) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or
+•	d) Limiting the use for publicity purposes of names of licensors or authors of the material; or
+•	e) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or
+•	f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
+All other non-permissive additional terms are considered “further restrictions” within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.
+If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.
+Additional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.
+
+8. Termination.
+You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).
+However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
+Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
+Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.
+
+9. Acceptance Not Required for Having Copies.
+You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.
+
+10. Automatic Licensing of Downstream Recipients.
+Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.
+An “entity transaction” is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party&apos;s predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.
+You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.
+
+11. Patents.
+A “contributor” is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor&apos;s “contributor version”.
+A contributor&apos;s “essential patent claims” are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, “control” includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.
+Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor&apos;s essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.
+In the following three paragraphs, a “patent license” is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To “grant” such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.
+If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. “Knowingly relying” means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient&apos;s use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.
+If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.
+A patent license is “discriminatory” if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.
+Nothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.
+
+12. No Surrender of Others&apos; Freedom.
+If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.
+
+13. Use with the GNU Affero General Public License.
+Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.
+
+14. Revised Versions of this License.
+The Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.
+Each version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License “or any later version” applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.
+If the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy&apos;s public statement of acceptance of a version permanently authorizes you to choose that version for the Program.
+Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
+
+15. Disclaimer of Warranty.
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+16. Limitation of Liability.
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+17. Interpretation of Sections 15 and 16.
+If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
+
+END OF TERMS AND CONDITIONS
+
+</translation>
     </message>
     <message>
         <location filename="../dialogs/licenses.ui" line="193"/>
         <source>LICENCE PUBLIQUE GÉNÉRALE GNU</source>
-        <translation type="unfinished"></translation>
+        <translation>LICENZA PUBBLICA GENERALE GNU</translation>
     </message>
     <message>
         <location filename="../dialogs/licenses.ui" line="217"/>
@@ -2490,7 +2643,153 @@ utilisez la GNU Lesser General Public License à la place de cette Licence. Mais
 d’abord, veuillez lire &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt; ou
 la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
 </source>
-        <translation type="unfinished"></translation>
+        <translation>GNU GENERAL PUBLIC LICENSE 
+
+Versione 3, 29 Giugno 2007
+Questa è una traduzione non ufficiale in italiano della GNU General Public License. Questa traduzione non è stata pubblicata dalla Free Software Foundation, e non stabilisce i termini legali di distribuzione del software che usa la GNU GPL - Soltanto la versione originale in inglese della GNU GPL fa ciò. Ciononostante, speriamo che questa traduzione possa aiutare gli utenti di lingua italiana a comprendere un po&apos; meglio la GNU GPL.
+
+È possibile reperire la versione ufficiale della GNU General Public License pubblicata dalla Free Software Foundation all&apos;indirizzo http://www.gnu.org/licenses/gpl.html
+
+
+È possibile pubblicare questa traduzione, con o senza modifiche, esclusivamenre alle condizioni specificate all&apos;indirizzo: http://www.gnu.org/licenses/translations.html
+
+This is an unofficial translation of the GNU General Public License into Italian. It was not published by the Free Software Foundation, and does not legally state the distribution terms for software that uses the GNU GPL - only the original English text of the GNU GPL does that. However, we hope that this translation will help italian speakers understand the GNU GPL better.
+
+The original version of the GNU General Public Licenze as published by the Free Software Foundation is available at: http://www.gnu.org/licenses/gpl.html
+
+You may publish this translation, modified or unmodified, only under the terms at http://www.gnu.org/licenses/translations.html
+Copyright © 2007 Free Software Foundation, Inc. http://fsf.org/
+
+
+A chiunque è permesso copiare e ridistribuire copie esatte di questo documento di licenza, ma non è in alcun modo consentito apportarvi modifiche.
+Preambolo
+La GNU General Public License è una licenza libera e basata su copyleft per software e altri tipi di opere.
+Le licenze della maggior parte del software e di altre opere materiali sono pensate per togliere la libertà di condividere e modificare tali opere. Al contrario, la GNU General Public License ha l&apos;obiettivo di garantire la libertà di condividere e modificare tutte le versioni di un programma e di fare in modo che esso rimanga software libero per tutti gli utenti. Noi, Free Software Foundation, usiamo la GNU General Public License per la maggior parte del nostro software; essa viene applicata anche a qualunque altro software rilasciato dall&apos;autore sotto questa licenza. Chiunque può utilizzare questa licenza per i suoi programmi.
+Quando parliamo di software libero (free software), ci riferiamo al concetto di libertà, non al prezzo. Le nostre General Public License sono progettate per garantire che chiunque abbia la libertà di distribuire copie di software libero (anche dietro pagamento di un prezzo, se lo desidera), che chiunque riceva o possa ricevere il codice sorgente se lo vuole, che chiunque possa apportare modifiche al software o utilizzarne delle porzioni in altri software liberi, e che chiunque sappia che ha il diritto di fare tutte queste cose col software libero.
+Per proteggere i vostri diritti, abbiamo la necessità di impedire che altri vi neghino questi diritti o vi obblighino a rinunciarvi. Pertanto, chiunque distribuisce o modifica software rilasciato con questa licenza assume dei precisi doveri: il dovere di rispettare la libertà degli altri.
+Per esempio, chi distribuisce copie di un programma rilasciato sotto questa licenza, sia gratis che dietro pagamento di un prezzo, e&apos; obbligato a riconoscere a chi riceve il software esattamente gli stessi diritti che ha ricevuto. Deve garantire che chi riceva il software abbia o possa avere accesso al codice sorgente. E deve chiaramente far conoscere ai destinatari del software queste condizioni, così che essi conoscano quali sono i loro diritti.
+Gli sviluppatori che usano la GNU GPL proteggono i vostri diritti in due modi: (1) Rivendicando il copyright sul software, e (2) offrendovi questa licenza che vi garantisce il diritto legale di copiarlo e/o di modificarlo.
+Al fine di proteggere gli sviluppatori e gli autori, la GPL spiega chiaramente che non c&apos;è nessuna garanzia per questo software libero. Nell&apos;interesse degli utenti e degli autori, la GPL impone che le versioni modificate del software vengano esplicitamente marcate come &quot;modificate&quot;, in maniera tale che eventuali problemi non vengano erroneamente attribuiti agli autori delle versioni precedenti.
+Alcuni dispositivi sono progettati per negare agli utenti l&apos;installazione o l&apos;esecuzione di versioni modificate del software che gira sugli stessi, anche se il costruttore si riserva la possibilità di farlo. Ciò è fondamentalmente incompatibile con l&apos;obiettivo di garantire la libertà degli utenti di modificare il software. Una ripetizione sistematica di tali abusi avviene nel campo dei dispositivi per usi individuali, e ciò rende questi abusi ancora più inaccettabili. Pertanto, abbiamo realizzato questa versione della GPL al fine di proibire queste pratiche. Se problemi simili dovessero sorgere in altri ambiti, saremo pronti ad estendere queste misure a questi nuovi ambiti in versioni future della GPL, nella maniera che si renderà necessaria per difendere la libertà degli utenti.
+In conclusione, tutti i programmi sono costantemente minacciati dai brevetti sul software. Gli Stati non dovrebbero permettere ai brevetti sul software di limitare lo sviluppo e l&apos;utilizzo di software per computer, ma nei Paesi in cui ciò avviene noi vogliamo evitare in particolare il pericolo che i brevetti sul software applicati ad un programma libero possano renderlo, a tutti gli effetti, proprietario. Per impedire ciò, la GPL assicura che non è possibile utilizzare i brevetti sul software per rendere un programma non libero.
+I termini e le condizioni esatte per la copia, la distribuzione e la modifica del software sono riportate di seguito.
+Termini e Condizioni
+
+    Definizioni
+    &quot;Questa Licenza&quot; si riferisce alla versione 3 della GNU General Public License.
+    &quot;Copyright&quot; indica anche leggi simili al copyright che riguardano altri tipi di opere, come le maschere per la produzione di semiconduttori.
+    &quot;Il Programma&quot; indica qualunque opera che sia soggetta a copyright e che sia rilasciata sotto questa Licenza. I detentori della licenza sono indicati come &quot;tu&quot; o &quot;voi&quot;. Licenziatari e destinatari possono essere individui o organizzazioni.
+    &quot;Modificare&quot; un&apos;opera significa copiare o adattare tutta o parte dell&apos;opera in una maniera che richieda un permesso di copyright, e non indica la semplice azione di fare una esatta copia dell&apos;opera. L&apos;opera risultante viene chiamata &quot;versione modificata&quot; dell&apos;opera precedente, oppure viene detta opera &quot;basata sulla&quot; opera precedente.
+    Un&apos; &quot;opera coperta da questa licenza&quot; indica il Programma originale non modificato oppure un&apos;opera basata sul Programma.
+    &quot;Propagare&quot; un&apos;opera significa fare qualunque cosa con essa che, in mancanza di un esplicito permesso, ti renda direttamente o indirettamente perseguibile per violazione secondo le vigenti normative sul copyright, ad eccezione della semplice esecuzione del Programma su un computer o della modifica di una copia privata. La Propagazione include la copia, la distribuzione (con o senza modifiche), la messa a disposizione al pubblico e, in alcuni stati, altre attività simili e connesse.
+    &quot;Distribuire&quot; un&apos;opera indica qualunque forma di propagazione che permetta a terze parti di effettuare o ricevere delle copie. La mera interazione con un utente attraverso una rete di computer, senza che ci sia alcun trasferimento di una copia, non è considerata &quot;Distribuzione&quot;.
+    Una interfaccia utente interattiva fornisce delle &quot;Adeguate Informazioni Legali&quot; soltanto nel caso in cui include una apposita funzionalità, resa adeguatamente visibile, che (1) visualizzi un&apos;adeguata informazione di copyright, e (2) informi l&apos;utente che non c&apos;è alcuna garanzia sull&apos;opera (eccetto nel caso in cui delle garanzie sono espressamente fornite), dica che il licenziatario può distribuire l&apos;opera utilizzando questa Licenza, indichi come è possibile prendere visione di una copia di questa Licenza. Se l&apos;interfaccia presenta una lista di comandi o di opzioni, come ad esempio un menù, una delle opzioni fornite nella lista deve rispettare questa condizione.
+    Codice Sorgente.
+    Il &quot;codice sorgente&quot; di un&apos;opera indica la forma più indicata dell&apos;opera per effettuare modifiche su di essa. Il &quot;codice oggetto&quot; indica qualunque forma dell&apos;opera che non sia codice sorgente.
+    Una &quot;Interfaccia Standard&quot; è una interfaccia che risponde ad uno standard ufficiale definito da un ente di standardizzazione riconosciuto o, nel caso di interfacce specifiche per un particolare linguaggio di programmazione, una interfaccia che è largamente utilizzata dagli sviluppatori per sviluppare in tale linguaggio.
+    Le &quot;Librerie di Sistema&quot; di un eseguibile includono qualsiasi cosa, eccetto l&apos;opera nel suo insieme, che (a) sia inclusa nella normale forma di pacchettizzazione di un &quot;Componente Principale&quot;, ma che non è parte di quel Componente Principale, e (b) che serva solo a consentire l&apos;uso dell&apos;opera con quel Componente Principale, o per implementare una Interfaccia Standard per la quale esista una implementazione disponibile al pubblico in forma sorgente. Un &quot;Componente Principale&quot;, in questo contesto, è un componente essenziale (kernel, gestore di finestre eccetera) dello specifico sistema operativo (ammesso che ce ne sia uno) sul quale l&apos;eseguibile esegue, o un compilatore utilizzato per produrre il programma, o un interprete di codice oggetto utilizzato per eseguire il programma.
+    Il &quot;Sorgente Corrispondente&quot; per un&apos;opera in forma di codice oggetto è il codice sorgente necessario per generare, installare e (per un programma eseguibile) eseguire il codice oggetto e per modificare l&apos;opera, inclusi gli script per controllare le suddette attività di generazione, installazione ed esecuzione. Non sono incluse le Librerie di Sistema usate dal programma, o gli strumenti di utilità generica o i programmi liberamente accessibili che sono utilizzati, senza modifiche, per portare a termine le suddette attività ma che non fanno parte dell&apos;opera. Per esempio, il sorgente corrispondente include i file con le definizioni delle interfacce associati ai file sorgente dell&apos;opera, e il codice sorgente delle librerie condivise e sottoprogrammi collegati dinamicamente specificatamente necessari per il programma, ad esempio a causa di stretta comunicazione dati o di controllo di flusso tra questi sottoprogrammi e altre parti del programma.
+    Il Sorgente Corrispondente non include qualunque cosa che l&apos;utente possa rigenerare automaticamente da altre parti del Sorgente Corrispondente stesso.
+    Il Sorgente Corrispondente di un&apos;opera in forma di codice sorgente è l&apos;opera stessa.
+    Principali Diritti
+    Tutti i diritti garantiti da questa Licenza sono garantiti per la durata del copyright sul Programma, e sono irrevocabili ammesso che le suddette condizioni siano rispettate. Questa Licenza afferma esplicitamente il tuo permesso illimitato di eseguire il Programma non modificato. Il risultato dell&apos;esecuzione di un programma coperto da questa Licenza è a sua volta coperto da questa Licenza solo se il risultato stesso, a causa del suo contenuto, è un&apos;opera coperta da questa Licenza. Questa Licenza riconosce il tuo diritto all&apos;uso legittimo o altri diritti equivalenti, come stabilito dalla legislazione sul copyright.
+    Puoi creare, eseguire e propagare programmi coperti da questa Licenza che tu non distribuisci, senza alcuna condizione fino a quando la tua Licenza rimane valida. Puoi distribuire opere coperte da questa Licenza ad altri al solo scopo di ottenere che essi facciano delle modifiche al programma esclusivamente per te, o che ti forniscano dei servizi per l&apos;esecuzione di queste opere, ammesso che tu rispetti i termini di questa Licenza nel distribuire tutto il materiale per il quale non detieni il copyright. Coloro i quali creano o eseguono per conto tuo un programma coperto da questa Licenza lo fanno esclusivamente in tua vece, sotto la tua direzione e il tuo controllo, in maniera tale che sia proibito a costoro effettuare copie di materiale di cui detieni il copyright al di fuori della relazione che intrattengono nei tuoi confronti.
+    Distribuire opere coperte da licenza in qualunque altra circostanza è consentito soltanto alle condizioni espresse in seguito. Non è consentito sottolicenziare le opere: la sezione 10 lo rende non necessario.
+    Protezione dei diritti legali degli utenti dalle leggi anti-elusione.
+    Nessun programma protetto da questa Licenza può essere considerato parte di una misura tecnologica di restrizione che sottosta ad alcuna delle leggi che soddisfano l&apos;articolo 11 del &quot;WIPO copyright treaty&quot; adottato il 20 Dicembre 1996, o a simili leggi che proibiscono o limitano l&apos;elusione di tali misure tecnologiche di restrizione.
+    Quando distribuisci un programma coperto da questa Licenza, rifiuti tutti i poteri legali atti a proibire l&apos;elusione di misure tecnologiche di restrizione ammesso che tale elusione sia effettuata nell&apos;esercizio dei diritti garantiti da questa Licenza riguardo al programma coperto da questa Licenza, e rinunci all&apos;intenzione di limitare l&apos;operatività o la modifica del programma per far valere, contro i diritti degli utenti del programma, diritti legali tuoi o di terze parti che impediscano l&apos;elusione di misure tecnologiche di restrizione.
+    Distribuzione di Copie Esatte.
+    Ti è permesso distribuire copie esatte del codice sorgente del Programma come lo hai ricevuto, con qualunque mezzo, ammesso che tu aggiunga in maniera appropriata su ciascuna copia una appropriata nota di copyright; che tu lasci intatti tutti gli avvisi che affermano che questa Licenza e tutte le clausole non-permissive aggiunte in accordo con la sezione 7 sono valide per il codice che distribuisci; che tu lasci intatti tutti gli avvisi circa l&apos;assenza di garanzia; che tu fornisca a tutti i destinatari una copia di questa Licenza assieme al Programma.
+    Puoi richiedere il pagamento di un prezzo o di nessun prezzo per ciascuna copia che distribuisci, e puoi offrire supporto o garanzia a pagamento.
+    Distribuzione di Versioni modificate del sorgente.
+    Puoi distribuire un&apos;opera basata sul Programma, o le modifiche per produrla a partire dal Programma, nella forma di codice sorgente secondo i termini della sezione 4, ammesso che tu rispetti anche tutte le seguenti condizioni:
+        L&apos;opera deve recare con sè delle informazioni adeguate che affermino che tu l&apos;hai modificata, indicando la data di modifica.
+        L&apos;opera deve recare informazioni adeguate che affermino che essa è rilasciata sotto questa Licenza e sotto le condizioni aggiuntive secondo quanto indicato dalla Sezione 7. Questa condizione modifica la condizione espressa alla sezione 4 di &quot;lasciare intatti tutti gli avvisi&quot;.
+        Devi rilasciare l&apos;intera opera, nel suo complesso, sotto questa Licenza a chiunque venga in possesso di una copia di essa. Questa Licenza sarà pertanto applicata, assieme ad eventuali clausole aggiunte in osservanza della Sezione 7, all&apos;opera nel suo complesso, a tutte le sue parti, indipendentemente da come esse siano pacchettizzate. Questa Licenza nega il permesso di licenziare l&apos;opera in qualunque altro modo, ma non rende nullo un tale permesso ammesso che tu lo abbia ricevuto separatamente.
+        Se l&apos;opera ha delle interfacce utente interattive, ciascuna deve mostrare delle Adeguate Informazioni Legali; altrimenti, se il Programma ha delle interfacce interattive che non visualizzano delle Adeguate Informazioni Legali, il tuo programma non è obbligato a visualizzarle.
+    La giustapposizione di un&apos;opera coperta da questa Licenza assieme ad altre opere separate e indipendenti, che non sono per loro natura estensioni del Programma, e che non sono combinate con esso a formare un altro programma più grande, dentro o in uno stesso supporto di memorizzazione a lungo termine o di distribuzione, è semplicemente detto &quot;aggregato&quot; se la raccolta e il suo copyright non sono utilizzati per limitare l&apos;accesso o i diritti legali degli utenti della raccolta stessa oltre ciò che ciascun singolo programma consente. L&apos;inclusione di un programma coperto da questa Licenza in un aggregato non comporta l&apos;applicazione di questa Licenza alle altre parti dell&apos;aggregato.
+    Distribuzione in formato non-sorgente
+    Puoi distribuire un programma coperto da questa Licenza in formato di codice oggetto secondo i termini delle sezioni 4 e 5, ammesso che tu fornisca anche il Sorgente Corrispondente in formato comprensibile da un computer sotto i termini di questa stessa Licenza, in uno dei seguenti modi:
+        Distribuendo il codice oggetto in, o contenuto in, un prodotto fisico (inclusi i mezzi fisici di distribuzione), accompagnato dal Sorgente Corrispondente su un supporto fisico duraturo comunemente utilizzato per lo scambio di software.
+        Distribuendo il codice oggetto in, o contenuto in, un prodotto fisico (inclusi i mezzi fisici di distribuzione), accompagnato da un&apos;offerta scritta, valida per almeno tre anni e valida per tutto il tempo durante il quale tu offri ricambi o supporto per quel modello di prodotto, di fornire a chiunque possieda il codice oggetto (1) una copia del Sorgente Corrispondente di tutto il software contenuto nel prodotto che è coperto da questa Licenza, su un supporto fisico duraturo comunemente utilizzato per lo scambio di software, ad un prezzo non superiore al costo ragionevole per effettuare fisicamente tale distribuzione del sorgente, oppure (2) accesso alla copia del Sorgente Corrispondente attraverso un server di rete senza alcun costo aggiuntivo.
+        Distribuendo copie singole del codice oggetto assieme ad una copia dell&apos;offerta scritta di fornire il Sorgente Corrispondente. Questa possibilità è permessa soltanto occasionalmente e per fini non commerciali, e solo se tu hai ricevuto il codice oggetto assieme ad una tale offerta, in accordo alla sezione 6b.
+        Distribuendo il codice oggetto mediante accesso da un luogo designato (gratis o dietro pagamento di un prezzo), e offrendo un accesso equivalente al Sorgente Corrispondente alla stessa maniera a partire dallo stesso luogo senza costi aggiuntivi. Non devi obbligare i destinatari a copiare il Sorgente Corrispondente assieme al codice oggetto. Se il luogo dal quale copiare il codice oggetto è un server di rete, il Sorgente Corrispondente può trovarsi su un server differente (gestito da te o da terze parti) che fornisca funzionalità equivalenti per la copia, a patto che tu fornisca delle indicazioni chiare accanto al codice oggetto che indichino dove trovare il Sorgente Corrispondente. Indipendentemente da quale server ospiti il Sorgente Corrispondente, tu rimani obbligato ad assicurare che esso rimanga disponibile per tutto il tempo necessario a soddisfare queste condizioni.
+        Distribuendo il codice oggetto mediante trasmissione peer-to-peer, a patto che tu informi gli altri peer circa il luogo in cui il codice oggetto e il Sorgente Corrispondente sono gratuitamente offerti al pubblico secondo i termini della sezione 6d.
+    Una porzione separabile del codice oggetto, il cui sorgente è escluso dal Sorgente Corrispondente e trattato come Libreria di Sistema, non deve essere obbligatoriamente inclusa nella distribuzione del codice oggetto del programma.
+    Un &quot;Prodotto Utente&quot; è un (1) &quot;prodotto consumer&quot;, cioè qualunque proprietà personale tangibile che è normalmente utilizzata per scopi personali, familiari o domestici, oppure (2) qualunque cosa progettata o venduta per essere utilizzata in ambiente domestico. Nella classificazione di un prodotto come &quot;prodotto consumer&quot;, i casi dubbi andranno risolti in favore dell&apos;ambito di applicazione. Per un dato prodotto ricevuto da un dato utente, &quot;normalmente utilizzato&quot; si riferisce ad un uso tipico o comune di quella classe di prodotti, indipendentemente dallo stato dell&apos;utente specifico o dal modo in cui l&apos;utente specifico utilizza, o si aspetta o ci si aspetta che utilizzi, il prodotto. Un prodotto è un &quot;prodotto consumer&quot; indipendentemente dal fatto che abbia usi commerciali, industriali o diversi da quelli &quot;consumer&quot;, a meno che questi usi non rappresentino il solo modo utile di utilizzare il prodotto in questione.
+    Le &quot;Informazioni di Installazione&quot; per un Prodotto Utente sono i metodi, le procedure, le chiavi di autorizzazioni o altre informazioni necessarie per installare ed eseguire versioni modificate di un programma coperto da questa Licenza all&apos;interno di un Prodotto Utente, a partire da versioni modificate dei suoi Sorgenti Corrispondenti. Tali informazioni devono essere sufficienti ad assicurare che il funzionamento del codice oggetto modificato non sia in nessun caso proibito o ostacolato per il solo fatto che sono state apportate delle modifiche.
+    Se distribuisci un codice oggetto secondo le condizioni di questa sezione in, o assieme, o specificatamente per l&apos;uso in o con un Prodotto Utente, e la distribuzione avviene come parte di una transazione nella quale il diritto di possesso e di uso del Prodotto Utente viene trasferito al destinatario per sempre o per un periodo prefissato (indipendentemente da come la transazione sia caratterizzata), il Sorgente Corrispondente distribuito secondo le condizioni di questa sezione deve essere accompagnato dalle Informazioni di Installazione. Questa condizione non è richiesta se nè tu nè una terza parte ha la possibilità di installare versioni modificate del codice oggetto sul Prodotto Utente (ad esempio, se il programma è installato su una ROM)
+    La condizione che richiede di fornire delle Informazioni di Installazione non implica che venga fornito supporto, garanzia o aggiornamenti per un programma che è stato modificato o installato dal destinatario, o per il Prodotto Utente in cui esso è stato modificato o installato. L&apos;accesso ad una rete può essere negato se le modifiche apportate impattano materialmente sull&apos;operatività della rete o se violano le regole e i protocolli di comunicazione attraverso la rete.
+    Il Sorgente Corrispondente distribuito, e le Informazioni di Installazione fornite, in accordo con questa sezione, devono essere in un formato che sia pubblicamente documentato (e con una implementazione pubblicamente disponibile in formato di codice sorgente), e non devono richiedere speciali password o chiavi per essere spacchettate, lette o copiate.
+    Condizioni Aggiuntive.
+    Le &quot;Condizioni Aggiuntive&quot; sono condizioni che completano le condizioni di questa Licenza permettendo delle eccezioni a una o più delle condizioni sopra elencate. Le condizioni aggiuntive che sono applicabili all&apos;intero Programma devono essere considerate come se fossero incluse in questa Licenza, a patto che esse siano valide secondo le normative vigenti. Se alcune condizioni aggiuntive fanno riferimento soltanto ad alcune parti del Programma, quelle parti possono essere utilizzate separatamente sotto le stesse condizioni, ma l&apos;intero Programma rimane sottoposto a questa Licenza senza riferimento ad alcuna condizione aggiuntiva.
+    Quando distribuisci una copia di un programma coperto da questa Licenza, puoi, a tua discrezione, eliminare qualunque condizione aggiuntiva dalla copia, o da parte di essa. (Le Condizioni Aggiuntive possono essere scritte in maniera tale da richiedere la loro rimozione in certi casi di modifica del Programma). Puoi aggiungere Condizioni Aggiuntive su materiale, aggiunto da te ad un&apos;opera coperta da questa Licenza, per il quale hai o puoi garantire un&apos;adeguata licenza di copyright.
+    Indipendentemente da qualunque altra condizione di questa Licenza, e per il materiale che aggiungi ad un&apos;opera coperta da questa Licenza, puoi (se autorizzato dai legittimi detentori del copyright per il suddetto materiale) aggiungere alle condizioni di questa Licenza delle condizioni che:
+        Negano la garanzia o limitano la responsabilità del Programma in maniera differente da quanto riportato nelle sezioni 15 e 16 di questa Licenza; oppure
+        Richiedono il mantenimento di specifiche e circostanziate informative legali o di note di attribuzione ad autori nel materiale o assieme alle Adeguate Informazioni Legali mostrate dal Programma che lo contiene; oppure
+        Proibiscono di fornire informazioni errate o ingannevoli sull&apos;origine e la provenienza del materiale in oggetto, o richiedono che versioni modificate di tale materiale siano appositamente marcate in maniera differente rispetto alla versione originale; oppure
+        Limitano l&apos;utilizzo per scopi pubblicitari del nome dei detentori del copyright o degli autori del materiale; oppure
+        Rifiutano di garantire diritti secondo le leggi sulla proprietà intellettuale circa l&apos;uso di nomi, marchi di fabbrica o similari; oppure
+        Richiedono l&apos;indennizzo dei detentori del copyright o degli autori del materiale in oggetto da parte di chi distribuisce il materiale (o versioni modificate dello stesso) con impegni contrattuali circa la responsabilità nei confronti del destinatario, per qualunque responsabilità che questi impegni contrattuali dovessero imporre direttamente ai suddetti detentori del copyright e autori.
+    Tutte le altre condizioni addizionali non-permissive sono considerate &quot;ulteriori restrizioni&quot;, secondo il significato specificato alla sezione 10. Se il Programma o parti di esso contengono, all&apos;atto della ricezione dello stesso, informative che specificano che esso è soggetto a questa Licenza assieme ad una condizione che è una &quot;ulteriore restrizione&quot;, puoi rimuovere quest&apos;ultima condizione. Se un documento di licenza contiene ulteriori restrizioni ma permette di rilicenziare o distribuire il Programma con questa Licenza, puoi aggiungere al Programma del materiale coperto dalle condizioni di quel documento di licenza, a patto che le ulteriori restrizioni non compaiano nelle versioni rilicenziate o ridistribuite.
+    Se aggiungi ad un Programma coperto da questa Licenza delle condizioni aggiuntive in accordo con questa sezione, devi aggiungere anche, nei file sorgenti corrispondenti, un avviso che riassuma le condizioni aggiuntive applicate a quei file, ovvero un avviso che specifichi dove è possibile trovare copia delle condizioni aggiunte.
+    Tutte le Condizioni aggiuntive, permissive o non-permissive, devono essere espresse nella forma di una licenza scritta e separata, o espresse esplicitamente come eccezioni; in entrambi i casi valgono le condizioni succitate.
+    Cessazione di Licenza
+    Non puoi propagare o modificare un programma coperto da questa Licenza in maniera diversa da quanto espressamente consentito da questa Licenza. Qualunque tentativo di propagare o modificare altrimenti il Programma è nullo, e provoca l&apos;immediata cessazione dei diritti garantiti da questa Licenza (compresi tutte le eventuali licenze di brevetto garantite ai sensi del terzo paragrafo della sezione 11).
+    In ogni caso, se cessano tutte le violazioni di questa Licenza, allora la tua licenza da parte di un dato detentore del copyright viene ripristinata (a) in via cautelativa, a meno che e fino a quando il detentore del copyright non cessa esplicitamente e definitivamente la tua licenza, e (b) in via permanente se il detentore del copyright non ti notifica in alcun modo la violazione entro 60 giorni dalla cessazione della licenza.
+    Inoltre, la tua licenza da parte di un dato detentore del copyright viene ripristinata in maniera permanente se il detentore del copyright ti notifica la violazione in maniera adeguata, se questa è la prima volta che ricevi una notifica di violazione di questa Licenza (per qualunque Programma) dallo stesso detentore di copyright, e se rimedi alla violazione entro 30 giorni dalla data di ricezione della notifica di violazione.
+    La cessazione dei tuoi diritti come specificato in questa sezione non provoca la cessazione delle licenze di terze parti che abbiano ricevuto copie o diritti da te secondo questa Licenza. Se i tuoi diritti cessano e non sono ristabiliti in via permanente, non hai diritto di ricevere nuove licenze per lo stesso materiale, secondo quanto stabilito nella sezione 10.
+    L&apos;ottenimento di copie non richiede l&apos;accettazione della Licenza
+    Non sei obbligato ad accettare i termini di questa Licenza al solo fine di ottenere o eseguire una copia del Programma. Similmente, propagazioni collaterali di un Programma coperto da questa Licenza che occorrono come semplice conseguenza dell&apos;utilizzo di trasmissioni peer-to-peer per la ricezione di una copia non richiedono l&apos;accettazione della Licenza. In ogni caso, solo e soltanto questa Licenza ti garantiscono il permesso di propagare e modificare qualunque programma coperto da questa Licenza. Queste azioni violano le leggi sul copyright nel caso in cui tu non accetti questa Licenza. Pertanto, modificando o propagando un programma coperto da questa Licenza, indichi implicitamente la tua accettazione della Licenza.
+    Licenza Automatica per i successivi destinatari
+    Ogni qual volta distribuisci un programma coperto da questa Licenza, il destinatario riceve automaticamente una licenza, dal detentore originario del copyright, di eseguire, modificare e propagare il programma, nel rispetto di questa Licenza. Non sei ritenuto responsabile del rispetto di questa Licenza da parte di terze parti.
+    Una &quot;transazione d&apos; entità&quot; è una transazione che trasferisce il controllo di una organizzazione, o sostanzialmente di tutti i suoi beni, che suddivide una organizzazione o che fonde più organizzazioni. Se la propagazione di un programma coperto da questa Licenza è conseguente ad una transazione di entità, ciascuna parte che ha ruolo nella transazione e che riceve una copia del programma riceve allo stesso tempo qualsiasi licenza sul programma che i predecessori della parte possedevano o potevano rilasciare nel rispetto del paragrafo precedente, e in più il diritto di possesso del Sorgente Corrispondente del programma dal predecessore in interesse, se il predecessore lo possiede o se può ottenerlo senza troppe difficoltà.
+    Non puoi imporre nessuna ulteriore restrizione sull&apos;esercizio dei diritti garantiti o affermati da questa Licenza. Per esempio, non puoi imporre un prezzo di licenza, una royalty, o altri costi per l&apos;esercizio dei diritti garantiti da questa Licenza, a non puoi dar corso ad una controversia (ivi incluse le controversie incrociate o la difesa in cause legali) affermando che siano stati violati dei brevetti a causa della produzione, dell&apos;uso, della vendita, della messa in vendita o dell&apos;importazione del Programma o di sue parti.
+    Brevetti.
+    Un &quot;contribuente&quot; è un detentore di copyright che autorizza l&apos;uso secondo questa Licenza di un Programma o di un&apos;opera basata sul Programma. L&apos;opera così licenziata viene chiamata &quot;versione del contribuente&quot;.
+    I &quot;diritti essenziali di brevetto&quot; da parte di un contribuente sono tutti i diritti di brevetto che appartengono o che sono controllati dal contribuente, che siano già acquisiti o che saranno acquisiti in futuro, che possano essere violati in qualche maniera, consentita da questa Licenza, generando, modificando o vendendo la versione del contribuente, ma non includono i diritti che possano essere violati soltanto come conseguenza di ulteriori modifiche alla versione del contribuente. In relazione a questa definizione, il termine &quot;controllo&quot; include il diritto di garantire sottolicenze di brevetto in maniera consistente con le condizioni di questa Licenza.
+    Ciascun contribuente ti garantisce la licenza di brevetto sui diritti essenziali di brevetto del contribuente stesso non-esclusiva, valida in tutto il mondo, esente da royalty, di creare, usare, vendere, offrire in vendita, importare e altrimenti eseguire, modificare e propagare i contenuti della versione del contribuente.
+    Nei tre paragrafi successivi, con &quot;licenza di brevetto&quot; si intende qualunque accordo o contratto, comunque denominato, di non rivendicazione di un brevetto (come ad esempio un permesso esplicito di utilizzare un brevetto o un accordo di rinuncia alla persecuzione per violazione di brevetto). &quot;Garantire&quot; una tale licenza di brevetto ad una parte significa portare a termine un tale accordo o contratto di non rivendicazione di brevetto contro la parte.
+    Se distribuisci un programma coperto da questa Licenza, confidando consapevolmente su una licenza di brevetto, e il Sorgente Corrispondente per il programma non è reso disponibile per la copia, senza alcun onere aggiuntivo e comunque nel rispetto delle condizioni di questa Licenza, attraverso un server di rete pubblicamente accessibile o tramite altri mezzi facilmente accessibili, allora devi (1) fare in modo che il Sorgente Corrispondente sia reso disponibile come sopra, oppure (2) fare in modo di rinunciare ai benefici della licenza di brevetto per quel particolare programma, oppure (3) adoperarti, in maniera consistente con le condizioni di questa Licenza, per estendere la licenza di brevetto a tutti i destinatari successivi. &quot;Confidare consapevolmente&quot; significa che tu sei attualmente cosciente che, eccettuata la licenza di brevetto, la distribuzione da parte tua di un programma protetto da questa Licenza in un paese, o l&apos;utilizzo in un paese del programma coperto da questa Licenza da parte di un destinatario, può violare uno o più brevetti in quel paese che tu hai ragione di ritenere validi.
+    Se, come conseguenza o in connessione con una singola transazione o con un dato accordo, distribuisci, o fai in modo di distribuire, un programma coperto da questa Licenza, e garantisci una licenza di brevetto per alcune delle parti che ricevono il Programma autorizzandole ad utilizzare, propagare, modificare o distribuire una specifica copia del Programma, allora la licenza di brevetto che fornisci è automaticamente estesa a tutti i destinatari del Programma coperto da questa Licenza e delle opere basate sul Programma.
+    Una licenza di brevetto è &quot;discriminatoria&quot; se non include nell&apos;ambito della sua copertura, proibisce l&apos;esercizio, o è vincolata al non-esercizio di uno o più dei diritti che sono specificatamente garantiti da questa Licenza. Non puoi distribuire un Programma coperto da questa Licenza se sei parte di un accordo con una terza parte la cui attività comprende la distribuzione di software, secondo il quale tu sei costretto ad un pagamento alla parte terza in funzione della tua attività di distribuzione del Programma, e in conseguenza del quale la parte terza garantisce, a qualunque delle parti che riceveranno il Programma da te, una licenza di brevetto discriminatoria (a) assieme a copie del Programma coperto da questa Licenza distribuite da te (o ad altre copie fatte da codeste copie), oppure (b) principalmente per e in connessione con specifici prodotti o raccolte di prodotti che contengono il Programma, a meno che l&apos;accordo non sia stato stipulato, o le licenze di brevetto non siano state rilasciate, prima del 28 Marzo 2007.
+    Nessuna parte di questa Licenza può essere interpretata come atta ad escludere o limitare gli effetti di qualunque altra licenza o altri meccanismi di difesa dalla violazione che possano altrimenti essere resi disponibili dalla normativa vigente in materia di brevetti.
+    Nessuna resa di libertà altrui
+    Se ti vengono imposte delle condizioni (da un ordine giudiziario, da un accordo o da qualunque altra eventualità) che contraddicono le condizioni di questa Licenza, non sei in nessun modo esonerato dal rispetto delle condizioni di questa Licenza. Se non puoi distribuire un Programma coperto da questa Licenza per sottostare simultaneamente agli obblighi derivanti da questa Licenza e ad altri obblighi pertinenti, allora non puoi distribuire il Programma per nessun motivo. Per esempio, se accetti delle condizioni che ti obbligano a richiedere il pagamento di una royalty per le distribuzioni successivamente effettuate da coloro ai quali hai distribuito il Programma, l&apos;unico modo per soddisfare sia queste condizioni che questa Licenza è evitare del tutto la distribuzione del Programma.
+    Utilizzo con la GNU Affero General Public License
+    Indipendentemente da qualunque altra condizione espressa da questa Licenza, hai il permesso di collegare o combinare qualunque Programma coperto da questa Licenza con un&apos;opera rilasciata sotto la versione 3 della licenza GNU Affero General Public License, ottenendo un singolo Programma derivato, e di distribuire il Programma risultante. Le condizioni di questa Licenza continuano a valere per le parti riguardanti il Programma che sono coperte da questa Licenza, mentre le condizioni speciali della GNU Affero General Public License, sezione 13, riguardanti l&apos;interazione mediante rete, saranno applicate al Programma così risultante.
+    Versioni rivedute di questa Licenza
+    La Free Software Foundation può pubblicare delle versioni rivedute e/o delle nuove versioni della GNU General Public License di tanto in tanto. Tali versioni saranno simili, nello spirito, alla presente versione, ma potranno differire nei dettagli al fine di affrontare nuovi problemi e nuove situazioni.
+    A ciascuna versione viene assegnato un numero identificativo di versione. Se il Programma specifica che si applica a sè stesso una certa versione della GNU General Public License, &quot;o qualunque altra versione successiva&quot;, hai la possibilità di sottostare alle condizioni di quella specifica versione o di qualunque altra versione successiva pubblicata dalla Free Software Foundation. Se il Programma non specifica un numero di versione della GNU General Public License, puoi scegliere qualunque versione della GNU General Public License pubblicata dalla Free Software Foundation.
+    Se il Programma specifica che un sostituto o un procuratore può decidere quali versioni future della GNU General Public License posso essere utilizzate, allora tale scelta di accettazione di una data versione ti autorizza, in maniera permanente, ad utilizzare quella versione della Licenza per il Programma.
+    Versioni successive della Licenza possono garantire diritti aggiuntivi o leggermente differenti. Ad ogni modo, nessun obbligo aggiuntivo viene imposto agli autori o ai detentori di copyright come conseguenza della tua scelta di adottare una versione successiva della Licenza.
+    Rinuncia alla Garanzia
+    NON C&apos;E&apos; NESSUNA GARANZIA PER IL PROGRAMMA, PER QUANTO CONSENTITO DALLE VIGENTI NORMATIVE. ECCETTO QUANDO ALTRIMENTI STABILITO PER ISCRITTO, I DETENTORI DEL COPYRIGHT E/O LE ALTRE PARTI FORNISCONO IL PROGRAMMA &quot;COSI&apos; COME È&quot; SENZA GARANZIA DI ALCUN TIPO, NE&apos; ESPRESSA NE&apos; IMPLICITA, INCLUSE, MA NON LIMITATE A, LE GARANZIE DI COMMERCIABILITA&apos; O DI UTILIZZABILITA&apos; PER UN PARTICOLARE SCOPO. L&apos;INTERO RISCHIO CONCERNENTE LA QUALITA&apos; E LE PRESTAZIONI DEL PROGRAMMA E&apos; DEL LICENZIATARIO. SE IL PROGRAMMA DOVESSE RISULTARE DIFETTOSO, IL LICENZIATARIO SI ASSUME I COSTI DI MANUTENZIONE, RIPARAZIONE O CORREZIONE.
+    Limitazione di Responsabilità
+    IN NESSUN CASO, A MENO CHE NON SIA RICHIESTO DALLA NORMATIVA VIGENTE O CONCORDATO PER ISCRITTO, I DETENTORI DEL COPYRIGHT, O QUALUNQUE ALTRA PARTE CHE MODIICA E/O DISTRIBUISCE IL PROGRAMMA SECONDO LE CONDIZIONI PRECEDENTI, POSSONO ESSERE RITENUTI RESPONSABILI NEI CONFRONTI DEL LICENZIATARIO PER DANNI, INCLUSO QUALUNQUE DANNEGGIAMENTO GENERICO, SPECIALE, INCIDENTALE O CONSEQUENZIALE DOVUTO ALL&apos;USO O ALL&apos;IMPOSSIBILITA&apos; D&apos;USO DEL PROGRAMMA (INCLUSI, MA NON LIMITATI A, LE PERDITE DI DATI, LA CORRUZIONE DI DATI, LE PERDITE SOSTENUTE DAL LICENZIATARIO O DA TERZE PARTI O L&apos;IMPOSSIBILITA&apos; DEL PROGRAMMA A FUNZIONARE ASSIEME AD ALTRI PROGRAMMI), ANCHE NEL CASO IN CUI IL DETENTORE O LE ALTRE PARTI SIANO STATI AVVISATI CIRCA LA POSSIBILITA&apos; DI TALI DANNEGGIAMENTI.
+    Interpretazione delle Sezioni 15 e 16.
+    Se la dichiarazione di garanzia e la limitazione di responsabilità fornite precedentemente non hanno effetto legale in un paese a causa delle loro condizioni, le corti di giustizia devono applicare la norma locale che più si avvicini al rifiuto assoluto di qualsivoglia responsabilità civile relativa al Programma, a meno che una garanzia o una assunzione di responsabilità scritta non accompagni una copia del programma ottenuta dietro pagamento.
+    Fine dei Termini e delle Condizioni
+    Come applicare questre condizioni di Licenza ai vostri programmi
+    Se sviluppi un nuovo programma, e vuoi che esso sia della massima utilità, il modo migliore è renderlo software libero in modo che chiunque possa ridistribuirlo e modificarlo secondo i termini di questa Licenza.
+    Per fare ciò, allega le seguenti note informative al programma. Il modo migliore è inserirle all&apos;inizio di ciascun file sorgente, al fine di rimarcare adeguatamente la mancanza di garanzia; ciascun file dovrebbe inoltre contenere la dichiarazione di copyright e un riferimento al posto in cui è possibile ottenere la versione completa delle note informative.
+
+        &lt;one line to give the program&apos;s name and a brief idea of what it does.&gt;
+        Copyright (C) &lt;year&gt; &lt;name of author&gt;
+        This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+        This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+        You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
+
+    Inoltre, aggiungi le informazioni necessarie a contattarti via posta ordinaria o via posta elettronica.
+    Se il programma interagisce mediante terminale, fai in modo che visualizzi, quando viene avviato in modalità interattiva, un breve messaggio come quello che segue:
+
+        &lt;program&gt; Copyright (C) &lt;year&gt; &lt;name of author&gt;
+        This program comes with ABSOLUTELY NO WARRANTY; for details type show w. This is free software, and you are welcome to redistribute it under certain conditions; type show c for details. 
+
+    Gli ipotetici comandi show w e show c devono visualizzare le parti corrispondenti della GNU General Public License. Naturalmente i comandi del tuo programma potrebbero essere differenti; per una interfaccia di tipo GUI, dovresti usare un bottone &quot;About&quot; o &quot;Info&quot;.
+    Devi inoltre fare in modo che il tuo datore di lavoro (se lavori come programmatore presso terzi) o la tua scuola, eventualmente, firmino una &quot;rinuncia al copyright&quot; sul programma, se necessario. Per maggiori informazioni su questo punto, e su come applicare e rispettare la GNU GPL, consultare la pagina http://www.gnu.org/licenses/.
+    La GNU General Public License non consente di incorporare il programma all&apos;interno di software proprietario. Se il tuo programma è una libreria di funzioni, potresti ritenere più opportuno consentire il collegamento tra software proprietario e la tua libreria. Se è questo ciò che vuoi, allora utilizza la GNU Lesser General Public License anziché questa Licenza, ma prima leggi http://www.gnu.org/philosophy/why-not-lgpl.html.
+</translation>
     </message>
 </context>
 <context>
@@ -2498,50 +2797,50 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
     <message>
         <location filename="../mainwindow.ui" line="28"/>
         <source>Open Jardin version 1.07</source>
-        <translation type="unfinished"></translation>
+        <translation>Open Jardin versione 1.07</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="132"/>
         <source>Designation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="151"/>
         <source>Désignation de la parcelle sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione della parcella selezionata</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="161"/>
         <source>Enregistrer la modification de désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva la modifica della designazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="181"/>
         <source>Plan de détail de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Pianta di dettaglio della parcella</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="201"/>
         <source>Afficher le planning de la parcelle sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra la pianificazione della parcella selezionata</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="227"/>
         <location filename="../mainwindow.ui" line="1506"/>
         <source>Afficher la fiche culture correspondante à la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizza la scheda di coltura corrispondente alla parcella</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="230"/>
         <location filename="../mainwindow.ui" line="1509"/>
         <source>Fiche culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda coltura</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="247"/>
         <source>Indique si la parcelle est affichée dans le planning</source>
         <extracomment>Affichage dans le planning</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Indica se la parcella è visualizzata nel pianificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="250"/>
@@ -2557,758 +2856,758 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
         <location filename="../mainwindow.ui" line="1241"/>
         <location filename="../mainwindow.ui" line="1267"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>Afficher ou non la parcelle dans le planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizzare o meno la parcella nel pianificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="278"/>
         <source>-Choix de l&apos;affichage-</source>
-        <translation type="unfinished"></translation>
+        <translation>-Scelta della visualizzazione-</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="283"/>
         <source>Afficher dans le planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra nel pianificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>Ne pas afficher</source>
-        <translation type="unfinished"></translation>
+        <translation>Non visualizzare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="302"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Imprimer le plan du terrain actuel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Stampa la mappa del terreno attualel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="322"/>
         <source>Enregistrer le plan modifié</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva il piano modificato</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="325"/>
         <source>Enregistrer le plan modifé</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva il piano modificato</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="418"/>
         <source>Epaisseur</source>
-        <translation type="unfinished"></translation>
+        <translation>Spessore</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="449"/>
         <source>Définir l&apos;épaisseur de la ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Imposta lo spessore della linea</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="453"/>
         <location filename="../mainwindow.ui" line="812"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="458"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="463"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="468"/>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="473"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="478"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="483"/>
         <source>7</source>
-        <translation type="unfinished"></translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="493"/>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="498"/>
         <source>10</source>
-        <translation type="unfinished"></translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="520"/>
         <source>Choisir la couleur des lignes et caractères</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore delle linee e dei caratteri</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="556"/>
         <source>Couleur Crayon</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore Matita</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="575"/>
         <source>Couleur du trait de la parcelle ou ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore della linea della particella o linea</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="581"/>
         <source>#0000ff</source>
-        <translation type="unfinished"></translation>
+        <translation>#0000ff</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="596"/>
         <source>Choisir la couleur de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore della parcella</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="632"/>
         <source>Couleur fond</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore dello sfondo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="651"/>
         <source>Couleur du fond de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore dello sfondo della parcella</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="657"/>
         <source>#00ff7f</source>
-        <translation type="unfinished"></translation>
+        <translation>#00ff7f</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="666"/>
         <source>Définir le type de ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Imposta il tipo di linea</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="670"/>
         <source>ligne pleine</source>
-        <translation type="unfinished"></translation>
+        <translation>Linea continua</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="675"/>
         <source>tirets longs</source>
-        <translation type="unfinished"></translation>
+        <translation>trattini lunghi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="680"/>
         <source>tirets courts</source>
-        <translation type="unfinished"></translation>
+        <translation>trattini</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="685"/>
         <source>axe</source>
-        <translation type="unfinished"></translation>
+        <translation>asse</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="730"/>
         <source>Observations sur la parcelle sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Osservazioni sulla parcella selezionata</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="757"/>
         <source>Zoom +</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom +</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="786"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="809"/>
         <source>Ratio du zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapporto dello zoom</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="841"/>
         <source>Zoom -</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom -</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="868"/>
         <source>Déplacer</source>
-        <translation type="unfinished"></translation>
+        <translation>Spostare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="887"/>
         <source>Ne pas déplacer le plan avec la souris</source>
-        <translation type="unfinished"></translation>
+        <translation>Non spostare il pianta con il mouse</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="919"/>
         <source>Déplacer le plan avec la souris</source>
-        <translation type="unfinished"></translation>
+        <translation>Spostare il pianta con il mouse</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="995"/>
         <source>Valider le Polyline</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare la Polyline</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1015"/>
         <location filename="../mainwindow.ui" line="3344"/>
         <source>Supprimer l&apos;objet sélectionné</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi l&apos;oggetto selezionato</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1043"/>
         <source>Valider</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1050"/>
         <source>Créer une parcelle en forme de  polygone ou polyline</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una parcella a forma di poligono o polilina</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1076"/>
         <source>Modifier le polygone ou le Polyline</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica poligono</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1109"/>
         <source>Créer</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1119"/>
         <source>Ajouter une image dans le plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi un&apos;immagine al pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1152"/>
         <source>Modifier</source>
-        <translation type="unfinished"></translation>
+        <translation>Modificare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1162"/>
         <source>Valider le Polygone</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalidare il Poligono</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1182"/>
         <source>Créer un équipement</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare un&apos;attrezzatura</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1238"/>
         <source>Créer une parcelle rectangulaire</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una parcella rettangolare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1264"/>
         <source>Créer une plantation</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare una piantagione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1334"/>
         <source>Plannning</source>
-        <translation type="unfinished"></translation>
+        <translation>Pianificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1376"/>
         <location filename="../mainwindow.ui" line="2397"/>
         <source>2017</source>
-        <translation type="unfinished"></translation>
+        <translation>2017</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1381"/>
         <location filename="../mainwindow.ui" line="2402"/>
         <source>2018</source>
-        <translation type="unfinished"></translation>
+        <translation>2018</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1386"/>
         <location filename="../mainwindow.ui" line="2407"/>
         <source>2019</source>
-        <translation type="unfinished"></translation>
+        <translation>2019</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1391"/>
         <location filename="../mainwindow.ui" line="2412"/>
         <source>2020</source>
-        <translation type="unfinished"></translation>
+        <translation>2020</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1396"/>
         <location filename="../mainwindow.ui" line="2417"/>
         <source>2021</source>
-        <translation type="unfinished"></translation>
+        <translation>2021</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1401"/>
         <location filename="../mainwindow.ui" line="2422"/>
         <source>2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1406"/>
         <location filename="../mainwindow.ui" line="2427"/>
         <source>2023</source>
-        <translation type="unfinished"></translation>
+        <translation>2023</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1411"/>
         <location filename="../mainwindow.ui" line="2432"/>
         <source>2024</source>
-        <translation type="unfinished"></translation>
+        <translation>2024</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1416"/>
         <location filename="../mainwindow.ui" line="2437"/>
         <source>2025</source>
-        <translation type="unfinished"></translation>
+        <translation>2025</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1421"/>
         <location filename="../mainwindow.ui" line="2442"/>
         <source>2026</source>
-        <translation type="unfinished"></translation>
+        <translation>2026</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1426"/>
         <location filename="../mainwindow.ui" line="2447"/>
         <source>2027</source>
-        <translation type="unfinished"></translation>
+        <translation>2027</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1431"/>
         <location filename="../mainwindow.ui" line="2452"/>
         <source>2028</source>
-        <translation type="unfinished"></translation>
+        <translation>2028</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1436"/>
         <location filename="../mainwindow.ui" line="2457"/>
         <source>2029</source>
-        <translation type="unfinished"></translation>
+        <translation>2029</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1441"/>
         <location filename="../mainwindow.ui" line="2462"/>
         <source>2030</source>
-        <translation type="unfinished"></translation>
+        <translation>2030</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1477"/>
         <location filename="../mainwindow.ui" line="2482"/>
         <source>Actualiser</source>
-        <translation type="unfinished"></translation>
+        <translation>Attualizzare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1493"/>
         <source> dd/MM/yyyy</source>
-        <translation type="unfinished"></translation>
+        <translation> dd/MM/yyyy</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1552"/>
         <source>Date démarrage</source>
-        <translation type="unfinished"></translation>
+        <translation>Data d&apos;inizio</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1591"/>
         <source>Durée en jours</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata in giorni</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1676"/>
         <location filename="../mainwindow.ui" line="2525"/>
         <source>APIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>APIACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1713"/>
         <location filename="../mainwindow.ui" line="2562"/>
         <source>ASTERACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ASTERECEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1750"/>
         <location filename="../mainwindow.ui" line="2599"/>
         <source>BRASSICACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>BRASSICACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1787"/>
         <location filename="../mainwindow.ui" line="2636"/>
         <source>CHENOPADACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CHENOPODIACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1824"/>
         <location filename="../mainwindow.ui" line="2673"/>
         <source>CUCURBITACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CUCURBITACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1861"/>
         <location filename="../mainwindow.ui" line="2710"/>
         <source>FABACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>FABACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1898"/>
         <location filename="../mainwindow.ui" line="2747"/>
         <source>ALLIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALLIACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1935"/>
         <location filename="../mainwindow.ui" line="2784"/>
         <source>POACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>POACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1972"/>
         <location filename="../mainwindow.ui" line="2821"/>
         <source>SOLANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>SOLANACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2009"/>
         <location filename="../mainwindow.ui" line="2858"/>
         <source>VALERIANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>VALERIANACEAE</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2046"/>
         <location filename="../mainwindow.ui" line="2895"/>
         <source>AUTRES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALTRI</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2078"/>
         <source>Glisser pour modifier la largeur</source>
-        <translation type="unfinished"></translation>
+        <translation>Trascina per modificare la larghezza</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2146"/>
         <source>Parcelles</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcelle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2248"/>
         <source>Pour élargir cette liste -&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Per espandere questa lista -&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2348"/>
         <source>Rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>Rotazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2389"/>
         <source>Année de démarrage</source>
-        <translation type="unfinished"></translation>
+        <translation>Anno di avvio</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2479"/>
         <source>Actualiser l&apos;affichage des parcelles</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiornare la visualizzazione delle parcelle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3054"/>
         <source>Objets</source>
-        <translation type="unfinished"></translation>
+        <translation>Oggetti</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3111"/>
         <source>Fichier</source>
-        <translation type="unfinished"></translation>
+        <translation>File</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3122"/>
         <source>Gestion du plan</source>
-        <translation type="unfinished"></translation>
+        <translation>gestione del pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3142"/>
         <location filename="../mainwindow.ui" line="3449"/>
         <source>Aide</source>
-        <translation type="unfinished"></translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3152"/>
         <source>Configuration</source>
-        <translation type="unfinished">Configurazione</translation>
+        <translation>Configurazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3161"/>
         <location filename="../mainwindow.ui" line="3586"/>
         <source>Gestion des tâches</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestione delle attività</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3178"/>
         <source>Passer l&apos;objet devant</source>
-        <translation type="unfinished"></translation>
+        <translation>Passare l&apos;oggetto davanti</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3228"/>
         <location filename="../mainwindow.ui" line="3231"/>
         <location filename="../mainwindow.ui" line="3234"/>
         <source>Ouvrir</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprire</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3243"/>
         <location filename="../mainwindow.ui" line="3246"/>
         <location filename="../mainwindow.ui" line="3249"/>
         <source>Enregistrer</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3275"/>
         <location filename="../mainwindow.ui" line="3278"/>
         <location filename="../mainwindow.ui" line="3281"/>
         <source>Ajouter Parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungere una parcella</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3289"/>
         <source>Carré</source>
-        <translation type="unfinished"></translation>
+        <translation>Quadrato</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3301"/>
         <location filename="../mainwindow.ui" line="3304"/>
         <source>Ajouter Plante seule</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi solo pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3307"/>
         <source>Ajouter Plante</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3319"/>
         <source>Ajouter image</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi un&apos;immagine</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3334"/>
         <source>Choisir le Fond d&apos;écran</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli la Carta da parati</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3339"/>
         <source>Ajouter icone</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungere icone</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3353"/>
         <source>Choisir la couleur</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3377"/>
         <source>selectionner tout</source>
-        <translation type="unfinished"></translation>
+        <translation>selezionare tutto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3386"/>
         <source>désélectionner tout</source>
-        <translation type="unfinished"></translation>
+        <translation>Deselezionare tutto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3401"/>
         <source>Modification</source>
-        <translation type="unfinished"></translation>
+        <translation>Modificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3412"/>
         <source>Mise à jour de la scène</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiornamento della scena</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3424"/>
         <location filename="../mainwindow.ui" line="3427"/>
         <source>Ajouter Matériel</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungere Materiale</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3439"/>
         <source>mettre en avant</source>
-        <translation type="unfinished"></translation>
+        <translation>Mettere davanti</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3444"/>
         <source>a propos de..</source>
-        <translation type="unfinished"></translation>
+        <translation>a proposito di..</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3458"/>
         <source>Choisir le type de crayon</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il tipo di matita</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3476"/>
         <source>Mode Création/Modification dans le plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità Creazione/Modifica nel pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3491"/>
         <source>Mode Utilisation du plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità Utilizzo del pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3500"/>
         <source>Cacher le fond d&apos;écran</source>
-        <translation type="unfinished"></translation>
+        <translation>Nascondere lo sfondo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3509"/>
         <source>Afficher le fond d&apos;écran</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra lo sfondo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3514"/>
         <source>Ouvrir fiche culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprire scheda cultura</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3522"/>
         <source>Nouveau</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3531"/>
         <source>Imprimer le plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Stampa la pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3546"/>
         <source>Afficher la grille</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra grilia</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3558"/>
         <source>Cacher la grille</source>
-        <translation type="unfinished"></translation>
+        <translation>Nascondere la griglia</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3567"/>
         <source>Fiches plantes</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede piante</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3572"/>
         <source>Configuration </source>
-        <translation type="unfinished"></translation>
+        <translation>Configurazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3577"/>
         <source>Licences</source>
-        <translation type="unfinished"></translation>
+        <translation>Licenze</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3591"/>
         <source>Ouvrir fiche Taches</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri la scheda attività</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3596"/>
         <source>Ouvrir fiche Ressources</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri la scheda risorse</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3601"/>
         <source>Ouvrir fiche Moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri la scheda mezzi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3606"/>
         <source>Ouvrir fiche Coordonnées</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri la scheda delle coordinate</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3611"/>
         <source>Ouvrir fiche Type de Moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri la scheda tipo di mezzi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3625"/>
         <source>Nouveau projet</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo progetto</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3633"/>
         <source>Afficher la notice PDF</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra avviso PDF</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3638"/>
         <source>AfficherPlanning</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra  pianificazione</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3643"/>
         <source>A propos de Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>a proposito di Qt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3648"/>
         <source>Translate in english</source>
-        <translation type="unfinished"></translation>
+        <translation>Translate in english</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3653"/>
         <source>Traduire en francais</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduire en francais</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="76"/>
         <source>Plan</source>
-        <translation type="unfinished"></translation>
+        <translation>Pianta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3254"/>
         <location filename="../mainwindow.ui" line="3257"/>
         <location filename="../mainwindow.ui" line="3260"/>
         <source>Quitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Uscire</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3322"/>
         <source>Ajouter Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi un&apos;immagine</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1218"/>
         <location filename="../mainwindow.ui" line="3365"/>
         <source>Supprimer</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="3620"/>
         <source>Enregistrer sous</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare come</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
         <source>A propos de Open_jardin</source>
-        <translation type="unfinished"></translation>
+        <translation>a proposito di Openjardin</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="332"/>
@@ -3317,207 +3616,213 @@ il utilise des fichier XML pour la configuration des plans
 et une base sqlite pour les données de culture
 Ce programme est compilé avec Qt 5.12.0 .
 Openjardin version 1.07.007 license GNU GPL version 3.0</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo programma è utilizzato per gestire graficamente le piantagioni di un orto.
+utilizza file XML per la configurazione dei piani
+e una base sqlite per i dati di cultura
+Questo programma è compilato con Qt 5.12.0 .
+Licenza GNU GPL versione 3.0</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>Ce programme utilise la version 5.12.2 de Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo programma utilizza la versione 5.12.2 di Qt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="519"/>
         <source>OPENJARDIN - Mise à jour de la base de données</source>
-        <translation type="unfinished"></translation>
+        <translation>OPENJARDIN - Aggiornamento della banca dati</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
         <source>La base de données doit être mise à jour.
 Confirmer la mise à jour en version 1.07 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>La banca dati deve essere aggiornata.
+Confermare l&apos;aggiornamento alla versione 1.07?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="675"/>
         <source>Base de données </source>
-        <translation type="unfinished"></translation>
+        <translation>Banca dati</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="676"/>
         <source>La base de données a été mise à jour en version 1.06</source>
-        <translation type="unfinished"></translation>
+        <translation>Il database è stato aggiornato alla versione 1.06</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="681"/>
         <source>Erreur de mise à jour</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di aggiornamento</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="682"/>
         <source>La base de données n&apos;a pas pu être mise à jour en version 1.06</source>
-        <translation type="unfinished"></translation>
+        <translation>Il database non ha potuto essere aggiornato alla versione 1.06</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="703"/>
         <location filename="../mainwindow.cpp" line="2492"/>
         <source>Ouverture du fichier des objets</source>
-        <translation type="unfinished"></translation>
+        <translation>Apertura del file degli oggetti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="705"/>
         <source>XML Files (*.xml);; All files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML Files (*.xml);; All files (*.*)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1485"/>
         <source>Sauvegarde du plan sous ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvataggio del pianta sotto ...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1487"/>
         <source>XML Files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>B</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1610"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <location filename="../mainwindow.cpp" line="1859"/>
         <source>Janvier</source>
-        <translation type="unfinished"></translation>
+        <translation>gennaio</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1615"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Février</source>
-        <translation type="unfinished"></translation>
+        <translation>febbraio</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1620"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Mars</source>
-        <translation type="unfinished"></translation>
+        <translation>Marzo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1625"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Avril</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprile</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1630"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Mai</source>
-        <translation type="unfinished"></translation>
+        <translation>Maggio</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1635"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Juin</source>
-        <translation type="unfinished"></translation>
+        <translation>giugno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1640"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Juillet</source>
-        <translation type="unfinished"></translation>
+        <translation>Luglio</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1645"/>
         <location filename="../mainwindow.cpp" line="1857"/>
         <source>Aout</source>
-        <translation type="unfinished"></translation>
+        <translation>Agosto</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1650"/>
         <location filename="../mainwindow.cpp" line="1858"/>
         <source>Septembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Settembre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1655"/>
         <location filename="../mainwindow.cpp" line="1859"/>
         <source>Octobre</source>
-        <translation type="unfinished"></translation>
+        <translation>Ottobre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1660"/>
         <location filename="../mainwindow.cpp" line="1859"/>
         <source>Novembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Novembre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1665"/>
         <location filename="../mainwindow.cpp" line="1859"/>
         <location filename="../mainwindow.cpp" line="1873"/>
         <source>Décembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Dicembre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <source>L</source>
-        <translation type="unfinished"></translation>
+        <translation>L</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>M</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1790"/>
         <source>M.</source>
-        <translation type="unfinished"></translation>
+        <translation>M.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1791"/>
         <source>J</source>
-        <translation type="unfinished"></translation>
+        <translation>J</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1791"/>
         <source>V</source>
-        <translation type="unfinished"></translation>
+        <translation>V</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1791"/>
         <source>S</source>
-        <translation type="unfinished"></translation>
+        <translation>S</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1791"/>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>D</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1826"/>
         <source>semaine </source>
-        <translation type="unfinished"></translation>
+        <translation>settimana </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2183"/>
         <location filename="../mainwindow.cpp" line="2706"/>
         <source>Ouverture du fichier image</source>
-        <translation type="unfinished"></translation>
+        <translation>Apertura del file immagine</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2185"/>
         <location filename="../mainwindow.cpp" line="2494"/>
         <location filename="../mainwindow.cpp" line="2708"/>
         <source>Image Files (*.png *.jpg *.bmp)</source>
-        <translation type="unfinished"></translation>
+        <translation>Image Files (*.png *.jpg *.bmp)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2636"/>
         <source>Suppression</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="2637"/>
         <source>Cet objet peut être supprimer.
 Confirmer la suppression de l&apos;objet ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo oggetto può essere rimosso.
+Confermare la rimozione dell&apos;oggetto?</translation>
     </message>
 </context>
 <context>
@@ -3525,87 +3830,87 @@ Confirmer la suppression de l&apos;objet ?</source>
     <message>
         <location filename="../dialogs/planner.ui" line="14"/>
         <source>Diagramme de Gantt du processus de culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Diagramma di Gantt del processo di coltivazione</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="39"/>
         <source> dd/MM/yyyy</source>
-        <translation type="unfinished"></translation>
+        <translation> dd/MM/yyyy</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="59"/>
         <source>2017</source>
-        <translation type="unfinished"></translation>
+        <translation>2017</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="64"/>
         <source>2018</source>
-        <translation type="unfinished"></translation>
+        <translation>2018</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="69"/>
         <source>2019</source>
-        <translation type="unfinished"></translation>
+        <translation>2019</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="74"/>
         <source>2020</source>
-        <translation type="unfinished"></translation>
+        <translation>2020</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="79"/>
         <source>2021</source>
-        <translation type="unfinished"></translation>
+        <translation>2021</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="84"/>
         <source>2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2022</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="89"/>
         <source>2023</source>
-        <translation type="unfinished"></translation>
+        <translation>2023</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="94"/>
         <source>2024</source>
-        <translation type="unfinished"></translation>
+        <translation>2024</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="99"/>
         <source>2025</source>
-        <translation type="unfinished"></translation>
+        <translation>2025</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="104"/>
         <source>2026</source>
-        <translation type="unfinished"></translation>
+        <translation>2026</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="109"/>
         <source>2027</source>
-        <translation type="unfinished"></translation>
+        <translation>2027</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="114"/>
         <source>2028</source>
-        <translation type="unfinished"></translation>
+        <translation>2028</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="119"/>
         <source>2029</source>
-        <translation type="unfinished"></translation>
+        <translation>2029</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="124"/>
         <source>2030</source>
-        <translation type="unfinished"></translation>
+        <translation>2030</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="142"/>
         <source>Fiche des tâches</source>
-        <translation type="unfinished"></translation>
+        <translation>Sceda delle attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="145"/>
@@ -3617,221 +3922,221 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/planner.ui" line="275"/>
         <location filename="../dialogs/planner.ui" line="628"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="162"/>
         <source>Fiche des ressources</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda risorse</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="182"/>
         <source>Fiche des moyens</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda mezzi</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="202"/>
         <source>Types de moyen</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di mezzo</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="222"/>
         <source>Types de tâches</source>
-        <translation type="unfinished"></translation>
+        <translation>Tipo di attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="242"/>
         <source>Coordonnées</source>
-        <translation type="unfinished"></translation>
+        <translation>Coordinate</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="321"/>
         <source>Désignation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="347"/>
         <source>Date de  départ</source>
-        <translation type="unfinished"></translation>
+        <translation>Data d&apos;inizio</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="373"/>
         <location filename="../dialogs/planner.ui" line="415"/>
         <source>dd-MM-yyyy</source>
-        <translation type="unfinished"></translation>
+        <translation> dd/MM/yyyy</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="389"/>
         <source>Date de fin</source>
-        <translation type="unfinished"></translation>
+        <translation>Data di fine</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="431"/>
         <source>Durée</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="448"/>
         <source>Contrainte de date</source>
-        <translation type="unfinished"></translation>
+        <translation>Vincolo di data</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="461"/>
         <source>Valider les modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Validare modifiche</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="580"/>
         <source>Arborescence des tâches</source>
-        <translation type="unfinished"></translation>
+        <translation>Albero delle attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="605"/>
         <source>Ajouter une nouvelle tache </source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungere una nuova attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.ui" line="651"/>
         <source>Editer la fiche de la tâche</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifica la scheda dell&apos;attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <source>L</source>
-        <translation type="unfinished"></translation>
+        <translation>L</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>M</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <location filename="../dialogs/planner.cpp" line="151"/>
         <source>M.</source>
-        <translation type="unfinished"></translation>
+        <translation>M.</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <location filename="../dialogs/planner.cpp" line="152"/>
         <source>J</source>
-        <translation type="unfinished"></translation>
+        <translation>J</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <location filename="../dialogs/planner.cpp" line="152"/>
         <source>V</source>
-        <translation type="unfinished"></translation>
+        <translation>V</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <location filename="../dialogs/planner.cpp" line="152"/>
         <source>S</source>
-        <translation type="unfinished"></translation>
+        <translation>S</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="150"/>
         <location filename="../dialogs/planner.cpp" line="152"/>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>D</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="172"/>
         <source>semaine </source>
-        <translation type="unfinished"></translation>
+        <translation>settimana </translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <location filename="../dialogs/planner.cpp" line="205"/>
         <source>Janvier</source>
-        <translation type="unfinished"></translation>
+        <translation>gennaio</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Février</source>
-        <translation type="unfinished"></translation>
+        <translation>febbraio</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Mars</source>
-        <translation type="unfinished"></translation>
+        <translation>Marzo</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Avril</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprile</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Mai</source>
-        <translation type="unfinished"></translation>
+        <translation>Maggio</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Juin</source>
-        <translation type="unfinished"></translation>
+        <translation>giugno</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Juillet</source>
-        <translation type="unfinished"></translation>
+        <translation>Luglio</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="203"/>
         <source>Aout</source>
-        <translation type="unfinished"></translation>
+        <translation>Agosto</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="204"/>
         <source>Septembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Settembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="205"/>
         <source>Octobre</source>
-        <translation type="unfinished"></translation>
+        <translation>Ottobre</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="205"/>
         <source>Novembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Novembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="205"/>
         <source>Décembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Dicembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="510"/>
         <location filename="../dialogs/planner.cpp" line="631"/>
         <location filename="../dialogs/planner.cpp" line="1091"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="511"/>
         <location filename="../dialogs/planner.cpp" line="632"/>
         <location filename="../dialogs/planner.cpp" line="1092"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="523"/>
         <location filename="../dialogs/planner.cpp" line="1103"/>
         <location filename="../dialogs/planner.cpp" line="1222"/>
         <source>Erreur </source>
-        <translation type="unfinished"></translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="524"/>
         <location filename="../dialogs/planner.cpp" line="1223"/>
         <source>Veuillez sélectionner une tâche svp</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego una attività</translation>
     </message>
     <message>
         <location filename="../dialogs/planner.cpp" line="1104"/>
         <source>Veuillez sélectionner la tache précédente svp</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezioni prego l&apos;attività precedente</translation>
     </message>
 </context>
 <context>
@@ -3839,283 +4144,283 @@ Confirmer la suppression de l&apos;objet ?</source>
     <message>
         <location filename="../dialogs/planning.ui" line="17"/>
         <source>Planning</source>
-        <translation type="unfinished"></translation>
+        <translation>Pianificazione</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="70"/>
         <source>2017</source>
-        <translation type="unfinished"></translation>
+        <translation>2017</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="75"/>
         <source>2018</source>
-        <translation type="unfinished"></translation>
+        <translation>2018</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="80"/>
         <source>2019</source>
-        <translation type="unfinished"></translation>
+        <translation>2019</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="85"/>
         <source>2020</source>
-        <translation type="unfinished"></translation>
+        <translation>2020</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="90"/>
         <source>2021</source>
-        <translation type="unfinished"></translation>
+        <translation>2021</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="95"/>
         <source>2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2022</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="100"/>
         <source>2023</source>
-        <translation type="unfinished"></translation>
+        <translation>2023</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="105"/>
         <source>2024</source>
-        <translation type="unfinished"></translation>
+        <translation>2024</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="110"/>
         <source>2025</source>
-        <translation type="unfinished"></translation>
+        <translation>2025</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="115"/>
         <source>2026</source>
-        <translation type="unfinished"></translation>
+        <translation>2026</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="120"/>
         <source>2027</source>
-        <translation type="unfinished"></translation>
+        <translation>2027</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="125"/>
         <source>2028</source>
-        <translation type="unfinished"></translation>
+        <translation>2028</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="130"/>
         <source>2029</source>
-        <translation type="unfinished"></translation>
+        <translation>2029</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="135"/>
         <source>2030</source>
-        <translation type="unfinished"></translation>
+        <translation>2030</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="168"/>
         <source>M.A.J.</source>
-        <translation type="unfinished"></translation>
+        <translation>M.A.J.</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="190"/>
         <source> dd/MM/yyyy</source>
-        <translation type="unfinished"></translation>
+        <translation> dd/MM/yyyy</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="203"/>
         <source>Afficher la fiche culture correspondante à la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizza la scheda di coltura corrispondente alla parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="206"/>
         <source>Fiche culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="248"/>
         <source>Date démarrage</source>
-        <translation type="unfinished"></translation>
+        <translation>Data d&apos;inizio</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="280"/>
         <source>Durée en jours</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata in giorni</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="341"/>
         <source>APIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>APIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="378"/>
         <source>ASTERACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ASTERECEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="415"/>
         <source>BRASSICACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>BRASSICACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="452"/>
         <source>CHENOPADACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CHENOPODIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="489"/>
         <source>CUCURBITACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>CUCURBITACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="526"/>
         <source>FABACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>FABACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="563"/>
         <source>ALLIACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALLIACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="600"/>
         <source>POACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>POACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="637"/>
         <source>SOLANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>SOLANACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="674"/>
         <source>VALERIANACEES</source>
-        <translation type="unfinished"></translation>
+        <translation>VALERIANACEAE</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="711"/>
         <source>AUTRES</source>
-        <translation type="unfinished"></translation>
+        <translation>ALTRI</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.ui" line="815"/>
         <source>Arborescence des cultures par parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Albero delle colture per parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <source>L</source>
-        <translation type="unfinished"></translation>
+        <translation>L</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>M</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <location filename="../dialogs/planning.cpp" line="152"/>
         <source>M.</source>
-        <translation type="unfinished"></translation>
+        <translation>M.</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <location filename="../dialogs/planning.cpp" line="153"/>
         <source>J</source>
-        <translation type="unfinished"></translation>
+        <translation>G</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <location filename="../dialogs/planning.cpp" line="153"/>
         <source>V</source>
-        <translation type="unfinished"></translation>
+        <translation>V</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <location filename="../dialogs/planning.cpp" line="153"/>
         <source>S</source>
-        <translation type="unfinished"></translation>
+        <translation>S</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="151"/>
         <location filename="../dialogs/planning.cpp" line="153"/>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>D</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="173"/>
         <source>semaine </source>
-        <translation type="unfinished"></translation>
+        <translation>settimana </translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <location filename="../dialogs/planning.cpp" line="206"/>
         <source>Janvier</source>
-        <translation type="unfinished"></translation>
+        <translation>gennaio</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Février</source>
-        <translation type="unfinished"></translation>
+        <translation>febbraio</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Mars</source>
-        <translation type="unfinished"></translation>
+        <translation>Marzo</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Avril</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprile</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Mai</source>
-        <translation type="unfinished"></translation>
+        <translation>Maggio</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Juin</source>
-        <translation type="unfinished"></translation>
+        <translation>giugno</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Juillet</source>
-        <translation type="unfinished"></translation>
+        <translation>Luglio</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="204"/>
         <source>Aout</source>
-        <translation type="unfinished"></translation>
+        <translation>Agosto</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="205"/>
         <source>Septembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Settembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="206"/>
         <source>Octobre</source>
-        <translation type="unfinished"></translation>
+        <translation>Ottobre</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="206"/>
         <source>Novembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Novembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="206"/>
         <source>Décembre</source>
-        <translation type="unfinished"></translation>
+        <translation>Dicembre</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="556"/>
         <source>Erreur d&apos;enregistrement</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di registrazione</translation>
     </message>
     <message>
         <location filename="../dialogs/planning.cpp" line="557"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di verificare che tutti i campi siano compilati correttamente</translation>
     </message>
 </context>
 <context>
@@ -4150,7 +4455,7 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/planner.cpp" line="125"/>
         <location filename="../mainwindow.cpp" line="3091"/>
         <source>id</source>
-        <translation type="unfinished"></translation>
+        <translation>id</translation>
     </message>
     <message>
         <location filename="../dialogs/configuration.cpp" line="105"/>
@@ -4183,7 +4488,7 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/planner.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="3092"/>
         <source>designation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="114"/>
@@ -4193,7 +4498,7 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/cultures.cpp" line="797"/>
         <location filename="../mainwindow.cpp" line="3093"/>
         <source>parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.cpp" line="129"/>
@@ -4203,7 +4508,7 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/cultures.cpp" line="618"/>
         <location filename="../dialogs/cultures.cpp" line="844"/>
         <source>date</source>
-        <translation type="unfinished"></translation>
+        <translation>data</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.cpp" line="75"/>
@@ -4211,12 +4516,12 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/fiche_plantes.cpp" line="785"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="835"/>
         <source>famille</source>
-        <translation type="unfinished"></translation>
+        <translation>Famiglia</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.cpp" line="89"/>
         <source>couleur</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.cpp" line="105"/>
@@ -4224,12 +4529,12 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/fiche_plantes.cpp" line="388"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="425"/>
         <source>espece</source>
-        <translation type="unfinished"></translation>
+        <translation>Specie</translation>
     </message>
     <message>
         <location filename="../dialogs/fiche_plantes.cpp" line="106"/>
         <source>commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Commenti</translation>
     </message>
 </context>
 <context>
@@ -4237,32 +4542,32 @@ Confirmer la suppression de l&apos;objet ?</source>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="20"/>
         <source>Détail d&apos;une parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Dettaglio di una parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="57"/>
         <source>Parcelle: </source>
-        <translation type="unfinished"></translation>
+        <translation>Parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="77"/>
         <source>  Id</source>
-        <translation type="unfinished"></translation>
+        <translation>id</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="109"/>
         <source>Designation</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="128"/>
         <source>Désignation de la parcelle sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Designazione della parcella selezionata</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="135"/>
         <source>Valider la désignation et les commentaires</source>
-        <translation type="unfinished"></translation>
+        <translation>Convalida della designazione e dei commenti</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="138"/>
@@ -4278,254 +4583,255 @@ Confirmer la suppression de l&apos;objet ?</source>
         <location filename="../dialogs/detail_parcelle.ui" line="583"/>
         <location filename="../dialogs/detail_parcelle.ui" line="659"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="164"/>
         <source>Ouvre un plan existant</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprire una pianta esistente</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="196"/>
         <source>Enregistre le plan pour cette parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva la pianta per questa parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="231"/>
         <source>Enregistrer le plan sous..</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvare la pianta come..</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="254"/>
         <source>Mode utilisation</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità Utilizzo</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="280"/>
         <source>Mode dessin</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità disegno</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="318"/>
         <source>Dessiner un rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Disegnare un rettangolo</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="353"/>
         <source>Dessiner un cercle</source>
-        <translation type="unfinished"></translation>
+        <translation>Disegnare un cerchio</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="376"/>
         <source>mettre en avant</source>
-        <translation type="unfinished"></translation>
+        <translation>Mettere davanti</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="399"/>
         <source>Supprimer l&apos;objet</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi l&apos;oggetto </translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="422"/>
         <source>Quitter </source>
-        <translation type="unfinished"></translation>
+        <translation>Uscire</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="484"/>
         <source>Epaisseur</source>
-        <translation type="unfinished"></translation>
+        <translation>Spessore</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="509"/>
         <source>Définir l&apos;épaisseur de la ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Imposta lo spessore della linea</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="513"/>
         <location filename="../dialogs/detail_parcelle.ui" line="825"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="518"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation>2</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="523"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation>3</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="528"/>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation>4</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="533"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation>5</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="538"/>
         <source>6</source>
-        <translation type="unfinished"></translation>
+        <translation>6</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="543"/>
         <source>7</source>
-        <translation type="unfinished"></translation>
+        <translation>7</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="548"/>
         <source>8</source>
-        <translation type="unfinished"></translation>
+        <translation>8</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="553"/>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation>9</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="558"/>
         <source>10</source>
-        <translation type="unfinished"></translation>
+        <translation>10</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="580"/>
         <source>Choisir la couleur des lignes et caractères</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore delle linee e dei caratteri</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="616"/>
         <source>Couleur Crayon</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore Matita</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="635"/>
         <source>Couleur du trait de la parcelle ou ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore della linea della particella o linea</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="641"/>
         <source>#0000ff</source>
-        <translation type="unfinished"></translation>
+        <translation>#0000ff</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="656"/>
         <source>Choisir la couleur de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli il colore della parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="692"/>
         <source>Couleur fond</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore dello sfondo</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="711"/>
         <source>Couleur du fond de la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Colore dello sfondo della parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="717"/>
         <source>#00ff7f</source>
-        <translation type="unfinished"></translation>
+        <translation>#00ff7f</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="726"/>
         <source>Définir le type de ligne</source>
-        <translation type="unfinished"></translation>
+        <translation>Imposta il tipo di linea</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="730"/>
         <source>ligne pleine</source>
-        <translation type="unfinished"></translation>
+        <translation>Linea continua</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="735"/>
         <source>tirets longs</source>
-        <translation type="unfinished"></translation>
+        <translation>trattini lunghi</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="740"/>
         <source>tirets courts</source>
-        <translation type="unfinished"></translation>
+        <translation>trattini</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="745"/>
         <source>axe</source>
-        <translation type="unfinished"></translation>
+        <translation>asse</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="770"/>
         <source>Zoom +</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom +</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="799"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="822"/>
         <source>Ratio du zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapporto dello zoom</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="854"/>
         <source>Zoom -</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom -</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="880"/>
         <source>Afficher la fiche culture correspondante à la parcelle</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizza la scheda di coltura corrispondente alla parcella</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="883"/>
         <source>Fiche culture</source>
-        <translation type="unfinished"></translation>
+        <translation>Scheda coltura</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="923"/>
         <source> OBSERVATIONS</source>
-        <translation type="unfinished"></translation>
+        <translation>Osservazioni</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.ui" line="942"/>
         <source>Observations sur la parcelle sélectionnée</source>
-        <translation type="unfinished"></translation>
+        <translation>Osservazioni sulla parcella selezionata</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="252"/>
         <source>Ouverture du fichier des objets</source>
-        <translation type="unfinished"></translation>
+        <translation>Apertura del file degli oggetti</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="254"/>
         <source>XML Files (*.xml);; All files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML Files (*.xml)</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="518"/>
         <source>Sauvegarde du plan de détail</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvataggio del pianta sotto ...</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="520"/>
         <source>XML Files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML Files (*.xml)</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="1096"/>
         <source>Suppression</source>
-        <translation type="unfinished"></translation>
+        <translation>Soppressione</translation>
     </message>
     <message>
         <location filename="../dialogs/detail_parcelle.cpp" line="1097"/>
         <source>Cet objet peut être supprimer.
 Confirmer la suppression de l&apos;objet ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Questo oggetto può essere rimosso.
+Confermare la rimozione dell&apos;oggetto?</translation>
     </message>
 </context>
 <context>
@@ -4533,7 +4839,7 @@ Confirmer la suppression de l&apos;objet ?</source>
     <message>
         <location filename="../dialogs/dialog_aide.ui" line="14"/>
         <source>Aide</source>
-        <translation type="unfinished"></translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../dialogs/dialog_aide.ui" line="105"/>
@@ -4646,7 +4952,115 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Export de la base de donnée active:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;La base de données est sauvegardée sous un nouveau nom dans un fichier texte de requête sql de type .sql. ce fichier peut être importé en tant que nouvele base de données.&lt;br /&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;aide openjardin&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#ffffff&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;home&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;Helvetica,Arial,sans-serif&apos;; font-size:14pt; font-weight:600; font-style:italic; color:#009900;&quot;&gt;A&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica,Arial,sans-serif&apos;; font-size:14pt; font-weight:600; font-style:italic; color:#009900;&quot;&gt;IDE OPENJARDIN&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;br /&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Présentation&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;RESENTATION&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Le logiciel est destiné  à la gestion des cultures d&apos;un jardin à  partir d&apos;un plan avec la représentation de parcelles, de fiches de cultures, d&apos;un tableau du planning annuel par parcelle, et d&apos;un tableau des rotations de cultures  pour chaque parcelle avec la visualisation des cultures précédentes colorées selon la famille botanique.&lt;br /&gt;Il comporte également les fiches des variétés de plantes utilisées pour les cultures, les fiches des espèces et des familles de plantes les plus courantes. Toutes ces fiches peuvent être complétées et modifiées.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;La page plan comporte un fond d&apos;écran (fichier png - jpg - bmp etc..) en général une représentation graphique du jardin (photos aérienne ou plan) sur lequel on placera les objets suivants : les parcelles, les équipements et les plantations isolées.&lt;br /&gt;Un quadrillage est superposé sur le fond d&apos;écran.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Présentation/La base SQLITE&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;a base de données SQLITE&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Il est basé sur l&apos;utilisation d&apos;une base de données &amp;quot;sqlite&amp;quot; qui comporte les tables suivantes :&lt;br /&gt;- table cultures&lt;br /&gt;- table variétés de plantes (à remplir par vos soins selon les variétés que vous utilisez)&lt;br /&gt;- table espèces botaniques (&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-style:italic; color:#000000;&quot;&gt;pré-remplie avec les espèces les plus courantes mais peut être complétée&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;)&lt;br /&gt;- table familles botaniques (&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-style:italic; color:#000000;&quot;&gt;pré-remplie avec les familles les plus courantes mais peut être complétée&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;)&lt;br /&gt;- tables observations et tâches (&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-style:italic; color:#000000;&quot;&gt;pré-remplie mais peut être complétée&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- tables des parcelles et fond de plan&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;        &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Principes_généraux&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;rincipes généraux d&apos;utilisation du logiciel&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;Démarrer un nouveau projet&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;Au démarrage d&apos;un projet il faut :&lt;br /&gt;1/ Définir le fond d&apos;écran en ouvrant le fichier image qui représente le jardin, &lt;br /&gt;2/ Passer en mode edition du plan (icone avec le crayon), et mettre en place les différentes parcelles, plantations et équipements, &lt;br /&gt;3/ Enregister les modifications du plan (fond de plan et parcelles) Bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregister le plan modifié&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;a name=&quot;Principes_généraux/Créer une nouvelle fiche de culture&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;réer une fiche de culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;1/ Quitter le mode édition du plan,&lt;br /&gt;2/ Clicker sur la zone de la parcelle (les références de la parcelle sont inscrites dans la zone située au dessus du plan) &lt;br /&gt;3/ Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; pour ouvrir la fenêtre fiche de culture&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;4/ Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Nouvelle fiche vierge&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; &lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;5/ remplir la fiche et clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Créer une nouvelle culture&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;.&lt;br /&gt;6/ fermer la fiche (les données sont enregistrées dans la base de données)&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Principes_généraux/prise_en_main&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;rise en main&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;        &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;      &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;A l&apos;ouverture du logiciel, la zone plan comporte un fond d&apos;écran de présentation, la base de données jardin.sqli située dans le répertoire d&apos;installation du logiciel est connectée. &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;          &lt;br /&gt;        &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Principes_généraux/Modes_Utilisation_Edition&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;M&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;odes &amp;quot;Edition du plan&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;Pour modifier les objets graphiques et activer les icones de dessin il faut passer en mode &amp;quot;édition&amp;quot; (&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-style:italic; color:#000000;&quot;&gt;bouton avec l&apos;icone représentant un crayon&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;)&lt;br /&gt;Le mode &amp;quot;Edition&amp;quot; doit être désactivé lors de l&apos;utilisation courante du logiciel car il évite la modification des objets graphiques avec la souris.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Le mode Edition vous permet de créer les objets représentant les parcelles, équipements, plantations et réseaux.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;a name=&quot;Principes_généraux/Création-des_objets&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;réation des objets graphiques&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;Pour créer les objets graphiques, passer en mode &amp;quot;Edition du plan&amp;quot;, une barre d&apos;outils apparaît sur la gauche du plan.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;1/ icône &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Rectangle&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Clicker sur cette icône pour créer une parcelle de forme rectangulaire qui apparaitra dans le planning et la rotation, et qui possède une fiche de culture.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;2/ icône &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Rectangle avec sommets arrondis&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Clicker sur cette icône pour créer un équipement qui n&apos;apparaitra pas dans le planning et la rotation, (par exemple le bac à compost).&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;/ icône &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Ellipse&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Clicker sur cette icône pour créer une plantation qui n&apos;apparaitra pas dans le planning et la rotation, (par exemple arbre fruitier) mais qui possède une fiche de culture.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;/ icône &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Image&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Clicker sur cette icône pour intégrer une image dans le plan.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;/ Objet &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Polygone&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Clicker sur cette icône pour créer une parcelle de forme polygonale qui apparaitra dans le planning et la rotation, et qui possède une fiche de culture.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Clicker sur l&apos;icone avec le signe plus pour passer en mode création de polygone, chaque click sur le plan crée une des sommets du polygone relié par un trait représentant e coté, puis clicker sur la première icône située après &amp;quot;Valider&amp;quot; pour la validation du polygone.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;/ Objet &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#ff5500;&quot;&gt;Polyline&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;- Clicker sur cette icône pour créer la représentation d&apos;un réseau de forme polyligne qui n&apos;apparaitra pas dans le planning et la rotation, et qui ne possède pas de fiche de culture.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Clicker sur l&apos;icone avec le signe plus pour passer en mode création de polyligne, chaque click sur le plan crée une des sommets du polyligne relié par un trait représentant e coté, puis clicker sur la seconde icône située après &amp;quot;Valider&amp;quot; pour la validation du polyline.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;a name=&quot;Principes_généraux/Modification_des_objets&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;M&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;odification des objets graphiques&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;Pour modifier les objets graphiques passer en mode &amp;quot;Edition du plan&amp;quot;, passer la souris sur l&apos;objet, une main apparaît, puis clicker sur l&apos;objet et en maintenant le bouton gauche de la souris pour le déplacer.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour modifier la taille des objets rectangle - rectangle arrondi et ellipse passer la souris sur la partie droite en bas de l&apos;objet, lorsque la double flêche apparaît, clicker en maintenant le bouton gauche de la souris pour en modifier la taille.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;- Pour modifier les sommets des polygones, sélectionner le polygone, puis clicker sur l&apos;icone Modifier. Les sommets apparaissent, les déplacer , ou à l&apos;aide du menu (click droit de la souris sur le rectangle représentant le sommet ajouter ou supprimer un sommet). puis clicker sur la première icône située après &amp;quot;Valider&amp;quot; pour la validation du polygone.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;- Pour modifier les sommets des polylignes, sélectionner le polyline en clickant sur le rectangle situé à une extrémité du polyligne, puis clicker sur l&apos;icone Modifier. Les sommets apparaissent, les déplacer , ou à l&apos;aide du menu (click droit de la souris sur le rectangle représentant le sommet ajouter ou supprimer un sommet). puis clicker sur la secondee icône située après &amp;quot;Valider&amp;quot; pour la validation du polyligne.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Principes_généraux/Personnalisation_des_objets_graphiques&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;ersonnalisation des objets graphiques&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;La couleur de fond et des caractères des parcelles, équipements et plantations peut être modifiée en clickant sur l&apos;objet puis sur l&apos;icone Choix couleur fond, épaisseur et couleur du bord extérieur, une boite de dialogue s&apos;ouvre pour sélectionner la couleur ou l&apos;épaisseur.&lt;br /&gt;On peut également modifier l&apos;ordre des objets graphiques en utilisant les icônes&amp;quot; Passer devant &amp;quot;.&lt;br /&gt;Les deux icônes afficher ou non le fond de plan permettent de masquer ou d&apos;afficher ce fond de plan courant, et les icônes masquer ou afficher la grille font de même pour la grille.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Fiches&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;es Fiches&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Les fiches disponibles sont les suivantes:&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;Fiches/la fiche cultures&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;a fiche cultures&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;En clickant sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche cultures&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;, on accède à la &lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;parcelle sélectionnée au préalable dans le plan&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;. &lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Création d&apos;un nouvelle fiche de culture&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;1/ Clicker sur la zone de la parcelle (les références de la parcelle sont inscrites dans la zone située au dessus du plan) &lt;br /&gt;2/ Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; pour ouvrir la fenêtre fiche de culture&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;3/ Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Nouvelle fiche vierge&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; &lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;4/ remplir la fiche et clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Créer une nouvelle culture&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;.&lt;br /&gt;5/ fermer la fiche (les données sont enregistrées dans la base de données)&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Suppression d&apos;une culture&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; pour supprimer la culture.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Modification d&apos;une culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;1/ Clicker sur la zone de la parcelle (les références de la parcelle sont inscrites dans la zone située au dessus du plan) &lt;br /&gt;2/ Clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche culture&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; pour ouvrir la fenêtre fiche de culture&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;3/ Modifier la fiche et clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer modification&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;.&lt;br /&gt;5/ fermer la fiche (les données sont enregistrées dans la base de données)&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;br /&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;La configuration&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#3333ff;&quot;&gt;a configuration&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;La configuration/configuration des plantes&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;a configuration des plantes&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Le bouton  &amp;quot;fiche plantes&amp;quot; permet d&apos;afficher une fenêtre qui liste l&apos;ensemble des familles, espèces et variétés de plantes dans trois onglets.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Familles&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour créer une nouvelle famille choisir l&apos;onglet correspondant, remplir le Désignation puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer nouvelle fiche&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;pour supprimer une famille, choisir la famille puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Supprimer&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour modifier une famille, choisir la famille, modifier la désignation  puis clicker sur le bouton&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer modifications&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Espèces&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour créer une nouvelle espèce, choisir l&apos;onglet correspondant, remplir la fiche puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer nouvelle fiche&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;pour supprimer une espèce, choisir l&apos;espèce puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Supprimer&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour modifier une espèce, choisir l&apos;espèce, modifier la fiche,  puis clicker sur le bouton&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer modifications&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Variétés&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour créer une nouvelle variété, choisir l&apos;onglet correspondant, clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Fiche vierge&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot; ensuite sélectionner l&apos;espèce, puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer nouvelle fiche&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;pour supprimer une variété, choisir la variété puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Supprimer&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour modifier une variété, choisir la variété, modifier la fiche,  puis clicker sur le bouton&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer modifications&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;La configuration/configuratiuon des tâches et états&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;a configuration des tâches et états&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Le choix configuration affiche une fenêtre qui liste les tâches et états après la configuration de la base de données.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#ff9900;&quot;&gt;Tâches&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour créer une nouvelle tâche, remplir le Désignation puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer nouvelle fiche&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;pour supprimer une tâche, choisir la tâche puis clicker sur le bouton &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Supprimer&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Pour modifier une tâche, choisir la tâche, modifier la désignation  puis clicker sur le bouton&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Enregistrer modifications&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; color:#000000;&quot;&gt;&amp;quot;.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;La configuration/configuratiuon de la base de données&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;L&lt;/span&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#009900;&quot;&gt;a configuration de la base de données&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;arial,helvetica,sans-serif&apos;; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;    Le fichier XML contient les données de configuration du plan du terrain avec les parcelles, les matériels et les plantations.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Le fichier de la base de données (.sqli) qui est lié au fichier de configuration  contient :&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- les fiches cultures (associées aux parcelles)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- les fiches plantes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- les fiches espèces &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- les fiches des familles de plantes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Choisir la base de données active:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Vous pouvez choisir la base de données .sqli qui sera active, puis sauvegarder le nom de cette bae dans le fichier de configuration .xml en cickant sur le bouton &amp;quot;enregistrer les paramètres dans le fichier xml&amp;quot; pour que cette base soit active lors de l&apos;ouverture du fichier de configuration.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Création d&apos;une nouvelle base de données:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Vous pouvez soit créer : &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- une base de donnée avec uniquement les tables sans données, &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;- une base de données avec les tables especes - familles -  taches préremplies, &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;-  une nouvelle base en important un fichier texte de sauvegarde de type  .sql qui comprend les tables et les données.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Export de la base de donnée active:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;La base de données est sauvegardée sous un nouveau nom dans un fichier texte de requête sql de type .sql. ce fichier peut être importé en tant que nouvele base de données.&lt;br /&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -4654,38 +5068,38 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="14"/>
         <source>Création d&apos;un nouveau projet OPENJARDIN</source>
-        <translation type="unfinished"></translation>
+        <translation>Creazione di un nuovo progetto OPENJARDIN</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="31"/>
         <source>CREATION D&apos;UN NOUVEAU PROJET</source>
-        <translation type="unfinished"></translation>
+        <translation>Creazione di un nuovo progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="41"/>
         <location filename="../dialogs/nouveau_projet.ui" line="86"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="62"/>
         <source>Nom du projet : </source>
-        <translation type="unfinished"></translation>
+        <translation>Nome del progetto:</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="76"/>
         <source>Répertoire du projet : </source>
-        <translation type="unfinished"></translation>
+        <translation>Directory del progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.ui" line="120"/>
         <source>Créer le nouveau projet</source>
-        <translation type="unfinished"></translation>
+        <translation>Creare nuovo progetto</translation>
     </message>
     <message>
         <location filename="../dialogs/nouveau_projet.cpp" line="67"/>
         <source>Choisir le répertoire</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli la directory</translation>
     </message>
 </context>
 </TS>

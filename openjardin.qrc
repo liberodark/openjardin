@@ -76,7 +76,6 @@
         <file>images/type_moyen.png</file>
         <file>images/planning.png</file>
         <file>images/message.png</file>
-        <file>translations/open-jardin_es.ts</file>
-        <file>translations/open-jardin_it.ts</file>
+        <file>translations/open-jardin_it.qm</file>
     </qresource>
 </RCC>

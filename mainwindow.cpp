@@ -111,6 +111,7 @@ MainWindow::MainWindow(QWidget *parent) :
     // translator
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
+
     translator.load(fichier);
     qApp->installTranslator(&translator);
 
@@ -361,7 +362,7 @@ void MainWindow::on_actionLangue_Anglais_triggered()
 
 void MainWindow::on_actionTraduire_en_francais_triggered()
 {
-    // forcer la langue anglaise
+    // forcer la langue française
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_fr.ts";
     translator.load(fichier);
