@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <base>
+  <fichier_base fichier="/home/christian/openjardin/version1-07/jardin.sqli"/>
+ </base>
+ <background>
+  <fond chemin="/home/christian/openjardin/jardin_type.png" Type="7" PositionY="0" PositionX="0"/>
+ </background>
+ <objets>
+  <Objet TypeLine="1" FichierDetail="" WidthLine="2" Texte="Pommes reinettes" Chemin="" Pen="4278190335" Id="4" Brush="4294901760" SizeY="98" Commentaire="" ZValue="0" PositionX="668" SizeX="113" Forme="3" Uuid="{b768d820-4a2d-4fd8-bb35-24205e893a87}" Nom="Pommier" PositionY="71" Type="65536" Etat="0" Mode="0"/>
+  <Objet TypeLine="1" FichierDetail="" WidthLine="1" Texte="Parcelle" Chemin="" Pen="4278190335" Id="1" Brush="4278255487" SizeY="107" Commentaire="" ZValue="0" PositionX="171" SizeX="209" Forme="1" Uuid="{b2995e7a-eb1d-4dca-9172-f226a9b9c56a}" Nom="Parcelle 1" PositionY="202" Type="65536" Etat="1" Mode="0"/>
+  <Objet TypeLine="1" FichierDetail="" WidthLine="2" Texte="Potager avec arrosage goutte à goutte" Chemin="" Pen="4289331200" Id="2" Brush="4278233600" SizeY="122" Commentaire="" ZValue="0" PositionX="196" SizeX="257" Forme="1" Uuid="{bb7902c7-30ae-4ab3-b208-fbc178d3decf}" Nom="Potager " PositionY="348" Type="65536" Etat="1" Mode="0"/>
+  <Objet TypeLine="1" FichierDetail="" WidthLine="1" Texte="Plantes aromatiques" Chemin="" Pen="4278190335" Id="3" Brush="4289353215" SizeY="119" Commentaire="" ZValue="0" PositionX="376" SizeX="93" Forme="1" Uuid="{cf61bf77-d160-4d11-821f-cffe1c557ea6}" Nom="Aromatiques" PositionY="349" Type="65536" Etat="1" Mode="0"/>
+  <Objet TypeLine="1" FichierDetail="" WidthLine="1" Texte="Parcelle " Chemin="0,0;312,-1;336,154;266,238;56,210;-14,42;" Pen="4278190207" Id="5" Brush="4294945280" SizeY="242" Commentaire="" ZValue="0" PositionX="130" SizeX="353" Forme="5" Uuid="{b0ce8a88-9146-4df6-a27d-08adee36a0be}" Nom="Parcelle 5" PositionY="436" Type="65537" Etat="1" Mode="0"/>
+ </objets>
+</root>
