@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <base>
+  <fichier_base fichier="/home/christian/openjardin/jardin.sqli"/>
+ </base>
+ <background>
+  <fond PositionX="0" PositionY="0" chemin="/home/christian/openjardin/jardin_type.png" Type="7"/>
+ </background>
+ <objets>
+  <Objet Id="6" Pen="4294901760" PositionX="674" SizeX="150" TypeAction="3145776" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 6 SERRE" PositionY="54" SizeY="91" Brush="4288716964" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+  <Objet Id="5" Pen="4278190080" PositionX="1068" SizeX="50" TypeAction="7667810" Action="" Texte="" Commentaire="" Nom="pommier" PositionY="327" SizeY="50" Brush="4278255360" Mode="1" Chemin="" Type="65536" Etat="1" Forme="3"/>
+  <Objet Id="4" Pen="4294901760" PositionX="245" SizeX="355" TypeAction="3145776" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 4" PositionY="351" SizeY="124" Brush="4289365008" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+  <Objet Id="3" Pen="4294901760" PositionX="382" SizeX="81" TypeAction="7667810" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 3" PositionY="204" SizeY="110" Brush="4288716964" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+  <Objet Id="2" Pen="4294901760" PositionX="292" SizeX="84" TypeAction="0" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 2" PositionY="205" SizeY="111" Brush="4288716964" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+  <Objet Id="1" Pen="4294901760" PositionX="202" SizeX="81" TypeAction="3145776" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 1" PositionY="206" SizeY="111" Brush="4288716964" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+  <Objet Id="0" Pen="4294901760" PositionX="106" SizeX="84" TypeAction="0" Action="" Texte="Parcelle" Commentaire="" Nom="Parcelle 0" PositionY="204" SizeY="111" Brush="4288716964" Mode="1" Chemin="" Type="65536" Etat="1" Forme="1"/>
+ </objets>
+</root>

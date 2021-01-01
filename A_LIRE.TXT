@@ -1,0 +1,8 @@
+A LIRE
+
+En cas de compilation il faut que certains fichiers soient copiés dans des répertoires spécifiques (qui sont créés automatiquement avec le .deb) :
+
+- la base de données SQLite jardin.sqli doit être copiée dans le répertoire suivant pour Linux /home/votre user name/openjardin/
+
+- le fichier de configuration exemple : jardin_exemple.xml et jardin_type.png seront copiés également dans le même répertoire.
+
