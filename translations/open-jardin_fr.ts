@@ -3322,9 +3322,9 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
         <translation type="vanished">afficher fiche culture</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3243"/>
-        <location filename="../mainwindow.ui" line="3246"/>
-        <location filename="../mainwindow.ui" line="3249"/>
+        <location filename="../mainwindow.ui" line="3266"/>
+        <location filename="../mainwindow.ui" line="3269"/>
+        <location filename="../mainwindow.ui" line="3272"/>
         <source>Enregistrer</source>
         <translation>Enregistrer</translation>
     </message>
@@ -3654,166 +3654,166 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1376"/>
-        <location filename="../mainwindow.ui" line="2397"/>
+        <location filename="../mainwindow.ui" line="2408"/>
         <source>2017</source>
         <translation>2017</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1381"/>
-        <location filename="../mainwindow.ui" line="2402"/>
+        <location filename="../mainwindow.ui" line="2413"/>
         <source>2018</source>
         <translation>2018</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1386"/>
-        <location filename="../mainwindow.ui" line="2407"/>
+        <location filename="../mainwindow.ui" line="2418"/>
         <source>2019</source>
         <translation>2019</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1391"/>
-        <location filename="../mainwindow.ui" line="2412"/>
+        <location filename="../mainwindow.ui" line="2423"/>
         <source>2020</source>
         <translation>2020</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1396"/>
-        <location filename="../mainwindow.ui" line="2417"/>
+        <location filename="../mainwindow.ui" line="2428"/>
         <source>2021</source>
         <translation>2021</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1401"/>
-        <location filename="../mainwindow.ui" line="2422"/>
+        <location filename="../mainwindow.ui" line="2433"/>
         <source>2022</source>
         <translation>2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1406"/>
-        <location filename="../mainwindow.ui" line="2427"/>
+        <location filename="../mainwindow.ui" line="2438"/>
         <source>2023</source>
         <translation>2023</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1411"/>
-        <location filename="../mainwindow.ui" line="2432"/>
+        <location filename="../mainwindow.ui" line="2443"/>
         <source>2024</source>
         <translation>2024</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1416"/>
-        <location filename="../mainwindow.ui" line="2437"/>
+        <location filename="../mainwindow.ui" line="2448"/>
         <source>2025</source>
         <translation>2025</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1421"/>
-        <location filename="../mainwindow.ui" line="2442"/>
+        <location filename="../mainwindow.ui" line="2453"/>
         <source>2026</source>
         <translation>2026</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1426"/>
-        <location filename="../mainwindow.ui" line="2447"/>
+        <location filename="../mainwindow.ui" line="2458"/>
         <source>2027</source>
         <translation>2027</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1431"/>
-        <location filename="../mainwindow.ui" line="2452"/>
+        <location filename="../mainwindow.ui" line="2463"/>
         <source>2028</source>
         <translation>2028</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1436"/>
-        <location filename="../mainwindow.ui" line="2457"/>
+        <location filename="../mainwindow.ui" line="2468"/>
         <source>2029</source>
         <translation>2029</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1441"/>
-        <location filename="../mainwindow.ui" line="2462"/>
+        <location filename="../mainwindow.ui" line="2473"/>
         <source>2030</source>
         <translation>2030</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1787"/>
-        <location filename="../mainwindow.ui" line="2636"/>
+        <location filename="../mainwindow.ui" line="1791"/>
+        <location filename="../mainwindow.ui" line="2651"/>
         <source>CHENOPADACEES</source>
         <translation>CHENOPADACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2078"/>
+        <location filename="../mainwindow.ui" line="2089"/>
         <source>Glisser pour modifier la largeur</source>
         <translation>Glisser pour modifier la largeur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2248"/>
+        <location filename="../mainwindow.ui" line="2259"/>
         <source>Pour élargir cette liste -&gt;</source>
         <translation>Pour élargir cette liste -&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3572"/>
+        <location filename="../mainwindow.ui" line="3595"/>
         <source>Configuration </source>
         <translation>Configuration </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3591"/>
+        <location filename="../mainwindow.ui" line="3614"/>
         <source>Ouvrir fiche Taches</source>
         <translation>Ouvrir fiche Taches</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3596"/>
+        <location filename="../mainwindow.ui" line="3619"/>
         <source>Ouvrir fiche Ressources</source>
         <translation>Ouvrir fiche Ressources</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3601"/>
+        <location filename="../mainwindow.ui" line="3624"/>
         <source>Ouvrir fiche Moyens</source>
         <translation>Ouvrir fiche Moyens</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3606"/>
+        <location filename="../mainwindow.ui" line="3629"/>
         <source>Ouvrir fiche Coordonnées</source>
         <translation>Ouvrir fiche Coordonnées</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3611"/>
+        <location filename="../mainwindow.ui" line="3634"/>
         <source>Ouvrir fiche Type de Moyens</source>
         <translation>Ouvrir fiche Type de Moyens</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3620"/>
+        <location filename="../mainwindow.ui" line="3643"/>
         <source>Enregistrer sous</source>
         <translation>Enregistrer sous</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3625"/>
+        <location filename="../mainwindow.ui" line="3652"/>
         <source>Nouveau projet</source>
         <translation>Nouveau projet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3633"/>
+        <location filename="../mainwindow.ui" line="3660"/>
         <source>Afficher la notice PDF</source>
         <translation>Afficher la notice PDF</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3638"/>
+        <location filename="../mainwindow.ui" line="3665"/>
         <source>AfficherPlanning</source>
         <translation>AfficherPlanning</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3643"/>
+        <location filename="../mainwindow.ui" line="3670"/>
         <source>A propos de Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3648"/>
+        <location filename="../mainwindow.ui" line="3675"/>
         <source>Translate in english</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3653"/>
+        <location filename="../mainwindow.ui" line="3680"/>
         <source>Traduire en francais</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3840,20 +3840,20 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
         <translation type="vanished">Valider dates</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1676"/>
-        <location filename="../mainwindow.ui" line="2525"/>
+        <location filename="../mainwindow.ui" line="1677"/>
+        <location filename="../mainwindow.ui" line="2537"/>
         <source>APIACEES</source>
         <translation>APIACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1713"/>
-        <location filename="../mainwindow.ui" line="2562"/>
+        <location filename="../mainwindow.ui" line="1715"/>
+        <location filename="../mainwindow.ui" line="2575"/>
         <source>ASTERACEES</source>
         <translation>ASTERACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1750"/>
-        <location filename="../mainwindow.ui" line="2599"/>
+        <location filename="../mainwindow.ui" line="1753"/>
+        <location filename="../mainwindow.ui" line="2613"/>
         <source>BRASSICACEES</source>
         <translation>BRASSICACEES</translation>
     </message>
@@ -3862,70 +3862,70 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
         <translation type="vanished">CHENOPODACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1824"/>
-        <location filename="../mainwindow.ui" line="2673"/>
+        <location filename="../mainwindow.ui" line="1829"/>
+        <location filename="../mainwindow.ui" line="2689"/>
         <source>CUCURBITACEES</source>
         <translation>CUCURBITACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1861"/>
-        <location filename="../mainwindow.ui" line="2710"/>
+        <location filename="../mainwindow.ui" line="1867"/>
+        <location filename="../mainwindow.ui" line="2727"/>
         <source>FABACEES</source>
         <translation>FABACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1898"/>
-        <location filename="../mainwindow.ui" line="2747"/>
+        <location filename="../mainwindow.ui" line="1905"/>
+        <location filename="../mainwindow.ui" line="2765"/>
         <source>ALLIACEES</source>
         <translation>ALLIACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1935"/>
-        <location filename="../mainwindow.ui" line="2784"/>
+        <location filename="../mainwindow.ui" line="1943"/>
+        <location filename="../mainwindow.ui" line="2803"/>
         <source>POACEES</source>
         <translation>POACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1972"/>
-        <location filename="../mainwindow.ui" line="2821"/>
+        <location filename="../mainwindow.ui" line="1981"/>
+        <location filename="../mainwindow.ui" line="2841"/>
         <source>SOLANACEES</source>
         <translation>SOLANACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2009"/>
-        <location filename="../mainwindow.ui" line="2858"/>
+        <location filename="../mainwindow.ui" line="2019"/>
+        <location filename="../mainwindow.ui" line="2879"/>
         <source>VALERIANACEES</source>
         <translation>VALERIANACEES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2046"/>
-        <location filename="../mainwindow.ui" line="2895"/>
+        <location filename="../mainwindow.ui" line="2057"/>
+        <location filename="../mainwindow.ui" line="2917"/>
         <source>AUTRES</source>
         <translation>AUTRES</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2146"/>
+        <location filename="../mainwindow.ui" line="2157"/>
         <source>Parcelles</source>
         <translation>Parcelles</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2348"/>
+        <location filename="../mainwindow.ui" line="2359"/>
         <source>Rotation</source>
         <translation>Rotation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2389"/>
+        <location filename="../mainwindow.ui" line="2400"/>
         <source>Année de démarrage</source>
         <translation>Année de démarrage</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="2479"/>
+        <location filename="../mainwindow.ui" line="2490"/>
         <source>Actualiser l&apos;affichage des parcelles</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1477"/>
-        <location filename="../mainwindow.ui" line="2482"/>
+        <location filename="../mainwindow.ui" line="2493"/>
         <source>Actualiser</source>
         <translation>Actualiser</translation>
     </message>
@@ -4008,27 +4008,27 @@ la traduction &lt;http://www.gnu.org/licenses/why-not-lgpl.fr.html&gt;
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1218"/>
-        <location filename="../mainwindow.ui" line="3365"/>
+        <location filename="../mainwindow.ui" line="3388"/>
         <source>Supprimer</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3412"/>
+        <location filename="../mainwindow.ui" line="3435"/>
         <source>Mise à jour de la scène</source>
         <translation>Mise à jour de la scène</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3476"/>
+        <location filename="../mainwindow.ui" line="3499"/>
         <source>Mode Création/Modification dans le plan</source>
         <translation>Mode Création/Modification dans le plan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3491"/>
+        <location filename="../mainwindow.ui" line="3514"/>
         <source>Mode Utilisation du plan</source>
         <translation>Mode Utilisation du plan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3522"/>
+        <location filename="../mainwindow.ui" line="3545"/>
         <source>Nouveau</source>
         <translation>Nouveau</translation>
     </message>
@@ -4258,7 +4258,7 @@ Enregistrer une nouvelle fiche</translation>
         <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00aa00;&quot;&gt;FICHE DES FAMILLES&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3152"/>
+        <location filename="../mainwindow.ui" line="3174"/>
         <source>Configuration</source>
         <translation>Configuration</translation>
     </message>
@@ -5619,7 +5619,7 @@ Le fichier de la base de données (.sqli) qui est lié au fichier de configurati
 - les fiches des familles de plantes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3054"/>
+        <location filename="../mainwindow.ui" line="3076"/>
         <source>Objets</source>
         <translation>Objets</translation>
     </message>
@@ -5628,12 +5628,12 @@ Le fichier de la base de données (.sqli) qui est lié au fichier de configurati
         <translation type="vanished">Mise à jour</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3567"/>
+        <location filename="../mainwindow.ui" line="3590"/>
         <source>Fiches plantes</source>
         <translation>Fiches plantes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3577"/>
+        <location filename="../mainwindow.ui" line="3600"/>
         <source>Licences</source>
         <translation>Licences</translation>
     </message>
@@ -6950,7 +6950,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3111"/>
+        <location filename="../mainwindow.ui" line="3133"/>
         <source>Fichier</source>
         <translation>Fichier</translation>
     </message>
@@ -6959,8 +6959,8 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Edition</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3142"/>
-        <location filename="../mainwindow.ui" line="3449"/>
+        <location filename="../mainwindow.ui" line="3164"/>
+        <location filename="../mainwindow.ui" line="3472"/>
         <source>Aide</source>
         <translation>Aide</translation>
     </message>
@@ -6969,54 +6969,54 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Modes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3178"/>
+        <location filename="../mainwindow.ui" line="3200"/>
         <source>Passer l&apos;objet devant</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3228"/>
-        <location filename="../mainwindow.ui" line="3231"/>
-        <location filename="../mainwindow.ui" line="3234"/>
+        <location filename="../mainwindow.ui" line="3251"/>
+        <location filename="../mainwindow.ui" line="3254"/>
+        <location filename="../mainwindow.ui" line="3257"/>
         <source>Ouvrir</source>
         <translation>Ouvrir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3254"/>
-        <location filename="../mainwindow.ui" line="3257"/>
-        <location filename="../mainwindow.ui" line="3260"/>
+        <location filename="../mainwindow.ui" line="3277"/>
+        <location filename="../mainwindow.ui" line="3280"/>
+        <location filename="../mainwindow.ui" line="3283"/>
         <source>Quitter</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3275"/>
-        <location filename="../mainwindow.ui" line="3278"/>
-        <location filename="../mainwindow.ui" line="3281"/>
+        <location filename="../mainwindow.ui" line="3298"/>
+        <location filename="../mainwindow.ui" line="3301"/>
+        <location filename="../mainwindow.ui" line="3304"/>
         <source>Ajouter Parcelle</source>
         <translation>Ajouter Parcelle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3289"/>
+        <location filename="../mainwindow.ui" line="3312"/>
         <source>Carré</source>
         <translation>Carré</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3301"/>
-        <location filename="../mainwindow.ui" line="3304"/>
+        <location filename="../mainwindow.ui" line="3324"/>
+        <location filename="../mainwindow.ui" line="3327"/>
         <source>Ajouter Plante seule</source>
         <translation>Ajouter Plante seule</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3307"/>
+        <location filename="../mainwindow.ui" line="3330"/>
         <source>Ajouter Plante</source>
         <translation>Ajouter Plante</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3319"/>
+        <location filename="../mainwindow.ui" line="3342"/>
         <source>Ajouter image</source>
         <translation>Ajouter image</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3322"/>
+        <location filename="../mainwindow.ui" line="3345"/>
         <source>Ajouter Image</source>
         <translation>Ajouter Image</translation>
     </message>
@@ -7033,18 +7033,18 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Coller</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3334"/>
+        <location filename="../mainwindow.ui" line="3357"/>
         <source>Choisir le Fond d&apos;écran</source>
         <translation>Choisir le Fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3339"/>
+        <location filename="../mainwindow.ui" line="3362"/>
         <source>Ajouter icone</source>
         <translation>Ajouter icone</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1015"/>
-        <location filename="../mainwindow.ui" line="3344"/>
+        <location filename="../mainwindow.ui" line="3367"/>
         <source>Supprimer l&apos;objet sélectionné</source>
         <translation>Supprimer l&apos;objet sélectionné</translation>
     </message>
@@ -7058,33 +7058,33 @@ p, li { white-space: pre-wrap; }
         <translation> dd/MM/yyyy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3122"/>
+        <location filename="../mainwindow.ui" line="3144"/>
         <source>Gestion du plan</source>
         <translation>Gestion du plan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3161"/>
-        <location filename="../mainwindow.ui" line="3586"/>
+        <location filename="../mainwindow.ui" line="3183"/>
+        <location filename="../mainwindow.ui" line="3609"/>
         <source>Gestion des tâches</source>
         <translation>Gestion des tâches</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3353"/>
+        <location filename="../mainwindow.ui" line="3376"/>
         <source>Choisir la couleur</source>
         <translation>Choisir la couleur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3377"/>
+        <location filename="../mainwindow.ui" line="3400"/>
         <source>selectionner tout</source>
         <translation>selectionner tout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3386"/>
+        <location filename="../mainwindow.ui" line="3409"/>
         <source>désélectionner tout</source>
         <translation>désélectionner tout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3401"/>
+        <location filename="../mainwindow.ui" line="3424"/>
         <source>Modification</source>
         <translation>Modification</translation>
     </message>
@@ -7093,13 +7093,13 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Maj scene</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3424"/>
-        <location filename="../mainwindow.ui" line="3427"/>
+        <location filename="../mainwindow.ui" line="3447"/>
+        <location filename="../mainwindow.ui" line="3450"/>
         <source>Ajouter Matériel</source>
         <translation>Ajouter Matériel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3439"/>
+        <location filename="../mainwindow.ui" line="3462"/>
         <source>mettre en avant</source>
         <translation>mettre en avant</translation>
     </message>
@@ -7108,12 +7108,12 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">mettre en arrière</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3444"/>
+        <location filename="../mainwindow.ui" line="3467"/>
         <source>a propos de..</source>
         <translation>a propos de..</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3458"/>
+        <location filename="../mainwindow.ui" line="3481"/>
         <source>Choisir le type de crayon</source>
         <translation>Choisir le type de crayon</translation>
     </message>
@@ -7126,17 +7126,17 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Utilisation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3500"/>
+        <location filename="../mainwindow.ui" line="3523"/>
         <source>Cacher le fond d&apos;écran</source>
         <translation>Cacher le fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3509"/>
+        <location filename="../mainwindow.ui" line="3532"/>
         <source>Afficher le fond d&apos;écran</source>
         <translation>Afficher le fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3514"/>
+        <location filename="../mainwindow.ui" line="3537"/>
         <source>Ouvrir fiche culture</source>
         <translation>Ouvrir fiche culture</translation>
     </message>
@@ -7145,17 +7145,17 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Enregistrer sous..</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3531"/>
+        <location filename="../mainwindow.ui" line="3554"/>
         <source>Imprimer le plan</source>
         <translation>Imprimer le plan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3546"/>
+        <location filename="../mainwindow.ui" line="3569"/>
         <source>Afficher la grille</source>
         <translation>Afficher la grille</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="3558"/>
+        <location filename="../mainwindow.ui" line="3581"/>
         <source>Cacher la grille</source>
         <translation>Cacher la grille</translation>
     </message>
@@ -7164,13 +7164,13 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Sauvegarde du tableau des objets</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1487"/>
+        <location filename="../mainwindow.cpp" line="1488"/>
         <source>XML Files (*.xml)</source>
         <translation>XML Files (*.xml)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
-        <location filename="../mainwindow.cpp" line="2492"/>
+        <location filename="../mainwindow.cpp" line="704"/>
+        <location filename="../mainwindow.cpp" line="2493"/>
         <source>Ouverture du fichier des objets</source>
         <translation>Ouverture du fichier des objets</translation>
     </message>
@@ -7185,7 +7185,7 @@ et une base sqlite pour les données de culture
 version 2017.001 license GNU GPL version 3 {1.06.067 ?}</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="519"/>
+        <location filename="../mainwindow.cpp" line="520"/>
         <source>OPENJARDIN - Mise à jour de la base de données</source>
         <translation>OPENJARDIN - Mise à jour de la base de données</translation>
     </message>
@@ -7212,195 +7212,195 @@ Confirmer la mise à jour en version 1.06 ?</source>
 Confirmer la mise à jour en version 1.06 ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Ce programme est utilisé pour gérer graphiquement les plantations d&apos;un potager.
 il utilise des fichier XML pour la configuration des plans
 et une base sqlite pour les données de culture
-Ce programme est compilé avec Qt 5.12.0 .
-Openjardin version 1.07.007 license GNU GPL version 3.0</source>
+Ce programme est compilé avec Qt 5.5.1 .
+Openjardin version 1.07.008 license GNU GPL version 3.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="342"/>
-        <source>Ce programme utilise la version 5.12.2 de Qt</source>
+        <location filename="../mainwindow.cpp" line="343"/>
+        <source>Ce programme utilise la version 5.5.1 de Qt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>La base de données doit être mise à jour.
 Confirmer la mise à jour en version 1.07 ?</source>
         <translation type="unfinished">La base de données doit être mise à jour.
 Confirmer la mise à jour en version 1.06 ? {1.07 ?}</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="676"/>
         <source>Base de données </source>
         <translation>Base de données </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="676"/>
+        <location filename="../mainwindow.cpp" line="677"/>
         <source>La base de données a été mise à jour en version 1.06</source>
         <translation>La base de données a été mise à jour en version 1.06</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="681"/>
+        <location filename="../mainwindow.cpp" line="682"/>
         <source>Erreur de mise à jour</source>
         <translation>Erreur de mise à jour</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="682"/>
+        <location filename="../mainwindow.cpp" line="683"/>
         <source>La base de données n&apos;a pas pu être mise à jour en version 1.06</source>
         <translation>La base de données n&apos;a pas pu être mise à jour en version 1.06</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="705"/>
+        <location filename="../mainwindow.cpp" line="706"/>
         <source>XML Files (*.xml);; All files (*.*)</source>
         <translation>XML Files (*.xml);; All files (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1485"/>
+        <location filename="../mainwindow.cpp" line="1486"/>
         <source>Sauvegarde du plan sous ...</source>
         <translation>Sauvegarde du plan sous ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1610"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
-        <location filename="../mainwindow.cpp" line="1859"/>
+        <location filename="../mainwindow.cpp" line="1611"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Janvier</source>
         <translation>Janvier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1615"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1616"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Février</source>
         <translation>Février</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1620"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1621"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Mars</source>
         <translation>Mars</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1625"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1626"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Avril</source>
         <translation>Avril</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1630"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1631"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Mai</source>
         <translation>Mai</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1635"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1636"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Juin</source>
         <translation>Juin</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1640"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1641"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Juillet</source>
         <translation>Juillet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1645"/>
-        <location filename="../mainwindow.cpp" line="1857"/>
+        <location filename="../mainwindow.cpp" line="1646"/>
+        <location filename="../mainwindow.cpp" line="1858"/>
         <source>Aout</source>
         <translation>Aout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1650"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1651"/>
+        <location filename="../mainwindow.cpp" line="1859"/>
         <source>Septembre</source>
         <translation>Septembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1655"/>
-        <location filename="../mainwindow.cpp" line="1859"/>
+        <location filename="../mainwindow.cpp" line="1656"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Octobre</source>
         <translation>Octobre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1660"/>
-        <location filename="../mainwindow.cpp" line="1859"/>
+        <location filename="../mainwindow.cpp" line="1661"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Novembre</source>
         <translation>Novembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1665"/>
-        <location filename="../mainwindow.cpp" line="1859"/>
-        <location filename="../mainwindow.cpp" line="1873"/>
+        <location filename="../mainwindow.cpp" line="1666"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
+        <location filename="../mainwindow.cpp" line="1874"/>
         <source>Décembre</source>
         <translation>Décembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
         <source>M</source>
         <translation>M</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
-        <location filename="../mainwindow.cpp" line="1791"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>J</source>
         <translation>J</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
-        <location filename="../mainwindow.cpp" line="1791"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
-        <location filename="../mainwindow.cpp" line="1791"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>S</source>
         <translation>S</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
-        <location filename="../mainwindow.cpp" line="1791"/>
+        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>D</source>
         <translation>D</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1789"/>
         <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1791"/>
         <source>M.</source>
         <translation>M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1826"/>
+        <location filename="../mainwindow.cpp" line="1827"/>
         <source>semaine </source>
         <translation>semaine</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2183"/>
-        <location filename="../mainwindow.cpp" line="2706"/>
+        <location filename="../mainwindow.cpp" line="2184"/>
+        <location filename="../mainwindow.cpp" line="2707"/>
         <source>Ouverture du fichier image</source>
         <translation>Ouverture du fichier image</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2185"/>
-        <location filename="../mainwindow.cpp" line="2494"/>
-        <location filename="../mainwindow.cpp" line="2708"/>
+        <location filename="../mainwindow.cpp" line="2186"/>
+        <location filename="../mainwindow.cpp" line="2495"/>
+        <location filename="../mainwindow.cpp" line="2709"/>
         <source>Image Files (*.png *.jpg *.bmp)</source>
         <translation>Image Files (*.png *.jpg *.bmp)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2636"/>
+        <location filename="../mainwindow.cpp" line="2637"/>
         <source>Suppression</source>
         <translation>Suppression</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2637"/>
+        <location filename="../mainwindow.cpp" line="2638"/>
         <source>Cet objet peut être supprimer.
 Confirmer la suppression de l&apos;objet ?</source>
         <translation>Cet objet peut être supprimer.
@@ -7431,7 +7431,7 @@ version 2017.001 license GNU GPL version 3 {1.06.001 ?}</translation>
         <translation type="vanished">Ouverture du fichier fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>A propos de Open_jardin</source>
         <translation>A propos de Open_jardin</translation>
     </message>
@@ -8102,7 +8102,7 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/fiche_plantes.cpp" line="898"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="940"/>
         <location filename="../dialogs/planner.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="3091"/>
+        <location filename="../mainwindow.cpp" line="3092"/>
         <source>id</source>
         <translation>id</translation>
     </message>
@@ -8135,7 +8135,7 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/fiche_plantes.cpp" line="899"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="941"/>
         <location filename="../dialogs/planner.cpp" line="126"/>
-        <location filename="../mainwindow.cpp" line="3092"/>
+        <location filename="../mainwindow.cpp" line="3093"/>
         <source>designation</source>
         <translation>designation</translation>
     </message>
@@ -8145,7 +8145,7 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/cultures.cpp" line="255"/>
         <location filename="../dialogs/cultures.cpp" line="455"/>
         <location filename="../dialogs/cultures.cpp" line="797"/>
-        <location filename="../mainwindow.cpp" line="3093"/>
+        <location filename="../mainwindow.cpp" line="3094"/>
         <source>parcelle</source>
         <translation>parcelle</translation>
     </message>
@@ -8633,7 +8633,17 @@ p, li { white-space: pre-wrap; }
         <translation>Répertoire du projet : </translation>
     </message>
     <message>
-        <location filename="../dialogs/nouveau_projet.ui" line="120"/>
+        <location filename="../dialogs/nouveau_projet.ui" line="105"/>
+        <source>Base des plantes en français</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/nouveau_projet.ui" line="115"/>
+        <source>Plants database in English</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/nouveau_projet.ui" line="137"/>
         <source>Créer le nouveau projet</source>
         <translation>Créer le nouveau projet</translation>
     </message>

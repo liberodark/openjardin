@@ -333,14 +333,14 @@ void MainWindow::on_actionA_propos_de_triggered()
                        tr("Ce programme est utilisé pour gérer graphiquement les plantations d'un potager.\n"
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
-                          "Ce programme est compilé avec Qt 5.15.2 .\n"
-                          "Openjardin version 1.07.008 license GNU GPL version 3.0"));
+                          "Ce programme est compilé avec Qt 5.5.1 .\n"
+                          "Openjardin version 1.07.009 license GNU GPL version 3.0"));
 }
 
 void MainWindow::on_actionA_propos_de_Qt_triggered()
 {
     //QMessageBox::aboutQt(this,tr(QT_VERSION_STR));
-    QMessageBox::aboutQt(this, tr("Ce programme utilise la version 5.12.2 de Qt"));
+    QMessageBox::aboutQt(this, tr("Ce programme utilise la version 5.5.1 de Qt"));
 }
 
 void MainWindow::on_actionQuitter_triggered()
@@ -634,7 +634,7 @@ void MainWindow::mise_a_jour_DB(QString sqlfileName)
                 query.exec(s);                             //<== executer les requêtes normales
                 if (query.lastError().type() != QSqlError::NoError)
                 {
-                    qDebug() << "erreur 571 " << query.lastError().text() << query.lastQuery();
+                    qDebug() << "erreur 637 " << query.lastError().text() << query.lastQuery();
 
                     drap_erreur = 1;
                     db.rollback();                         //<== rollback la transaction s'il y a un probême
@@ -4096,6 +4096,5 @@ void MainWindow::on_pushButton_clicked()
 
     Fiche->show();
 }
-
 
 

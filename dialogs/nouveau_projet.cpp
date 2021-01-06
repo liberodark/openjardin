@@ -78,6 +78,8 @@ void nouveau_Projet::on_pushButton_clicked()
 
     if (fileName.isEmpty())
     {
+        QMessageBox msgBox;
+        msgBox.setText("Nom de fichier vide");
         return;
     }
 
@@ -106,10 +108,15 @@ void nouveau_Projet::on_pushButton_clicked()
         }
         QString queryStr;
         QFile   file(":/sql/restore.sql");
+        if (ui->checkBoxEnglish->isChecked() == true){
+                    file.setFileName(":/sql/restore_en.sql");
+         }
+
         if (!file.open(QFile::ReadOnly | QFile::Text))
         {
             QMessageBox msgBox;
-            msgBox.setText("ERREUR D'ÉCRITURE");
+            msgBox.setText("ERREUR lecture");
+        //    qDebug() << "117 fichier sql database " << file.fileName() <<"erreur";
             return;
         }
         else
@@ -119,6 +126,7 @@ void nouveau_Projet::on_pushButton_clicked()
             queryStr = stream.readAll();
 
             file.close();
+         //   qDebug() << "131 fichier sql database" << file.fileName() << " lu";
         }
 
         QSqlQuery query;
@@ -161,13 +169,13 @@ void nouveau_Projet::on_pushButton_clicked()
                     query.exec(s);                             //<== executer les requêtes normales
                     if (query.lastError().type() != QSqlError::NoError)
                     {
-                        //qDebug() << "erreur 135 " << query.lastError().text() << query.lastQuery();
+                     //   qDebug() << "erreur 172 " << query.lastError().text() << query.lastQuery();
 
                         db.rollback();                         //<== rollback la transaction s'il y a un probême
                     }
                     else
                     {
-                        // qDebug() << "142 " << query.lastQuery();
+                       // qDebug() << "178 " << query.lastQuery();
                     }
                 }
             }
@@ -175,6 +183,7 @@ void nouveau_Projet::on_pushButton_clicked()
             if (!isStartedWithTransaction)
             {
                 db.commit();
+                qDebug() << "187 ok";
             }
         }
         else
@@ -194,7 +203,7 @@ void nouveau_Projet::on_pushButton_clicked()
                 query.exec(s);
                 if (query.lastError().type() != QSqlError::NoError)
                 {
-                    //  qDebug() << "erreur 169 " << query.lastQuery();
+                     qDebug() << "erreur 204 " << query.lastQuery();
                 }
                 else
                 {
@@ -228,6 +237,7 @@ void nouveau_Projet::on_pushButton_clicked()
     fileName   = repertoire + "/" + ui->lineEdit_filename->text() + ".xml";
     if (fileName.isEmpty())
     {
+
         return;
     }
 
@@ -236,6 +246,7 @@ void nouveau_Projet::on_pushButton_clicked()
     {
         QMessageBox msgBox;
         msgBox.setText("ERREUR D'ÉCRITURE");
+        qDebug() << "247 erreur écriture xml";
         return;
     }
     else
@@ -261,4 +272,14 @@ void nouveau_Projet::on_lineEdit_filename_textChanged(const QString&arg1)
         ui->lineEdit_filename->setStyleSheet(
             "QLineEdit { background-color: rgb(255,255,217); }");
     }
+}
+
+void nouveau_Projet::on_checkBoxFrench_toggled(bool checked)
+{
+    ui->checkBoxEnglish->setChecked(false);
+}
+
+void nouveau_Projet::on_checkBoxEnglish_toggled(bool checked)
+{
+    ui->checkBoxFrench->setChecked(false);
 }

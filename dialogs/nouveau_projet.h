@@ -34,6 +34,10 @@ private slots:
 
     void on_lineEdit_filename_textChanged(const QString&arg1);
 
+    void on_checkBoxFrench_toggled(bool checked);
+
+    void on_checkBoxEnglish_toggled(bool checked);
+
 protected:
     void closeEvent(QCloseEvent *event) override;
 

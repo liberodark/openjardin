@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>457</width>
-    <height>155</height>
+    <width>476</width>
+    <height>198</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -98,6 +98,23 @@
         </widget>
        </item>
       </layout>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBoxFrench">
+       <property name="text">
+        <string>Base des plantes en français</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBoxEnglish">
+       <property name="text">
+        <string>Plants database in English</string>
+       </property>
+      </widget>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">

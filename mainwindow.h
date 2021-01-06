@@ -279,6 +279,7 @@ private slots:
 
     void on_actionTraduire_en_francais_triggered();
 
+
 protected:
     QPoint mousePressPt;
     void mousePressEvent(QMouseEvent *event);
