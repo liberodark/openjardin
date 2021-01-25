@@ -385,7 +385,8 @@ void detail_parcelle::on_toolButton_save_as_clicked()
     QString ObjetUuid;
 
     QList <QGraphicsItem *> itemList = scene->items();
-    for (int i = 0; i < itemList.size(); i++)
+    for (int i = itemList.size() - 1; i >= 0; i--)
+    //for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->pos().x() > 0)
         {
@@ -594,7 +595,8 @@ void detail_parcelle::on_toolButton_Sauver_clicked()
     QString ObjetUuid;
 
     QList <QGraphicsItem *> itemList = scene->items();
-    for (int i = 0; i < itemList.size(); i++)
+    for (int i = itemList.size() - 1; i >= 0; i--)
+    //for (int i = 0; i < itemList.size(); i++)
     {
         if (itemList[i]->pos().x() > 0)
         {

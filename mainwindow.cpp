@@ -334,7 +334,7 @@ void MainWindow::on_actionA_propos_de_triggered()
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
                           "Ce programme est compilé avec Qt 5.5.1 .\n"
-                          "Openjardin version 1.07.009 license GNU GPL version 3.0"));
+                          "Openjardin version 1.07.011 license GNU GPL version 3.0"));
 }
 
 void MainWindow::on_actionA_propos_de_Qt_triggered()
@@ -1134,7 +1134,8 @@ void MainWindow::on_actionSauver_triggered()
     QString ObjetFichierDetail = "";
 
     QList <QGraphicsItem *> itemList = scene->items();
-    for (int i = 0; i < itemList.size(); i++)
+
+    for (int i = itemList.size() - 1; i >= 0; i--)
     {
         if (itemList[i]->pos().x() > 0)
         {
@@ -1352,7 +1353,8 @@ void MainWindow::on_actionEnregistrer_sous_triggered()
     QString ObjetFichierDetail = "";
 
     QList <QGraphicsItem *> itemList = scene->items();
-    for (int i = 0; i < itemList.size(); i++)
+    for (int i = itemList.size() - 1; i >= 0; i--)
+
     {
         if (itemList[i]->pos().x() > 0)
         {
