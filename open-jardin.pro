@@ -28,6 +28,7 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
+    dialogs/dialogrequetefamille.cpp \
     dialogs/nouveau_projet.cpp \
     dialogs/planning.cpp \
     graphic/background.cpp \
@@ -65,6 +66,7 @@ SOURCES += main.cpp\
     utilitaires/util.cpp
 
 HEADERS  += mainwindow.h \
+    dialogs/dialogrequetefamille.h \
     dialogs/nouveau_projet.h \
     dialogs/planning.h \
     graphic/background.h \
@@ -103,6 +105,7 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui \
     dialogs/dialog_aide.ui \
     dialogs/cultures.ui \
+    dialogs/dialogrequetefamille.ui \
     dialogs/fiche_plantes.ui \
     dialogs/configuration.ui \
     dialogs/licenses.ui \

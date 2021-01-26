@@ -79,5 +79,6 @@
         <file>translations/open-jardin_it.qm</file>
         <file>sql/restore_en.sql</file>
         <file>images/open_New.png</file>
+        <file>images/filtre.png</file>
     </qresource>
 </RCC>

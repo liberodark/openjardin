@@ -39,6 +39,7 @@
 #include "graphic/myitem.h"
 #include "dialogs/fiche_plantes.h"
 #include "dialogs/dialog_taches.h"
+#include "dialogrequetefamille.h"
 #include "utilitaires/util.h"
 #include <QTextStream>
 #include <QPrinter>
@@ -1043,4 +1044,26 @@ void Cultures::creer_phase()
 void Cultures::on_toolButton_clicked()
 {
     close();
+}
+
+void Cultures::on_pushButton_clicked()
+{  // open dialogrequestfamille
+
+    DialogRequeteFamille *Fiche = new DialogRequeteFamille(0,this);
+    int resultat             = Fiche->exec();
+    if (resultat == QDialog::Accepted)
+    {
+        QString idEspece = Fiche->getIdEspece();
+
+        QSqlQueryModel *modelVariete = new QSqlQueryModel;
+        modelVariete->setQuery(
+            "SELECT designation FROM plantes WHERE espece ='" + idEspece + "' ORDER BY id ASC");
+        ui->comboBox_plante->setModel(modelVariete);
+        qDebug() <<"id espece : " << idEspece <<"nb lignes   "<<ui->comboBox_plante->count();
+        if(ui->comboBox_plante->count() == 0)
+        {
+            QMessageBox::information(this, tr("Filtre des variétés"),
+                                     tr("L'espèce sélectionnée ne comporte pas encore de variété !"));
+        }
+    }
 }

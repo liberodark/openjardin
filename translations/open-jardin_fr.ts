@@ -252,29 +252,34 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <translation>FICHE CULTURE DE LA PARCELLE</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="162"/>
-        <location filename="../dialogs/cultures.ui" line="548"/>
-        <location filename="../dialogs/cultures.ui" line="764"/>
+        <location filename="../dialogs/cultures.ui" line="221"/>
+        <location filename="../dialogs/cultures.ui" line="494"/>
+        <location filename="../dialogs/cultures.ui" line="796"/>
         <source>yyyy-MM-dd</source>
         <translation>yyyy-MM-dd</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="331"/>
+        <location filename="../dialogs/cultures.ui" line="264"/>
         <source>45</source>
         <translation>45</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="129"/>
+        <location filename="../dialogs/cultures.ui" line="363"/>
         <source>Date de fin de culture</source>
         <translation>Date de fin de culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="476"/>
+        <location filename="../dialogs/cultures.ui" line="398"/>
+        <source>Filtrer selon les familles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/cultures.ui" line="412"/>
         <source>Famille :</source>
         <translation>Famille :</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="119"/>
+        <location filename="../dialogs/cultures.ui" line="441"/>
         <source>Type lune : </source>
         <translation>Type lune : </translation>
     </message>
@@ -287,18 +292,18 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <translation type="vanished">Id culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="522"/>
+        <location filename="../dialogs/cultures.ui" line="303"/>
         <source>Variété  : </source>
         <translation>Variété  : </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="420"/>
-        <location filename="../dialogs/cultures.ui" line="774"/>
+        <location filename="../dialogs/cultures.ui" line="271"/>
+        <location filename="../dialogs/cultures.ui" line="806"/>
         <source>Designation</source>
         <translation>Designation</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="456"/>
+        <location filename="../dialogs/cultures.ui" line="231"/>
         <source>Espèce :</source>
         <translation>Espèce :</translation>
     </message>
@@ -307,131 +312,131 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <translation type="obsolete">Parcelle en culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="502"/>
+        <location filename="../dialogs/cultures.ui" line="467"/>
         <source>Parcelle en attente</source>
         <translation>Parcelle en attente</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="358"/>
+        <location filename="../dialogs/cultures.ui" line="323"/>
         <source>Date de mise en culture </source>
         <translation>Date de mise en culture </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="449"/>
+        <location filename="../dialogs/cultures.ui" line="336"/>
         <source>Durée prévisionelle (en jours)</source>
         <translation>Durée prévisionelle (en jours)</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="244"/>
+        <location filename="../dialogs/cultures.ui" line="548"/>
         <source>Imprimer la fiche</source>
         <translation>Imprimer la fiche</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="276"/>
-        <location filename="../dialogs/cultures.ui" line="832"/>
+        <location filename="../dialogs/cultures.ui" line="580"/>
+        <location filename="../dialogs/cultures.ui" line="864"/>
         <source>Enregistrer modifications</source>
         <translation>Enregistrer modifications</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="283"/>
-        <location filename="../dialogs/cultures.ui" line="839"/>
+        <location filename="../dialogs/cultures.ui" line="587"/>
+        <location filename="../dialogs/cultures.ui" line="871"/>
         <source>Supprimer</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="290"/>
+        <location filename="../dialogs/cultures.ui" line="594"/>
         <source>Nouvelle fiche vierge</source>
         <translation>Nouvelle fiche vierge</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="309"/>
+        <location filename="../dialogs/cultures.ui" line="613"/>
         <source>Créer nouvelle culture</source>
         <translation>Créer nouvelle culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="413"/>
+        <location filename="../dialogs/cultures.ui" line="251"/>
         <source>Commentaires</source>
         <translation>Commentaires</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="179"/>
+        <location filename="../dialogs/cultures.ui" line="158"/>
         <source>Visualiser la fiche de la variété</source>
         <translation>Visualiser la fiche de la variété</translation>
     </message>
     <message>
         <location filename="../dialogs/cultures.ui" line="60"/>
-        <location filename="../dialogs/cultures.ui" line="182"/>
-        <location filename="../dialogs/cultures.ui" line="204"/>
+        <location filename="../dialogs/cultures.ui" line="161"/>
+        <location filename="../dialogs/cultures.ui" line="183"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="136"/>
+        <location filename="../dialogs/cultures.ui" line="343"/>
         <source>Culture N°</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="201"/>
+        <location filename="../dialogs/cultures.ui" line="180"/>
         <source>Ajouter une nouvelle variété</source>
         <translation>Ajouter une nouvelle variété</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="469"/>
+        <location filename="../dialogs/cultures.ui" line="356"/>
         <source>Parcelle N°</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="487"/>
+        <location filename="../dialogs/cultures.ui" line="452"/>
         <source>Parcelle en simple culture </source>
         <translation>Parcelle en simple culture </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="492"/>
+        <location filename="../dialogs/cultures.ui" line="457"/>
         <source>Parcelle en double culture (ligne haute)</source>
         <translation>Parcelle en double culture (ligne haute)</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="497"/>
+        <location filename="../dialogs/cultures.ui" line="462"/>
         <source>Parcelle en double culture (ligne basse)</source>
         <translation>Parcelle en double culture (ligne basse)</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="558"/>
+        <location filename="../dialogs/cultures.ui" line="504"/>
         <source>Intégrer cette culture dans Gantt</source>
         <translation>Intégrer cette culture dans Gantt</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="585"/>
+        <location filename="../dialogs/cultures.ui" line="126"/>
         <source>Liste des cultures  réalisées sur cette parcelle</source>
         <translation>Liste des cultures  réalisées sur cette parcelle</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="663"/>
+        <location filename="../dialogs/cultures.ui" line="695"/>
         <source>Observations concernant cette culture</source>
         <translation>Observations concernant cette culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="722"/>
+        <location filename="../dialogs/cultures.ui" line="754"/>
         <source>Date : </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="735"/>
+        <location filename="../dialogs/cultures.ui" line="767"/>
         <source>Type d&apos;observation. : </source>
         <translation>Type d&apos;observation. : </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="858"/>
+        <location filename="../dialogs/cultures.ui" line="890"/>
         <source>Créer nouvelle observation</source>
         <translation>Créer nouvelle observation</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="887"/>
+        <location filename="../dialogs/cultures.ui" line="919"/>
         <source>Liste des observations  concernant  cette culture</source>
         <translation>Liste des observations  concernant  cette culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.ui" line="695"/>
+        <location filename="../dialogs/cultures.ui" line="727"/>
         <source>Observations</source>
         <translation>Observations</translation>
     </message>
@@ -452,22 +457,6 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <translation type="obsolete">Liste des tâches ou observations  concernant  cette culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="226"/>
-        <location filename="../dialogs/cultures.cpp" line="243"/>
-        <location filename="../dialogs/cultures.cpp" line="298"/>
-        <location filename="../dialogs/cultures.cpp" line="419"/>
-        <location filename="../dialogs/cultures.cpp" line="442"/>
-        <location filename="../dialogs/cultures.cpp" line="486"/>
-        <location filename="../dialogs/cultures.cpp" line="503"/>
-        <location filename="../dialogs/cultures.cpp" line="541"/>
-        <location filename="../dialogs/cultures.cpp" line="558"/>
-        <location filename="../dialogs/cultures.cpp" line="915"/>
-        <location filename="../dialogs/cultures.cpp" line="995"/>
-        <location filename="../dialogs/cultures.cpp" line="1031"/>
-        <source>Erreur d&apos;enregistrement</source>
-        <translation>Erreur d&apos;enregistrement</translation>
-    </message>
-    <message>
         <location filename="../dialogs/cultures.cpp" line="227"/>
         <location filename="../dialogs/cultures.cpp" line="244"/>
         <location filename="../dialogs/cultures.cpp" line="299"/>
@@ -480,48 +469,74 @@ La base de données est sauvegardée sous un nouveau nom dans un fichier texte d
         <location filename="../dialogs/cultures.cpp" line="916"/>
         <location filename="../dialogs/cultures.cpp" line="996"/>
         <location filename="../dialogs/cultures.cpp" line="1032"/>
+        <source>Erreur d&apos;enregistrement</source>
+        <translation>Erreur d&apos;enregistrement</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/cultures.cpp" line="228"/>
+        <location filename="../dialogs/cultures.cpp" line="245"/>
+        <location filename="../dialogs/cultures.cpp" line="300"/>
+        <location filename="../dialogs/cultures.cpp" line="421"/>
+        <location filename="../dialogs/cultures.cpp" line="444"/>
+        <location filename="../dialogs/cultures.cpp" line="488"/>
+        <location filename="../dialogs/cultures.cpp" line="505"/>
+        <location filename="../dialogs/cultures.cpp" line="543"/>
+        <location filename="../dialogs/cultures.cpp" line="560"/>
+        <location filename="../dialogs/cultures.cpp" line="917"/>
+        <location filename="../dialogs/cultures.cpp" line="997"/>
+        <location filename="../dialogs/cultures.cpp" line="1033"/>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
         <translation>Veuillez vérifier que tous les champs soient bien remplis</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="768"/>
+        <location filename="../dialogs/cultures.cpp" line="769"/>
         <source>Suppression d&apos;une culture</source>
         <translation>Suppression d&apos;une culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="769"/>
+        <location filename="../dialogs/cultures.cpp" line="770"/>
         <source>Cette culture peut être supprimer.
 Confirmer la suppression de la culture</source>
         <translation>Cette culture peut être supprimer.
 Confirmer la suppression de la culture</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="935"/>
-        <location filename="../dialogs/cultures.cpp" line="1011"/>
+        <location filename="../dialogs/cultures.cpp" line="936"/>
+        <location filename="../dialogs/cultures.cpp" line="1012"/>
         <source>Erreur </source>
         <translation>Erreur </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="936"/>
+        <location filename="../dialogs/cultures.cpp" line="937"/>
         <source>Veuillez sélectionner une culture svp</source>
         <translation>Veuillez sélectionner une culture svp</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="1000"/>
-        <location filename="../dialogs/cultures.cpp" line="1036"/>
+        <location filename="../dialogs/cultures.cpp" line="1001"/>
+        <location filename="../dialogs/cultures.cpp" line="1037"/>
         <source>Enregistrement de la phase culture </source>
         <translation>Enregistrement de la phase culture </translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="1001"/>
-        <location filename="../dialogs/cultures.cpp" line="1037"/>
+        <location filename="../dialogs/cultures.cpp" line="1002"/>
+        <location filename="../dialogs/cultures.cpp" line="1038"/>
         <source>La phase de culture a été crée avec succès !</source>
         <translation>La phase de culture a été crée avec succès !</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="1012"/>
+        <location filename="../dialogs/cultures.cpp" line="1013"/>
         <source>Cette phase de culture est existante !</source>
         <translation>Cette phase de culture est existante !</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/cultures.cpp" line="1065"/>
+        <source>Filtre des variétés</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/cultures.cpp" line="1066"/>
+        <source>L&apos;espèce sélectionnée ne comporte pas encore de variété !</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -655,6 +670,41 @@ Confirmer la suppression de la culture</translation>
     <message>
         <source>Veuillez vérifier que tous les champs soient bien remplis</source>
         <translation type="vanished">Veuillez vérifier que tous les champs soient bien remplis</translation>
+    </message>
+</context>
+<context>
+    <name>DialogRequeteFamille</name>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.ui" line="20"/>
+        <source>Choisir les variétés par espèce</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.ui" line="28"/>
+        <source>Choisir la famille</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.ui" line="45"/>
+        <source>Puis choisir l&apos;espèce</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.ui" line="55"/>
+        <source>Puis valider par OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.cpp" line="46"/>
+        <location filename="../dialogs/dialogrequetefamille.cpp" line="71"/>
+        <source>Erreur d&apos;enregistrement</source>
+        <translation type="unfinished">Erreur d&apos;enregistrement</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/dialogrequetefamille.cpp" line="47"/>
+        <location filename="../dialogs/dialogrequetefamille.cpp" line="72"/>
+        <source>Veuillez vérifier que tous les champs soient bien remplis</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7164,13 +7214,13 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">Sauvegarde du tableau des objets</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1488"/>
+        <location filename="../mainwindow.cpp" line="1490"/>
         <source>XML Files (*.xml)</source>
         <translation>XML Files (*.xml)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="704"/>
-        <location filename="../mainwindow.cpp" line="2493"/>
+        <location filename="../mainwindow.cpp" line="2495"/>
         <source>Ouverture du fichier des objets</source>
         <translation>Ouverture du fichier des objets</translation>
     </message>
@@ -7217,7 +7267,7 @@ Confirmer la mise à jour en version 1.06 ?</translation>
 il utilise des fichier XML pour la configuration des plans
 et une base sqlite pour les données de culture
 Ce programme est compilé avec Qt 5.5.1 .
-Openjardin version 1.07.008 license GNU GPL version 3.0</source>
+Openjardin version 1.07.012 license GNU GPL version 3.0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7258,149 +7308,149 @@ Confirmer la mise à jour en version 1.06 ? {1.07 ?}</translation>
         <translation>XML Files (*.xml);; All files (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1486"/>
+        <location filename="../mainwindow.cpp" line="1488"/>
         <source>Sauvegarde du plan sous ...</source>
         <translation>Sauvegarde du plan sous ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1611"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1613"/>
         <location filename="../mainwindow.cpp" line="1860"/>
+        <location filename="../mainwindow.cpp" line="1862"/>
         <source>Janvier</source>
         <translation>Janvier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1616"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1618"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Février</source>
         <translation>Février</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1621"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1623"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Mars</source>
         <translation>Mars</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1626"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1628"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Avril</source>
         <translation>Avril</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1631"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1633"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Mai</source>
         <translation>Mai</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1636"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1638"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Juin</source>
         <translation>Juin</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1641"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1643"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Juillet</source>
         <translation>Juillet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1646"/>
-        <location filename="../mainwindow.cpp" line="1858"/>
+        <location filename="../mainwindow.cpp" line="1648"/>
+        <location filename="../mainwindow.cpp" line="1860"/>
         <source>Aout</source>
         <translation>Aout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1651"/>
-        <location filename="../mainwindow.cpp" line="1859"/>
+        <location filename="../mainwindow.cpp" line="1653"/>
+        <location filename="../mainwindow.cpp" line="1861"/>
         <source>Septembre</source>
         <translation>Septembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1656"/>
-        <location filename="../mainwindow.cpp" line="1860"/>
+        <location filename="../mainwindow.cpp" line="1658"/>
+        <location filename="../mainwindow.cpp" line="1862"/>
         <source>Octobre</source>
         <translation>Octobre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1661"/>
-        <location filename="../mainwindow.cpp" line="1860"/>
+        <location filename="../mainwindow.cpp" line="1663"/>
+        <location filename="../mainwindow.cpp" line="1862"/>
         <source>Novembre</source>
         <translation>Novembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1666"/>
-        <location filename="../mainwindow.cpp" line="1860"/>
-        <location filename="../mainwindow.cpp" line="1874"/>
+        <location filename="../mainwindow.cpp" line="1668"/>
+        <location filename="../mainwindow.cpp" line="1862"/>
+        <location filename="../mainwindow.cpp" line="1876"/>
         <source>Décembre</source>
         <translation>Décembre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
         <source>M</source>
         <translation>M</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
         <location filename="../mainwindow.cpp" line="1792"/>
+        <location filename="../mainwindow.cpp" line="1794"/>
         <source>J</source>
         <translation>J</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
         <location filename="../mainwindow.cpp" line="1792"/>
+        <location filename="../mainwindow.cpp" line="1794"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
         <location filename="../mainwindow.cpp" line="1792"/>
+        <location filename="../mainwindow.cpp" line="1794"/>
         <source>S</source>
         <translation>S</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
         <location filename="../mainwindow.cpp" line="1792"/>
+        <location filename="../mainwindow.cpp" line="1794"/>
         <source>D</source>
         <translation>D</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1790"/>
-        <location filename="../mainwindow.cpp" line="1791"/>
+        <location filename="../mainwindow.cpp" line="1792"/>
+        <location filename="../mainwindow.cpp" line="1793"/>
         <source>M.</source>
         <translation>M.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1827"/>
+        <location filename="../mainwindow.cpp" line="1829"/>
         <source>semaine </source>
         <translation>semaine</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2184"/>
-        <location filename="../mainwindow.cpp" line="2707"/>
+        <location filename="../mainwindow.cpp" line="2186"/>
+        <location filename="../mainwindow.cpp" line="2709"/>
         <source>Ouverture du fichier image</source>
         <translation>Ouverture du fichier image</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2186"/>
-        <location filename="../mainwindow.cpp" line="2495"/>
-        <location filename="../mainwindow.cpp" line="2709"/>
+        <location filename="../mainwindow.cpp" line="2188"/>
+        <location filename="../mainwindow.cpp" line="2497"/>
+        <location filename="../mainwindow.cpp" line="2711"/>
         <source>Image Files (*.png *.jpg *.bmp)</source>
         <translation>Image Files (*.png *.jpg *.bmp)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2637"/>
+        <location filename="../mainwindow.cpp" line="2639"/>
         <source>Suppression</source>
         <translation>Suppression</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="2638"/>
+        <location filename="../mainwindow.cpp" line="2640"/>
         <source>Cet objet peut être supprimer.
 Confirmer la suppression de l&apos;objet ?</source>
         <translation>Cet objet peut être supprimer.
@@ -8079,16 +8129,16 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/configuration.cpp" line="612"/>
         <location filename="../dialogs/configuration.cpp" line="648"/>
         <location filename="../dialogs/configuration.cpp" line="685"/>
-        <location filename="../dialogs/cultures.cpp" line="112"/>
-        <location filename="../dialogs/cultures.cpp" line="142"/>
-        <location filename="../dialogs/cultures.cpp" line="159"/>
-        <location filename="../dialogs/cultures.cpp" line="253"/>
-        <location filename="../dialogs/cultures.cpp" line="453"/>
-        <location filename="../dialogs/cultures.cpp" line="514"/>
-        <location filename="../dialogs/cultures.cpp" line="569"/>
-        <location filename="../dialogs/cultures.cpp" line="616"/>
-        <location filename="../dialogs/cultures.cpp" line="795"/>
-        <location filename="../dialogs/cultures.cpp" line="842"/>
+        <location filename="../dialogs/cultures.cpp" line="113"/>
+        <location filename="../dialogs/cultures.cpp" line="143"/>
+        <location filename="../dialogs/cultures.cpp" line="160"/>
+        <location filename="../dialogs/cultures.cpp" line="254"/>
+        <location filename="../dialogs/cultures.cpp" line="454"/>
+        <location filename="../dialogs/cultures.cpp" line="515"/>
+        <location filename="../dialogs/cultures.cpp" line="570"/>
+        <location filename="../dialogs/cultures.cpp" line="617"/>
+        <location filename="../dialogs/cultures.cpp" line="796"/>
+        <location filename="../dialogs/cultures.cpp" line="843"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="73"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="87"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="103"/>
@@ -8102,7 +8152,7 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/fiche_plantes.cpp" line="898"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="940"/>
         <location filename="../dialogs/planner.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="3092"/>
+        <location filename="../mainwindow.cpp" line="3094"/>
         <source>id</source>
         <translation>id</translation>
     </message>
@@ -8111,17 +8161,17 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/configuration.cpp" line="613"/>
         <location filename="../dialogs/configuration.cpp" line="649"/>
         <location filename="../dialogs/configuration.cpp" line="686"/>
-        <location filename="../dialogs/cultures.cpp" line="113"/>
-        <location filename="../dialogs/cultures.cpp" line="128"/>
-        <location filename="../dialogs/cultures.cpp" line="143"/>
-        <location filename="../dialogs/cultures.cpp" line="160"/>
-        <location filename="../dialogs/cultures.cpp" line="254"/>
-        <location filename="../dialogs/cultures.cpp" line="454"/>
-        <location filename="../dialogs/cultures.cpp" line="515"/>
-        <location filename="../dialogs/cultures.cpp" line="570"/>
-        <location filename="../dialogs/cultures.cpp" line="617"/>
-        <location filename="../dialogs/cultures.cpp" line="796"/>
-        <location filename="../dialogs/cultures.cpp" line="843"/>
+        <location filename="../dialogs/cultures.cpp" line="114"/>
+        <location filename="../dialogs/cultures.cpp" line="129"/>
+        <location filename="../dialogs/cultures.cpp" line="144"/>
+        <location filename="../dialogs/cultures.cpp" line="161"/>
+        <location filename="../dialogs/cultures.cpp" line="255"/>
+        <location filename="../dialogs/cultures.cpp" line="455"/>
+        <location filename="../dialogs/cultures.cpp" line="516"/>
+        <location filename="../dialogs/cultures.cpp" line="571"/>
+        <location filename="../dialogs/cultures.cpp" line="618"/>
+        <location filename="../dialogs/cultures.cpp" line="797"/>
+        <location filename="../dialogs/cultures.cpp" line="844"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="74"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="88"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="104"/>
@@ -8135,27 +8185,27 @@ version 2017.001 license GNU GPL version 3</translation>
         <location filename="../dialogs/fiche_plantes.cpp" line="899"/>
         <location filename="../dialogs/fiche_plantes.cpp" line="941"/>
         <location filename="../dialogs/planner.cpp" line="126"/>
-        <location filename="../mainwindow.cpp" line="3093"/>
+        <location filename="../mainwindow.cpp" line="3095"/>
         <source>designation</source>
         <translation>designation</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="114"/>
-        <location filename="../dialogs/cultures.cpp" line="144"/>
-        <location filename="../dialogs/cultures.cpp" line="255"/>
-        <location filename="../dialogs/cultures.cpp" line="455"/>
-        <location filename="../dialogs/cultures.cpp" line="797"/>
-        <location filename="../mainwindow.cpp" line="3094"/>
+        <location filename="../dialogs/cultures.cpp" line="115"/>
+        <location filename="../dialogs/cultures.cpp" line="145"/>
+        <location filename="../dialogs/cultures.cpp" line="256"/>
+        <location filename="../dialogs/cultures.cpp" line="456"/>
+        <location filename="../dialogs/cultures.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="3096"/>
         <source>parcelle</source>
         <translation>parcelle</translation>
     </message>
     <message>
-        <location filename="../dialogs/cultures.cpp" line="129"/>
-        <location filename="../dialogs/cultures.cpp" line="161"/>
-        <location filename="../dialogs/cultures.cpp" line="516"/>
-        <location filename="../dialogs/cultures.cpp" line="571"/>
-        <location filename="../dialogs/cultures.cpp" line="618"/>
-        <location filename="../dialogs/cultures.cpp" line="844"/>
+        <location filename="../dialogs/cultures.cpp" line="130"/>
+        <location filename="../dialogs/cultures.cpp" line="162"/>
+        <location filename="../dialogs/cultures.cpp" line="517"/>
+        <location filename="../dialogs/cultures.cpp" line="572"/>
+        <location filename="../dialogs/cultures.cpp" line="619"/>
+        <location filename="../dialogs/cultures.cpp" line="845"/>
         <source>date</source>
         <translation>date</translation>
     </message>
@@ -8461,22 +8511,22 @@ version 2017.001 license GNU GPL version 3</translation>
         <translation>XML Files (*.xml);; All files (*.*)</translation>
     </message>
     <message>
-        <location filename="../dialogs/detail_parcelle.cpp" line="518"/>
+        <location filename="../dialogs/detail_parcelle.cpp" line="519"/>
         <source>Sauvegarde du plan de détail</source>
         <translation>Sauvegarde du plan de détail</translation>
     </message>
     <message>
-        <location filename="../dialogs/detail_parcelle.cpp" line="520"/>
+        <location filename="../dialogs/detail_parcelle.cpp" line="521"/>
         <source>XML Files (*.xml)</source>
         <translation>XML Files (*.xml)</translation>
     </message>
     <message>
-        <location filename="../dialogs/detail_parcelle.cpp" line="1096"/>
+        <location filename="../dialogs/detail_parcelle.cpp" line="1098"/>
         <source>Suppression</source>
         <translation>Suppression</translation>
     </message>
     <message>
-        <location filename="../dialogs/detail_parcelle.cpp" line="1097"/>
+        <location filename="../dialogs/detail_parcelle.cpp" line="1099"/>
         <source>Cet objet peut être supprimer.
 Confirmer la suppression de l&apos;objet ?</source>
         <translation>Cet objet peut être supprimer.
