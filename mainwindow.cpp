@@ -334,7 +334,7 @@ void MainWindow::on_actionA_propos_de_triggered()
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
                           "Ce programme est compilé avec Qt 5.5.1 .\n"
-                          "Openjardin version 1.07.011 license GNU GPL version 3.0"));
+                          "Openjardin version 1.07.012 license GNU GPL version 3.0"));
 }
 
 void MainWindow::on_actionA_propos_de_Qt_triggered()
@@ -372,7 +372,17 @@ void MainWindow::on_actionTraduire_en_francais_triggered()
     settings.setValue("langue", "francais"); // enregistre dans fichier .conf
 }
 
-
+void MainWindow::on_actionTradurre_in_italiano_triggered()
+{
+    // forcer la langue italienne
+    QTranslator translator;
+    QString     fichier = ":/translations/open-jardin_it.ts";
+    translator.load(fichier);
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
+    QSettings       settings;
+    settings.setValue("langue", "italien"); // enregistre dans fichier .conf
+}
 /*************************************************************************/
 void MainWindow::resizeEvent(QResizeEvent *event)
 {   //redimensionne la zone principale du planning et des rotations selon la taille de la fenêtre principale
@@ -414,23 +424,31 @@ void MainWindow::on_actionNouveau_projet_triggered()
 void MainWindow::loadIniSettings()
 {
     QSettings settings;
-    // création du document pour lire XML
-    QDomDocument document;
-    QString      champ;
     QFile        iniFile(settings.fileName());
 
     if (iniFile.exists())
     {
-        QSettings settings(iniFile.fileName(), QSettings::IniFormat);
+        QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
         settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
+        if(langue == "francais")
+        {
+            on_actionTraduire_en_francais_triggered();
+
+        }
         if(langue == "english")
         {
             on_actionLangue_Anglais_triggered();
 
         }
+        if(langue == "italien")
+        {
+            on_actionTradurre_in_italiano_triggered();
+
+        }
         QString fileName = settings.value("lastfile").toString();
         ouvrir_FichierXML(fileName);
+        qDebug() << " setting : filename " << fileName << " langue : " << langue;
     }
     else
     {
@@ -441,6 +459,7 @@ void MainWindow::loadIniSettings()
         setfileNameSQL(fileName);
         createConnection(fileName);
     }
+
 }
 
 void MainWindow::createConnection(QString fileName)
@@ -1581,6 +1600,31 @@ void MainWindow::affiche_rotation(int year)
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
 
+    QSettings settings;
+    QFile        iniFile(settings.fileName());
+
+    if (iniFile.exists())
+    {
+        QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
+        settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "francais")
+        {
+           fichier = ":/translations/open-jardin_fr.qm";
+
+        }
+        if(langue == "english")
+        {
+           fichier = ":/translations/open-jardin_en.qm";
+
+        }
+        if(langue == "italien")
+        {
+           fichier = ":/translations/open-jardin_it.qm";
+
+        }
+    }
+
     translator.load(fichier);
     qApp->installTranslator(&translator);
 
@@ -1780,7 +1824,30 @@ void MainWindow::affiche_planning(int day, int bis)
 {
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
+    QSettings settings;
+    QFile        iniFile(settings.fileName());
 
+    if (iniFile.exists())
+    {
+        QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
+        settings.setIniCodec("UTF-8");
+        QString langue = settings.value("langue").toString();
+        if(langue == "francais")
+        {
+           fichier = ":/translations/open-jardin_fr.qm";
+
+        }
+        if(langue == "english")
+        {
+           fichier = ":/translations/open-jardin_en.qm";
+
+        }
+        if(langue == "italien")
+        {
+           fichier = ":/translations/open-jardin_it.qm";
+
+        }
+    }
     translator.load(fichier);
     qApp->installTranslator(&translator);
 
@@ -2730,12 +2797,39 @@ void MainWindow::on_actionBringToFront_triggered()
 
     foreach(QGraphicsItem * item, overlapItems)
     {
-        zValue = item->zValue() + 0.1;
-        qDebug() << zValue;
+         if (item->zValue() >= zValue)
+         {
+            zValue = item->zValue() + 0.1;
+            qDebug() <<"zValue "<< zValue;
+         }
     }
     selectedItem->setZValue(zValue);
+     ui->pushButton_recorPlan->show();
 }
 
+void MainWindow::on_actionmettre_en_arri_re_triggered()
+{
+    if (scene->selectedItems().isEmpty())
+    {
+        return;
+    }
+
+    QGraphicsItem *         selectedItem = scene->selectedItems().first();
+    QList <QGraphicsItem *> overlapItems = selectedItem->collidingItems();
+
+    qreal zValue = 0;
+
+    foreach(QGraphicsItem * item, overlapItems)
+    {
+         if (item->zValue() >= zValue)
+         {
+            zValue = item->zValue() - 0.1;
+            qDebug() <<"zValue "<< zValue;
+         }
+    }
+    selectedItem->setZValue(zValue);
+     ui->pushButton_recorPlan->show();
+}
 /**********************affichage fond d'écran***************************/
 
 void MainWindow::on_actionCacher_le_fond_triggered()
@@ -2812,6 +2906,7 @@ void MainWindow::on_actionModification_plan_triggered()
     ui->actionChoisir_la_couleur->setEnabled(true);
     ui->actionChoisir_le_type_de_crayon->setEnabled(true);
     ui->actionBringToFront->setEnabled(true);
+    ui->actionmettre_en_arri_re->setEnabled(true);
     ui->actionDeselectionner_tout->setEnabled(true);
     ui->actionFondEcran->setEnabled(true);
     ui->actionSelectionner_tout->setEnabled(true);
@@ -2827,6 +2922,14 @@ void MainWindow::on_actionModification_plan_triggered()
     ui->toolButton_CouleurFond->setEnabled(true);
     ui->frame_ToolsCreate->show();
     statusLabel->setText("MODE MODIFICATION");
+}
+
+void MainWindow::on_actionModification_plan_changed()
+{
+   if(statusLabel->text() == "MODE MODIFICATION")
+   { // affichage du bouton de sauvegarde du plan
+      ui->pushButton_recorPlan->show();
+   }
 }
 
 void MainWindow::on_actionUtilisation_triggered()
@@ -2863,6 +2966,7 @@ void MainWindow::on_actionUtilisation_triggered()
     ui->actionChoisir_la_couleur->setDisabled(true);
     ui->actionChoisir_le_type_de_crayon->setDisabled(true);
     ui->actionBringToFront->setDisabled(true);
+    ui->actionmettre_en_arri_re->setDisabled(true);
     ui->actionDeselectionner_tout->setDisabled(true);
     ui->actionFondEcran->setDisabled(true);
     ui->actionSelectionner_tout->setDisabled(true);
@@ -4098,5 +4202,3 @@ void MainWindow::on_pushButton_clicked()
 
     Fiche->show();
 }
-
-

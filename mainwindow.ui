@@ -3158,6 +3158,7 @@
     <addaction name="actionBringToFront"/>
     <addaction name="actionOuvrir_fiche_culture"/>
     <addaction name="separator"/>
+    <addaction name="actionmettre_en_arri_re"/>
    </widget>
    <widget class="QMenu" name="menuAide">
     <property name="title">
@@ -3177,6 +3178,7 @@
     <addaction name="actionConfiguration"/>
     <addaction name="actionLangue_Anglais"/>
     <addaction name="actionTraduire_en_francais"/>
+    <addaction name="actionTradurre_in_italiano"/>
    </widget>
    <widget class="QMenu" name="menuGantt">
     <property name="title">
@@ -3678,6 +3680,20 @@
   <action name="actionTraduire_en_francais">
    <property name="text">
     <string>Traduire en francais</string>
+   </property>
+  </action>
+  <action name="actionmettre_en_arri_re">
+   <property name="icon">
+    <iconset resource="openjardin.qrc">
+     <normaloff>:/images/bringtoback.png</normaloff>:/images/bringtoback.png</iconset>
+   </property>
+   <property name="text">
+    <string>mettre en arrière</string>
+   </property>
+  </action>
+  <action name="actionTradurre_in_italiano">
+   <property name="text">
+    <string>Tradurre in italiano </string>
    </property>
   </action>
  </widget>

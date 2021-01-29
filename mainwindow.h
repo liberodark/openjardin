@@ -280,6 +280,12 @@ private slots:
     void on_actionTraduire_en_francais_triggered();
 
 
+    void on_actionModification_plan_changed();
+
+    void on_actionmettre_en_arri_re_triggered();
+
+    void on_actionTradurre_in_italiano_triggered();
+
 protected:
     QPoint mousePressPt;
     void mousePressEvent(QMouseEvent *event);
