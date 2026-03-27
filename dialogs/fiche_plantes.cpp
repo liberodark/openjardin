@@ -26,7 +26,6 @@ Fiche_plantes::Fiche_plantes(const int&IdPlante, QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -34,7 +33,9 @@ Fiche_plantes::Fiche_plantes(const int&IdPlante, QWidget *parent) :
                  fichier = ":/translations/open-jardin_en.ts";
             }
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -132,7 +133,7 @@ void Fiche_plantes::init_base()
         for (int y = 0; y < ui->tableWidget_culture_printemps->columnCount(); y++)
         {
             ui->tableWidget_culture_printemps->setItem(x, y, new QTableWidgetItem);
-            ui->tableWidget_culture_printemps->item(x, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_printemps->item(x, y)->setBackground(Qt::white);
         }
     }
 
@@ -141,7 +142,7 @@ void Fiche_plantes::init_base()
         for (int y = 0; y < ui->tableWidget_culture_automne->columnCount(); y++)
         {
             ui->tableWidget_culture_automne->setItem(x, y, new QTableWidgetItem);
-            ui->tableWidget_culture_automne->item(x, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_automne->item(x, y)->setBackground(Qt::white);
         }
     }
     for (int x = 0; x < ui->tableWidget_rotation->rowCount(); x++)
@@ -149,7 +150,7 @@ void Fiche_plantes::init_base()
         for (int y = 0; y < ui->tableWidget_rotation->columnCount(); y++)
         {
             ui->tableWidget_rotation->setItem(x, y, new QTableWidgetItem);
-            ui->tableWidget_rotation->item(x, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation->item(x, y)->setBackground(Qt::white);
         }
     }
     for (int x = 0; x < ui->tableWidget_rotation_2->rowCount(); x++)
@@ -157,7 +158,7 @@ void Fiche_plantes::init_base()
         for (int y = 0; y < ui->tableWidget_rotation_2->columnCount(); y++)
         {
             ui->tableWidget_rotation_2->setItem(x, y, new QTableWidgetItem);
-            ui->tableWidget_rotation_2->item(x, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation_2->item(x, y)->setBackground(Qt::white);
         }
     }
 }
@@ -209,7 +210,7 @@ void Fiche_plantes::on_tableView_plantes_clicked(const QModelIndex&index)
     mise_a_jourFiche(row);
 }
 
-void Fiche_plantes::on_comboBox_especes_de_plantes_currentIndexChanged(const QString&arg1)
+void Fiche_plantes::on_comboBox_especes_de_plantes_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   resultat;
@@ -445,28 +446,28 @@ void Fiche_plantes::on_pushButton_Nouveau_plantes_clicked()
 
 void Fiche_plantes::on_tableWidget_culture_printemps_cellClicked(int row, int column)
 {
-    QColor case_color = ui->tableWidget_culture_printemps->item(row, column)->backgroundColor();
+    QColor case_color = ui->tableWidget_culture_printemps->item(row, column)->background().color();
 
     if (row == 0)
     {
         if (case_color == Qt::green)
         {
-            ui->tableWidget_culture_printemps->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_printemps->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_printemps->item(row, column)->setBackgroundColor(Qt::green);
+            ui->tableWidget_culture_printemps->item(row, column)->setBackground(Qt::green);
         }
     }
     else
     {
         if (case_color == Qt::gray)
         {
-            ui->tableWidget_culture_printemps->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_printemps->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_printemps->item(row, column)->setBackgroundColor(Qt::gray);
+            ui->tableWidget_culture_printemps->item(row, column)->setBackground(Qt::gray);
         }
     }
     test_tables_semis();
@@ -475,28 +476,28 @@ void Fiche_plantes::on_tableWidget_culture_printemps_cellClicked(int row, int co
 
 void Fiche_plantes::on_tableWidget_culture_automne_cellClicked(int row, int column)
 {
-    QColor case_color = ui->tableWidget_culture_automne->item(row, column)->backgroundColor();
+    QColor case_color = ui->tableWidget_culture_automne->item(row, column)->background().color();
 
     if (row == 0)
     {
         if (case_color == Qt::green)
         {
-            ui->tableWidget_culture_automne->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_automne->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_automne->item(row, column)->setBackgroundColor(Qt::green);
+            ui->tableWidget_culture_automne->item(row, column)->setBackground(Qt::green);
         }
     }
     else
     {
         if (case_color == Qt::gray)
         {
-            ui->tableWidget_culture_automne->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_automne->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_automne->item(row, column)->setBackgroundColor(Qt::gray);
+            ui->tableWidget_culture_automne->item(row, column)->setBackground(Qt::gray);
         }
     }
     test_tables_semis();
@@ -509,7 +510,7 @@ void Fiche_plantes::test_tables_semis()
 
     for (int y = 0; y < ui->tableWidget_culture_printemps->columnCount(); y++)
     {
-        if (ui->tableWidget_culture_printemps->item(0, y)->backgroundColor() == Qt::green)
+        if (ui->tableWidget_culture_printemps->item(0, y)->background().color() == Qt::green)
         {
             printemps_semis = printemps_semis + "1";
         }
@@ -521,7 +522,7 @@ void Fiche_plantes::test_tables_semis()
 
     for (int y = 0; y < ui->tableWidget_culture_printemps->columnCount(); y++)
     {
-        if (ui->tableWidget_culture_printemps->item(1, y)->backgroundColor() == Qt::gray)
+        if (ui->tableWidget_culture_printemps->item(1, y)->background().color() == Qt::gray)
         {
             printemps_semis = printemps_semis + "1";
         }
@@ -539,7 +540,7 @@ void Fiche_plantes::test_tables_semis()
     QString automne_recolte = "";
     for (int y = 0; y < ui->tableWidget_culture_automne->columnCount(); y++)
     {
-        if (ui->tableWidget_culture_automne->item(0, y)->backgroundColor() == Qt::green)
+        if (ui->tableWidget_culture_automne->item(0, y)->background().color() == Qt::green)
         {
             automne_semis = automne_semis + "1";
         }
@@ -551,7 +552,7 @@ void Fiche_plantes::test_tables_semis()
 
     for (int y = 0; y < ui->tableWidget_culture_automne->columnCount(); y++)
     {
-        if (ui->tableWidget_culture_automne->item(1, y)->backgroundColor() == Qt::gray)
+        if (ui->tableWidget_culture_automne->item(1, y)->background().color() == Qt::gray)
         {
             automne_semis = automne_semis + "1";
         }
@@ -573,11 +574,11 @@ void Fiche_plantes::mise_a_jour_tables_semis(const QString&printemps, const QStr
     {
         if (printemps.mid(y, 1) == "0")
         {
-            ui->tableWidget_culture_printemps->item(0, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_printemps->item(0, y)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_printemps->item(0, y)->setBackgroundColor(Qt::green);
+            ui->tableWidget_culture_printemps->item(0, y)->setBackground(Qt::green);
         }
         pos = y;
     }
@@ -587,11 +588,11 @@ void Fiche_plantes::mise_a_jour_tables_semis(const QString&printemps, const QStr
     {
         if (printemps.mid(pos + z + 1, 1) == "0")
         {
-            ui->tableWidget_culture_printemps->item(1, z)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_printemps->item(1, z)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_printemps->item(1, z)->setBackgroundColor(Qt::gray);
+            ui->tableWidget_culture_printemps->item(1, z)->setBackground(Qt::gray);
         }
     }
 
@@ -602,11 +603,11 @@ void Fiche_plantes::mise_a_jour_tables_semis(const QString&printemps, const QStr
     {
         if (automne.mid(y, 1) == "0")
         {
-            ui->tableWidget_culture_automne->item(0, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_automne->item(0, y)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_automne->item(0, y)->setBackgroundColor(Qt::green);
+            ui->tableWidget_culture_automne->item(0, y)->setBackground(Qt::green);
         }
         pos = y;
     }
@@ -616,11 +617,11 @@ void Fiche_plantes::mise_a_jour_tables_semis(const QString&printemps, const QStr
     {
         if (automne.mid(pos + z + 1, 1) == "0")
         {
-            ui->tableWidget_culture_automne->item(1, z)->setBackgroundColor(Qt::white);
+            ui->tableWidget_culture_automne->item(1, z)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_culture_automne->item(1, z)->setBackgroundColor(Qt::gray);
+            ui->tableWidget_culture_automne->item(1, z)->setBackground(Qt::gray);
         }
     }
 }
@@ -953,35 +954,35 @@ void Fiche_plantes::on_tableWidget_rotation_cellClicked(int row, int column)
 {
     // modification du tableau des rotations de cultures et mise à jour de la valeur à enregistre dans la base
 
-    QColor case_color = ui->tableWidget_rotation->item(row, column)->backgroundColor();
+    QColor case_color = ui->tableWidget_rotation->item(row, column)->background().color();
 
     if (row == 0)
     {
         if (case_color == Qt::green)
         {
-            ui->tableWidget_rotation->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_rotation->item(row, column)->setBackgroundColor(Qt::green);
+            ui->tableWidget_rotation->item(row, column)->setBackground(Qt::green);
         }
     }
     else
     {
         if (case_color == Qt::red)
         {
-            ui->tableWidget_rotation->item(row, column)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation->item(row, column)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_rotation->item(row, column)->setBackgroundColor(Qt::red);
+            ui->tableWidget_rotation->item(row, column)->setBackground(Qt::red);
         }
     }
     //mise à jour de la valeur rotation
     QString rotation = "";
     for (int y = 0; y < ui->tableWidget_rotation->columnCount(); y++)
     {
-        if (ui->tableWidget_rotation->item(0, y)->backgroundColor() == Qt::green)
+        if (ui->tableWidget_rotation->item(0, y)->background().color() == Qt::green)
         {
             rotation = rotation + "1";
         }
@@ -993,7 +994,7 @@ void Fiche_plantes::on_tableWidget_rotation_cellClicked(int row, int column)
 
     for (int y = 0; y < ui->tableWidget_rotation->columnCount(); y++)
     {
-        if (ui->tableWidget_rotation->item(1, y)->backgroundColor() == Qt::red)
+        if (ui->tableWidget_rotation->item(1, y)->background().color() == Qt::red)
         {
             rotation = rotation + "1";
         }
@@ -1015,11 +1016,11 @@ void Fiche_plantes::on_lineEdit_valeur_rotation_familles_textChanged(const QStri
     {
         if (arg1.mid(y, 1) == "0")
         {
-            ui->tableWidget_rotation->item(0, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation->item(0, y)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_rotation->item(0, y)->setBackgroundColor(Qt::green);
+            ui->tableWidget_rotation->item(0, y)->setBackground(Qt::green);
         }
         pos = y;
     }
@@ -1029,11 +1030,11 @@ void Fiche_plantes::on_lineEdit_valeur_rotation_familles_textChanged(const QStri
     {
         if (arg1.mid(pos + z + 1, 1) == "0")
         {
-            ui->tableWidget_rotation->item(1, z)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation->item(1, z)->setBackground(Qt::white);
         }
         else
         {
-            ui->tableWidget_rotation->item(1, z)->setBackgroundColor(Qt::red);
+            ui->tableWidget_rotation->item(1, z)->setBackground(Qt::red);
         }
     }
 }
@@ -1047,12 +1048,12 @@ void Fiche_plantes::on_lineEdit_valeur_rotation_familles_2_textChanged(const QSt
         if (arg1.mid(y, 1) == "0")
         {
             ui->tableWidget_rotation_2->setItem(0, y, new QTableWidgetItem);
-            ui->tableWidget_rotation_2->item(0, y)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation_2->item(0, y)->setBackground(Qt::white);
         }
         else
         {
             ui->tableWidget_rotation_2->setItem(0, y, new QTableWidgetItem);
-            ui->tableWidget_rotation_2->item(0, y)->setBackgroundColor(Qt::green);
+            ui->tableWidget_rotation_2->item(0, y)->setBackground(Qt::green);
         }
         pos = y;
     }
@@ -1062,12 +1063,12 @@ void Fiche_plantes::on_lineEdit_valeur_rotation_familles_2_textChanged(const QSt
         if (arg1.mid(pos + z + 1, 1) == "0")
         {
             ui->tableWidget_rotation_2->setItem(1, z, new QTableWidgetItem);
-            ui->tableWidget_rotation_2->item(1, z)->setBackgroundColor(Qt::white);
+            ui->tableWidget_rotation_2->item(1, z)->setBackground(Qt::white);
         }
         else
         {
             ui->tableWidget_rotation_2->setItem(1, z, new QTableWidgetItem);
-            ui->tableWidget_rotation_2->item(1, z)->setBackgroundColor(Qt::red);
+            ui->tableWidget_rotation_2->item(1, z)->setBackground(Qt::red);
         }
     }
 }

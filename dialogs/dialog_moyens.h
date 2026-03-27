@@ -37,7 +37,7 @@ private slots:
 
     void on_pushButton_Annuler_clicked();
 
-    void on_comboBox_Moyens_currentIndexChanged(const QString&arg1);
+    void on_comboBox_Moyens_currentTextChanged(const QString&arg1);
 
 
 
@@ -46,8 +46,6 @@ private slots:
     void on_pushButton_Edit_Type_clicked();
 
     void on_pushButton_Add_coord_moyen_clicked();
-
-    void on_comboBox_coordonnees_currentIndexChanged(const QString&arg1);
 
     void on_comboBox_coordonnees_currentTextChanged(const QString&arg1);
 

@@ -19,7 +19,6 @@ Dialog_moyens::Dialog_moyens(const int&IdMoyen, QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -30,7 +29,9 @@ Dialog_moyens::Dialog_moyens(const int&IdMoyen, QWidget *parent) :
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -83,7 +84,7 @@ void Dialog_moyens::init_base()
     {
         QString designation_moyen = query.value(0).toString();
         ui->comboBox_Moyens->setCurrentText(designation_moyen);
-        on_comboBox_Moyens_currentIndexChanged(designation_moyen);
+        on_comboBox_Moyens_currentTextChanged(designation_moyen);
     }
 }
 
@@ -230,7 +231,7 @@ void Dialog_moyens::on_pushButton_Annuler_clicked()
     close();
 }
 
-void Dialog_moyens::on_comboBox_Moyens_currentIndexChanged(const QString&arg1)
+void Dialog_moyens::on_comboBox_Moyens_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   id_moyen;
@@ -335,11 +336,6 @@ void Dialog_moyens::on_pushButton_Add_coord_moyen_clicked()
     }
 }
 
-void Dialog_moyens::on_comboBox_coordonnees_currentIndexChanged(const QString&arg1)
-{
-    Q_UNUSED(arg1)
-}
-
 void Dialog_moyens::on_comboBox_coordonnees_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
@@ -395,6 +391,6 @@ void Dialog_moyens::on_toolButton_clicked()
     {
         QString designation_moyen = query.value(0).toString();
         ui->comboBox_Moyens->setCurrentText(designation_moyen);
-        on_comboBox_Moyens_currentIndexChanged(designation_moyen);
+        on_comboBox_Moyens_currentTextChanged(designation_moyen);
     }
 }

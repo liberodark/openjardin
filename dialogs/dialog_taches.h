@@ -52,7 +52,7 @@ private slots:
 
     void on_dateEdit_Depart_dateChanged(const QDate&date);
 
-    void on_comboBox_Taches_currentIndexChanged(const QString&arg1);
+    void on_comboBox_Taches_currentTextChanged(const QString&arg1);
 
     void on_spinBox_Avancement_valueChanged(int arg1);
 
@@ -80,7 +80,7 @@ private slots:
 
     void on_tableView_Ressources_clicked(const QModelIndex&index);
 
-    void on_comboBox_phasesCultures_currentIndexChanged(const QString&arg1);
+    void on_comboBox_phasesCultures_currentTextChanged(const QString&arg1);
 
     void on_lineEdit_Designation_textChanged(const QString&arg1);
 

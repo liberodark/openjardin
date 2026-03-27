@@ -71,7 +71,7 @@ private slots:
 
     void on_toolButton_AjoutCercle_clicked();
 
-    void on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString&arg1);
+    void on_comboBox_epaisseurLignes_P_currentTextChanged(const QString&arg1);
 
     void on_comboBox_typeLigne_P_currentIndexChanged(int index);
 

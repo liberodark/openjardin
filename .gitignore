@@ -1,0 +1,11 @@
+/build/
+.vscode/
+.idea/
+.fleet/
+*.iml
+.vim/
+.nvim/
+*.swp
+*.swo
+*.patch
+

@@ -37,7 +37,7 @@ private slots:
 
     void on_pushButton_Annuler_clicked();
 
-    void on_comboBox_Type_de_tache_currentIndexChanged(const QString&arg1);
+    void on_comboBox_Type_de_tache_currentTextChanged(const QString&arg1);
 
     void on_toolButton_CouleurFond_clicked();
 

@@ -17,7 +17,6 @@ Dialog_ajout_ressource::Dialog_ajout_ressource(const int&IdTache, QWidget *paren
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -28,7 +27,9 @@ Dialog_ajout_ressource::Dialog_ajout_ressource(const int&IdTache, QWidget *paren
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);

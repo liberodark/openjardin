@@ -34,7 +34,6 @@ detail_parcelle::detail_parcelle(const int&IdParcelle, const QString&fileName, Q
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -45,7 +44,9 @@ detail_parcelle::detail_parcelle(const int&IdParcelle, const QString&fileName, Q
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -165,7 +166,7 @@ void detail_parcelle::ouvrir_FichierXML(QString fileName)
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                         }
@@ -191,14 +192,14 @@ void detail_parcelle::ouvrir_FichierXML(QString fileName)
                             item->setTypeLine(objet.attribute("TypeLine").toInt());
                             item->setWidthLine(objet.attribute("WidthLine").toInt());
                             item->setZValue(objet.attribute("ZValue").toDouble());
-                            item->setUuid(objet.attribute("Uuid"));
+                            item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             if (objet.attribute("Uuid") == "")
                             {
                                 item->setUuid(QUuid::createUuid());
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                         }
@@ -230,7 +231,7 @@ void detail_parcelle::ouvrir_FichierXML(QString fileName)
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                         }
@@ -267,13 +268,13 @@ QPolygon detail_parcelle::convertStrToPoly(const QString MyString)
 {
     //conversion d'une chaine de caractères avec séparateur des QPoints avec ; en QPolygon
 
-    QStringList liste = MyString.split(';', QString::SkipEmptyParts);
+    QStringList liste = MyString.split(';', Qt::SkipEmptyParts);
     QPolygon    poly(liste.count());
 
     for (int i = 0; i < liste.count(); i++)
     {
         QString     valeur_point = liste[i];
-        QStringList liste_point  = valeur_point.split(',', QString::SkipEmptyParts);
+        QStringList liste_point  = valeur_point.split(',', Qt::SkipEmptyParts);
         QString     strX         = liste_point[0];
         QString     strY         = liste_point[1];
         int         x            = strX.toInt();
@@ -837,7 +838,7 @@ int detail_parcelle::get_MaxId()
     return m_MaxId;
 }
 
-void detail_parcelle::on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString&arg1)
+void detail_parcelle::on_comboBox_epaisseurLignes_P_currentTextChanged(const QString&arg1)
 {
     QList <QGraphicsItem *> itemList = scene->items();
     for (int i = 0; i < itemList.size(); i++)
@@ -1143,7 +1144,7 @@ void detail_parcelle::on_toolButton_devant_clicked()
 
     qreal zValue = 0;
 
-    foreach(QGraphicsItem * item, overlapItems)
+    for(QGraphicsItem * item : overlapItems)
     {
         zValue = item->zValue() + 0.1;
         qDebug() << zValue;

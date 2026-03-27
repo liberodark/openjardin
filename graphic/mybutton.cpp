@@ -58,7 +58,7 @@ void Button::leaveEvent(QEvent *e)
     QToolButton::leaveEvent(e);
 }
 
-void Button::enterEvent(QEvent *e)
+void Button::enterEvent(QEnterEvent *e)
 {
     setToolTip(getNom());
     QToolButton::enterEvent(e);

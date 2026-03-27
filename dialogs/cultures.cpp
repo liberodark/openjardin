@@ -43,6 +43,8 @@
 #include "utilitaires/util.h"
 #include <QTextStream>
 #include <QPrinter>
+#include <QPageLayout>
+#include <QPageSize>
 #include <QPrintDialog>
 #include <QtSql>
 #include <QtWidgets>
@@ -61,7 +63,6 @@ Cultures::Cultures(const int&IdItem, const int&IdCulture, QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -71,7 +72,9 @@ Cultures::Cultures(const int&IdItem, const int&IdCulture, QWidget *parent) :
              }
 
     }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -304,7 +307,7 @@ void Cultures::on_tableViewCultures_clicked(const QModelIndex&index)
     ui->lineEdit_id_cultures->setText(strId);
 }
 
-void Cultures::on_comboBox_plante_currentIndexChanged(const QString&arg1)
+void Cultures::on_comboBox_plante_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   id_plante;
@@ -639,10 +642,10 @@ void Cultures::on_pushButton_print_fiche_clicked()
     QString   titre   = " FICHE DE CULTURE ";
     QPrinter *printer = new QPrinter(QPrinter::HighResolution);
 
-    printer->setPaperSize(QPrinter::A4);
+    printer->setPageSize(QPageSize(QPageSize::A4));
     // printer->setOutputFormat(QPrinter::NativeFormat);
     printer->setOutputFormat(QPrinter::PdfFormat);
-    printer->setOrientation(QPrinter::Portrait);
+    printer->setPageOrientation(QPageLayout::Portrait);
     printer->setFullPage(true);
 
     QPrintDialog printDialog(printer, this);

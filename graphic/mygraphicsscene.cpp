@@ -67,7 +67,7 @@ void MyGraphicsScene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent)
 void MyGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent)
 {
     /*  QList <Sommet *> sommets;
-     * foreach(QGraphicsItem * item, items())
+     * for(QGraphicsItem * item : items())
      * {
      *    if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
      *    {
@@ -98,7 +98,7 @@ void MyGraphicsScene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
 void MyGraphicsScene::clearListSommets()
 {
     QList <Sommet *> sommets;
-    foreach(QGraphicsItem * item, items())
+    for(QGraphicsItem * item : items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {

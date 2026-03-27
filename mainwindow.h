@@ -175,7 +175,7 @@ private slots:
 
     void on_actionAfficher_le_fond_triggered();
 
-    void on_comboBox_AnneeEnCours_currentIndexChanged(const QString&arg1);
+    void on_comboBox_AnneeEnCours_currentTextChanged(const QString&arg1);
 
     void on_pushButton_Affiches_fiche_clicked();
 
@@ -185,7 +185,7 @@ private slots:
 
     void on_actionImprimer_le_plan_triggered();
 
-    void on_comboBox_AnneeEnCours_2_currentIndexChanged(const QString&arg1);
+    void on_comboBox_AnneeEnCours_2_currentTextChanged(const QString&arg1);
 
     void on_pushButton_color_clicked();
 
@@ -203,7 +203,7 @@ private slots:
 
     void on_comboBox_typeLigne_P_currentIndexChanged(int index);
 
-    void on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString&arg1);
+    void on_comboBox_epaisseurLignes_P_currentTextChanged(const QString&arg1);
 
     void on_toolButton_InsertRectangle_clicked();
 

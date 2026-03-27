@@ -1,6 +1,7 @@
 #include "util.h"
 #include <QCoreApplication>
 #include <QDebug>
+#include <QLocale>
 #include <qtranslator.h>
 
 util::util()

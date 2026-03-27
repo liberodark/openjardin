@@ -43,7 +43,6 @@ Planning::Planning(const int&IdParcelle, QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -54,7 +53,9 @@ Planning::Planning(const int&IdParcelle, QWidget *parent) :
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
     set_idparcelle(IdParcelle);
     ui->setupUi(this);
@@ -141,7 +142,9 @@ void Planning::affiche_planning(int day, int bis)
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
 
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
     //affiche le planning en démarrant au premier jour de la semaine selon la valeur de "day"
     //en fonction de l'année
@@ -436,7 +439,7 @@ void Planning::ajouter_repere_jour(QString titre, int colonne, int ligne, int wi
     scene_planning->addItem(item);
 }
 
-void Planning::on_comboBox_AnneeEnCours_currentIndexChanged(const QString&arg1)
+void Planning::on_comboBox_AnneeEnCours_currentTextChanged(const QString&arg1)
 {
     //le changement de l'année du combobox entraine l'affichage du planning calé au 1er janvier
     QString strDate       = "01/01/" + arg1;

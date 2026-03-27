@@ -5,7 +5,7 @@
 #include <qsplitter.h>
 #include "graphic/mytreewidgetitem.h"
 #include "utilitaires/util.h"
-#include <QtGui>
+#include <QGuiApplication>
 #include <QApplication>
 
 dialog_Aide::dialog_Aide(QWidget *parent) :
@@ -20,7 +20,6 @@ dialog_Aide::dialog_Aide(QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -31,7 +30,9 @@ dialog_Aide::dialog_Aide(QWidget *parent) :
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -93,20 +94,19 @@ void dialog_Aide::parse_html()
 {
     // extraction des liens du texte html
     QString     texte_html = ui->textBrowser_aide->toHtml();
-    QStringList qList      = texte_html.split(';', QString::SkipEmptyParts);
+    QStringList qList      = texte_html.split(';', Qt::SkipEmptyParts);
     QStringList linkNames;
 
-    foreach(const QString &s, qList)
+    for(const QString &s : qList)
     {
         // récupération des ancres
         if (s.contains("<a name="))
         {
             int        pos    = s.indexOf("<a name=");
-            QStringRef s2     = s.midRef(pos + 9);
+            QString    s2     = s.mid(pos + 9);
             int        posEnd = s2.indexOf(">");
-            QString    s4     = s2.toString();
-            QStringRef s3     = s4.leftRef(posEnd - 1);
-            linkNames << s3.toString();
+            QString    s3     = s2.left(posEnd - 1);
+            linkNames << s3;
         }
     }
     populate(linkNames); // remplissage du treewidget
@@ -119,7 +119,7 @@ void dialog_Aide::on_treeWidget_aide_itemClicked(QTreeWidgetItem *item, int colu
     QList <QTreeWidgetItem *> itemList;
 
     itemList = ui->treeWidget_aide->selectedItems();
-    foreach(QTreeWidgetItem * item, itemList)
+    for(QTreeWidgetItem * item : itemList)
     {
         mytreewidgetitem *item_ancre = dynamic_cast <mytreewidgetitem *> (item);
         QString           str        = "#" + item_ancre->getAncre(0);

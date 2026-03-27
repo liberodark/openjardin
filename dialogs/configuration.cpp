@@ -24,7 +24,6 @@ Configuration::Configuration(const QString&fileNameXML, const QString&fileNameSQ
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -35,7 +34,9 @@ Configuration::Configuration(const QString&fileNameXML, const QString&fileNameSQ
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
 
@@ -256,7 +257,7 @@ void Configuration::on_pushButton_NewdatabaseFull_clicked()
             queryStr = queryStr.trimmed();
 
             //Extraction des requêtes
-            QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
+            QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
             //Initialise les expressions pour détecter les requêts spéciales(`begin transaction` and `commit`).
             QRegularExpression re_transaction("\\bbegin.transaction.*", QRegularExpression::CaseInsensitiveOption);
             QRegularExpression re_commit("\\bcommit.*", QRegularExpression::CaseInsensitiveOption);
@@ -268,7 +269,7 @@ void Configuration::on_pushButton_NewdatabaseFull_clicked()
             }
             //Executer chaque requête individuellement
 
-            foreach(const QString &s, qList)
+            for(const QString &s : qList)
             {
                 if (re_transaction.match(s).hasMatch())        //<== detection des requêtes spéciales
                 {
@@ -312,8 +313,8 @@ void Configuration::on_pushButton_NewdatabaseFull_clicked()
             queryStr = queryStr.trimmed();
 
             //Executer chaque requête individuellement
-            QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
-            foreach(const QString &s, qList)
+            QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
+            for(const QString &s : qList)
             {
                 query.exec(s);
                 if (query.lastError().type() != QSqlError::NoError)
@@ -406,7 +407,7 @@ void Configuration::on_pushButton_import_clicked()
                 queryStr = queryStr.trimmed();
 
                 //Extraction des requêtes
-                QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
+                QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
                 //Initialise les expressions pour détecter les requêts spéciales(`begin transaction` and `commit`).
                 QRegularExpression re_transaction("\\bbegin.transaction.*", QRegularExpression::CaseInsensitiveOption);
                 QRegularExpression re_commit("\\bcommit.*", QRegularExpression::CaseInsensitiveOption);
@@ -417,7 +418,7 @@ void Configuration::on_pushButton_import_clicked()
                     db.transaction();
                 }
                 //Executer chaque requête individuellement
-                foreach(const QString &s, qList)
+                for(const QString &s : qList)
                 {
                     if (re_transaction.match(s).hasMatch())    //<== detection des requêtes spéciales
                     {
@@ -457,8 +458,8 @@ void Configuration::on_pushButton_import_clicked()
                 queryStr = queryStr.trimmed();
 
                 //Executer chaque requête individuellement
-                QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
-                foreach(const QString &s, qList)
+                QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
+                for(const QString &s : qList)
                 {
                     query.exec(s);
                     if (query.lastError().type() != QSqlError::NoError)
@@ -531,7 +532,7 @@ void Configuration::on_pushButton_export_clicked()
         QString    insert;
         QSqlRecord record;
 
-        foreach(const QString &table, tables)
+        for(const QString &table : tables)
         {
             query.exec(QString("SELECT * FROM [%1]").arg(table));
             while (query.next())
@@ -550,7 +551,7 @@ void Configuration::on_pushButton_export_clicked()
                         columns = columns + "," + record.fieldName(i);
                     }
 
-                    if (record.field(i).type() == QVariant::String)
+                    if (record.field(i).metaType() == QMetaType::fromType<QString>())
                     {
                         if (values == "")
                         {
@@ -752,7 +753,7 @@ void Configuration::on_pushButton_mise_a_jour_clicked()
         queryStr = queryStr.trimmed();
 
         //Extraction des requêtes
-        QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
+        QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
         //Initialise les expressions pour détecter les requêts spéciales(`begin transaction` and `commit`).
         QRegularExpression re_transaction("\\bbegin.transaction.*", QRegularExpression::CaseInsensitiveOption);
         QRegularExpression re_commit("\\bcommit.*", QRegularExpression::CaseInsensitiveOption);
@@ -764,7 +765,7 @@ void Configuration::on_pushButton_mise_a_jour_clicked()
         }
         //Executer chaque requête individuellement
 
-        foreach(const QString &s, qList)
+        for(const QString &s : qList)
         {
             if (re_transaction.match(s).hasMatch())        //<== detection des requêtes spéciales
             {
@@ -808,8 +809,8 @@ void Configuration::on_pushButton_mise_a_jour_clicked()
         queryStr = queryStr.trimmed();
 
         //Executer chaque requête individuellement
-        QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
-        foreach(const QString &s, qList)
+        QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
+        for(const QString &s : qList)
         {
             query.exec(s);
             if (query.lastError().type() != QSqlError::NoError)

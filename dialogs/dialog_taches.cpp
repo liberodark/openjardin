@@ -18,7 +18,6 @@ Dialog_taches::Dialog_taches(const int&IdTache, QWidget *parent) :
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -28,7 +27,9 @@ Dialog_taches::Dialog_taches(const int&IdTache, QWidget *parent) :
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -201,7 +202,7 @@ void Dialog_taches::nouvelle_tache(const QString&PhaseParent)
     }
 }
 
-void Dialog_taches::on_comboBox_phasesCultures_currentIndexChanged(const QString&arg1)
+void Dialog_taches::on_comboBox_phasesCultures_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   idPhase;
@@ -300,7 +301,7 @@ void Dialog_taches::init_base()
     calculer();
 }
 
-void Dialog_taches::on_comboBox_Taches_currentIndexChanged(const QString&arg1)
+void Dialog_taches::on_comboBox_Taches_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   id_tache;
@@ -777,7 +778,7 @@ void Dialog_taches::on_btnRessourcesAdd_clicked()
      *  ui->tableView_Ressources->setModel(modelListeRessource);
      * }*/
 
-    on_comboBox_Taches_currentIndexChanged(ui->comboBox_Taches->currentText());
+    on_comboBox_Taches_currentTextChanged(ui->comboBox_Taches->currentText());
 }
 
 void Dialog_taches::on_btnRessourceDelete_clicked()

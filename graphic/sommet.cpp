@@ -111,7 +111,7 @@ QVariant Sommet::itemChange(GraphicsItemChange change, const QVariant&value)
     switch (change)
     {
     case ItemPositionHasChanged:
-        foreach(Cote * cote, coteList)
+        for(Cote * cote : coteList)
         cote->adjust();
 
         break;

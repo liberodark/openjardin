@@ -18,7 +18,6 @@ Dialog_type_de_tache::Dialog_type_de_tache(const int&IdTypeTache, QWidget *paren
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::IniFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "english")
             {
@@ -29,7 +28,9 @@ Dialog_type_de_tache::Dialog_type_de_tache(const int&IdTypeTache, QWidget *paren
 
 
      }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     ui->setupUi(this);
@@ -135,7 +136,7 @@ void Dialog_type_de_tache::on_pushButton_Annuler_clicked()
     close();
 }
 
-void Dialog_type_de_tache::on_comboBox_Type_de_tache_currentIndexChanged(const QString&arg1)
+void Dialog_type_de_tache::on_comboBox_Type_de_tache_currentTextChanged(const QString&arg1)
 {
     QSqlQuery query;
     QString   id_type_de_tache;

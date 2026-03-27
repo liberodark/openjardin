@@ -38,7 +38,7 @@ private slots:
 
     void on_tableView_plantes_clicked(const QModelIndex&index);
 
-    void on_comboBox_especes_de_plantes_currentIndexChanged(const QString&arg1);
+    void on_comboBox_especes_de_plantes_currentTextChanged(const QString&arg1);
 
     void on_pushButton_Modifier_plantes_clicked();
 

@@ -7,7 +7,7 @@
 Cote::Cote(Sommet *sourceSommet, Sommet *destSommet)
     : arrowSize(6)
 {
-    setAcceptedMouseButtons(nullptr);
+    setAcceptedMouseButtons(Qt::NoButton);
     source = sourceSommet;
     dest   = destSommet;
     source->addCote(this);

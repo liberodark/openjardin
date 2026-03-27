@@ -84,6 +84,8 @@
 #include <QTimerEvent>
 #include <QTextStream>
 #include <QPrinter>
+#include <QPageLayout>
+#include <QPageSize>
 #include <QPrintDialog>
 #include <QPainter>
 #include <QCoreApplication>
@@ -112,7 +114,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_" + util::getLocale();
 
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
 
@@ -334,13 +338,13 @@ void MainWindow::on_actionA_propos_de_triggered()
                           "il utilise des fichier XML pour la configuration des plans\n"
                           "et une base sqlite pour les données de culture\n"
                           "Ce programme est compilé avec Qt 5.5.1 .\n"
-                          "Openjardin version 1.07.012 license GNU GPL version 3.0"));
+                          "Openjardin version 1.08 license GNU GPL version 3.0"));
 }
 
 void MainWindow::on_actionA_propos_de_Qt_triggered()
 {
     //QMessageBox::aboutQt(this,tr(QT_VERSION_STR));
-    QMessageBox::aboutQt(this, tr("Ce programme utilise la version 5.5.1 de Qt"));
+    QMessageBox::aboutQt(this, tr("Ce programme utilise Qt ") + qVersion());
 }
 
 void MainWindow::on_actionQuitter_triggered()
@@ -353,7 +357,9 @@ void MainWindow::on_actionLangue_Anglais_triggered()
     // forcer la langue anglaise
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_en.ts";
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
     ui->retranslateUi(this);
     QSettings       settings;
@@ -365,7 +371,9 @@ void MainWindow::on_actionTraduire_en_francais_triggered()
     // forcer la langue française
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_fr.ts";
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
     ui->retranslateUi(this);
     QSettings       settings;
@@ -377,7 +385,9 @@ void MainWindow::on_actionTradurre_in_italiano_triggered()
     // forcer la langue italienne
     QTranslator translator;
     QString     fichier = ":/translations/open-jardin_it.ts";
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
     ui->retranslateUi(this);
     QSettings       settings;
@@ -429,7 +439,6 @@ void MainWindow::loadIniSettings()
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "francais")
         {
@@ -497,7 +506,7 @@ void MainWindow::mise_a_jour_Titre()
 
     if (!getFileNameXML().isEmpty())
     {
-        titre = titre + " 1.07 - " + fichier;
+        titre = titre + " 1.08 - " + fichier;
     }
 
 
@@ -567,7 +576,7 @@ void MainWindow::backup_base()
 {   // backup du fichier sqli avec extension .bak
     QString fileName = getfileNameSQL();
     QFile   file(fileName);
-    QString baseName = fileName.split(".", QString::SkipEmptyParts).at(0);
+    QString baseName = fileName.split(".", Qt::SkipEmptyParts).at(0);
 
     baseName = baseName + ".bak";
     if (QFile::exists(baseName))
@@ -626,7 +635,7 @@ void MainWindow::mise_a_jour_DB(QString sqlfileName)
         queryStr = queryStr.trimmed();
 
         //Extraction des requêtes
-        QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
+        QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
         //Initialise les expressions pour détecter les requêts spéciales(`begin transaction` and `commit`).
         QRegularExpression re_transaction("\\bbegin.transaction.*", QRegularExpression::CaseInsensitiveOption);
         QRegularExpression re_commit("\\bcommit.*", QRegularExpression::CaseInsensitiveOption);
@@ -638,7 +647,7 @@ void MainWindow::mise_a_jour_DB(QString sqlfileName)
         }
         //Executer chaque requête individuellement
 
-        foreach(const QString &s, qList)
+        for(const QString &s : qList)
         {
             if (re_transaction.match(s).hasMatch())        //<== detection des requêtes spéciales
             {
@@ -676,9 +685,9 @@ void MainWindow::mise_a_jour_DB(QString sqlfileName)
         queryStr = queryStr.trimmed();
 
         //Executer chaque requête individuellement
-        QStringList qList = queryStr.split(';', QString::SkipEmptyParts);
+        QStringList qList = queryStr.split(';', Qt::SkipEmptyParts);
 
-        foreach(const QString &s, qList)
+        for(const QString &s : qList)
         {
             query.exec(s);
             if (query.lastError().type() != QSqlError::NoError)
@@ -858,7 +867,7 @@ void MainWindow::ouvrir_FichierXML(QString fileName)
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                             if (item->getEtat() == 1)
@@ -913,7 +922,7 @@ void MainWindow::ouvrir_FichierXML(QString fileName)
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                             if (item->getEtat() == 1)
@@ -967,7 +976,7 @@ void MainWindow::ouvrir_FichierXML(QString fileName)
                             }
                             else
                             {
-                                item->setUuid(objet.attribute("Uuid"));
+                                item->setUuid(QUuid::fromString(objet.attribute("Uuid")));
                             }
                             scene->addItem(item);
                         }
@@ -1284,7 +1293,7 @@ void MainWindow::on_actionSauver_triggered()
 
     QString fileName = getFileNameXML();
     // backup du fichier avant modifications
-    QString baseName = fileName.split(".", QString::SkipEmptyParts).at(0);
+    QString baseName = fileName.split(".", Qt::SkipEmptyParts).at(0);
     baseName = baseName + ".bak";
     if (QFile::exists(baseName))
     {
@@ -1562,7 +1571,7 @@ void MainWindow::dessine_grille(const int espace, const qreal&Opacite)
     }
 }
 
-void MainWindow::on_comboBox_AnneeEnCours_currentIndexChanged(const QString&arg1)
+void MainWindow::on_comboBox_AnneeEnCours_currentTextChanged(const QString&arg1)
 {   //le changement de l'année du combobox entraine l'affichage du planning calé au 1er janvier
     QString strDate       = "01/01/" + arg1;
     QDate   date          = QDate::fromString(strDate, "dd/MM/yyyy");
@@ -1574,7 +1583,7 @@ void MainWindow::on_comboBox_AnneeEnCours_currentIndexChanged(const QString&arg1
     affiche_planning(jour, NbJourFevrier);
 }
 
-void MainWindow::on_comboBox_AnneeEnCours_2_currentIndexChanged(const QString&arg1)
+void MainWindow::on_comboBox_AnneeEnCours_2_currentTextChanged(const QString&arg1)
 {   //le changement de l'année du combobox cale le tableau des rotations sur l'année sélectionnée
     QString strDate = "01/01/" + arg1;
     QDate   date    = QDate::fromString(strDate, "dd/MM/yyyy");
@@ -1606,7 +1615,6 @@ void MainWindow::affiche_rotation(int year)
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "francais")
         {
@@ -1625,7 +1633,9 @@ void MainWindow::affiche_rotation(int year)
         }
     }
 
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     scene_rotation->clear();
@@ -1830,7 +1840,6 @@ void MainWindow::affiche_planning(int day, int bis)
     if (iniFile.exists())
     {
         QSettings settings(iniFile.fileName(), QSettings::NativeFormat);
-        settings.setIniCodec("UTF-8");
         QString langue = settings.value("langue").toString();
         if(langue == "francais")
         {
@@ -1848,7 +1857,9 @@ void MainWindow::affiche_planning(int day, int bis)
 
         }
     }
-    translator.load(fichier);
+    if (!translator.load(fichier)) {
+        qWarning() << "Impossible de charger la traduction:" << fichier;
+    }
     qApp->installTranslator(&translator);
 
     //affiche le planning en démarrant au premier jour de la semaine selon la valeur de "day"
@@ -2795,7 +2806,7 @@ void MainWindow::on_actionBringToFront_triggered()
 
     qreal zValue = 0;
 
-    foreach(QGraphicsItem * item, overlapItems)
+    for(QGraphicsItem * item : overlapItems)
     {
          if (item->zValue() >= zValue)
          {
@@ -2819,7 +2830,7 @@ void MainWindow::on_actionmettre_en_arri_re_triggered()
 
     qreal zValue = 0;
 
-    foreach(QGraphicsItem * item, overlapItems)
+    for(QGraphicsItem * item : overlapItems)
     {
          if (item->zValue() >= zValue)
          {
@@ -3384,10 +3395,10 @@ void MainWindow::on_actionImprimer_le_plan_triggered()
 {
     QPrinter *printer = new QPrinter(QPrinter::HighResolution);
 
-    printer->setPaperSize(QPrinter::A4);
+    printer->setPageSize(QPageSize(QPageSize::A4));
     printer->setOutputFormat(QPrinter::NativeFormat);
     // printer->setOutputFormat (QPrinter::PdfFormat);
-    printer->setOrientation(QPrinter::Landscape);
+    printer->setPageOrientation(QPageLayout::Landscape);
     printer->setResolution(96);
     printer->setFullPage(true);
     QPrintDialog printDialog(printer, this);
@@ -3423,13 +3434,13 @@ QPolygon MainWindow::convertStrToPoly(const QString MyString)
 {
     //conversion d'une chaine de caractères avec séparateur des QPoints avec ; en QPolygon
 
-    QStringList liste = MyString.split(';', QString::SkipEmptyParts);
+    QStringList liste = MyString.split(';', Qt::SkipEmptyParts);
     QPolygon    poly(liste.count());
 
     for (int i = 0; i < liste.count(); i++)
     {
         QString     valeur_point = liste[i];
-        QStringList liste_point  = valeur_point.split(',', QString::SkipEmptyParts);
+        QStringList liste_point  = valeur_point.split(',', Qt::SkipEmptyParts);
         QString     strX         = liste_point[0];
         QString     strY         = liste_point[1];
         int         x            = strX.toInt();
@@ -3443,7 +3454,7 @@ void MainWindow::ShowContextMenu(const QPoint& pos) // this is a slot
 {
     QList <Sommet *> sommets;
 
-    foreach(QGraphicsItem * item, scene->items())
+    for(QGraphicsItem * item : scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {
@@ -3482,7 +3493,7 @@ void MainWindow::ajouterSommet()
     QList <Sommet *> sommets;
     qreal            position = 0;
 
-    foreach(QGraphicsItem * item, scene->items())
+    for(QGraphicsItem * item : scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {
@@ -3510,7 +3521,7 @@ void MainWindow::supprimerSommet()
 {
     QList <Sommet *> sommets;
 
-    foreach(QGraphicsItem * item, scene->items())
+    for(QGraphicsItem * item : scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {
@@ -3589,14 +3600,14 @@ void MainWindow::validerPolygone()
     strPolygon = "";
     //suppression des items Sommets
     QList <Sommet *> sommets;
-    foreach(QGraphicsItem * item, scene->items())
+    for(QGraphicsItem * item : scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {
             sommets << sommet;
         }
     }
-    foreach(Sommet * sommet, sommets)
+    for(Sommet * sommet : sommets)
     {
         delete sommet;
     }
@@ -3676,14 +3687,14 @@ void MainWindow::validerPolyline()
 
     //suppression des items Sommets
     QList <Sommet *> sommets;
-    foreach(QGraphicsItem * item, scene->items())
+    for(QGraphicsItem * item : scene->items())
     {
         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
         {
             sommets << sommet;
         }
     }
-    foreach(Sommet * sommet, sommets)
+    for(Sommet * sommet : sommets)
     delete sommet;
 
     ui->toolButton_newPolygon->setChecked(false);
@@ -3742,7 +3753,7 @@ void MainWindow::modifierPolygone()
                         scene->addItem(itemV);
                     }
                     QList <Sommet *> sommets;
-                    foreach(QGraphicsItem * item, scene->items())
+                    for(QGraphicsItem * item : scene->items())
                     {
                         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
                         {
@@ -3787,7 +3798,7 @@ void MainWindow::modifierPolygone()
                         scene->addItem(itemV);
                     }
                     QList <Sommet *> sommets;
-                    foreach(QGraphicsItem * item, scene->items())
+                    for(QGraphicsItem * item : scene->items())
                     {
                         if (Sommet *sommet = qgraphicsitem_cast <Sommet *>(item))
                         {
@@ -3878,7 +3889,7 @@ void MainWindow::on_toolButton_newPolygon_toggled(bool checked)
     }
 }
 
-void MainWindow::on_comboBox_epaisseurLignes_P_currentIndexChanged(const QString&arg1)
+void MainWindow::on_comboBox_epaisseurLignes_P_currentTextChanged(const QString&arg1)
 {
     QList <QGraphicsItem *> itemList = scene->items();
 

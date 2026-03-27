@@ -70,7 +70,7 @@ private slots:
 
     void on_pushButton_print_fiche_clicked();
 
-    void on_comboBox_plante_currentIndexChanged(const QString&arg1);
+    void on_comboBox_plante_currentTextChanged(const QString&arg1);
 
     void on_pushButton_creer_tache_clicked();
 
@@ -95,6 +95,8 @@ private slots:
     void on_pushButton_Gantt_clicked();
 
     void on_toolButton_clicked();
+
+    void on_pushButton_clicked();
 
 signals:
     void sendText(const QString&);

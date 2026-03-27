@@ -34,7 +34,7 @@
 #ifndef MYGRILLEITEM_H
 #define MYGRILLEITEM_H
 
-#include <QtGui>
+
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QPoint>

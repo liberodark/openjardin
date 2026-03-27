@@ -122,7 +122,7 @@ private slots:
 
     void ItemPlanning_clicked();
 
-    void on_comboBox_AnneeEnCours_currentIndexChanged(const QString&arg1);
+    void on_comboBox_AnneeEnCours_currentTextChanged(const QString&arg1);
 
 
     void populate_treeview();
